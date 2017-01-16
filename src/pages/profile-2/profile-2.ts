@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Profile1Page } from '../pages/profile-1/profile-1';
+//import { Profile1Page } from '../pages/profile-1/profile-1';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
@@ -15,7 +15,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class Profile2Page {
   
 
-  constructor(public nav: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
  
   }
 

@@ -13,11 +13,12 @@ import { NavController } from 'ionic-angular';
   
 })
 export class MyApp {
+  @ViewChild('myNav') nav: NavController
 
-  rootPage: any = Profile1Page;
+  rootPage: any = Profile2Page;
 
   constructor(
-    public platform: Platform, public nav: NavController,
+    public platform: Platform,
   ) {
 
     

@@ -17,7 +17,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class Profile1Page {
  
 
-  constructor(public nav: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   
   }
 
@@ -26,6 +26,6 @@ export class Profile1Page {
   }
   
   goToProfile2() {
-      this.nav.push(Profile2Page);
+      this.navCtrl.push(Profile2Page);
    }
 }
