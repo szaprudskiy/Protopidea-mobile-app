@@ -2,15 +2,15 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+//import { ItemDetailsPage } from '../pages/item-details/item-details';
+//import { ListPage } from '../pages/list/list';
 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    //ItemDetailsPage,
+    //ListPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, { scrollAssist: false, autoFocusAssist: false })
@@ -19,8 +19,8 @@ import { ListPage } from '../pages/list/list';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    //ItemDetailsPage,
+    //ListPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

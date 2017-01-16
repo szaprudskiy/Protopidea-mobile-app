@@ -4,7 +4,6 @@ import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
 import { NavController } from 'ionic-angular';
 
 @Component({
