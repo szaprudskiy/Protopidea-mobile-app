@@ -1,0 +1,29 @@
+.main-support {
+  padding-bottom: 138px; }
+  .main-support__input {
+    text-indent: 20px;
+    font-size: 16px;
+    width: 100%;
+    color: #9dbdc2;
+    border: none;
+    padding: 20px 0;
+    background: url(../assets/img/loupe-support.png) no-repeat;
+    opacity: .6;
+    background-position: 93% 18px;
+    border-bottom: 1px solid #00bfcc; }
+    .main-support__input::-webkit-input-placeholder {
+      color: #9dbdc2; }
+  .main-support__link {
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px solid #d9eef1;
+    color: #515151;
+    color: #1295a9; }
+    .main-support__link:after {
+      content: "";
+      position: absolute;
+      background: url(../img/arr-right2.png);
+      width: 9px;
+      height: 13px;
+      left: 87%;
+      top: 23px; }

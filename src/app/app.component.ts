@@ -12,9 +12,15 @@ import { Profile4PopupCameraGalleryPage } from '../pages/profile-4-popup-camera-
 import { Profile5UserProfilePage } from '../pages/profile-5-user-profile/profile-5-user-profile';
 import { Profile6PopupProfilePage } from '../pages/profile-6-popup-profile/profile-6-popup-profile';
 import { Profile7LogoutPage } from '../pages/profile-7-logout/profile-7-logout';
+import { Settings1ChangePSWDPage } from '../pages/settings-1-change-pswd/settings-1-change-pswd';
+import { Settings2LanguagePage } from '../pages/settings-2-language/settings-2-language';
+import { Settings3SupportPage } from '../pages/settings-3-support/settings-3-support';
+import { Settings4SupportIdeaPage } from '../pages/settings-4-support-idea/settings-4-support-idea';
+import { Settings5ReportProblemPage } from '../pages/settings-5-report-problem/settings-5-report-problem';
+import { Settings6ReportListPage } from '../pages/settings-6-report-list/settings-6-report-list';
+import { Settings7ReportAnswerPage } from '../pages/settings-7-report-answer/settings-7-report-answer';
+import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
 import { NavController } from 'ionic-angular';
-
-
 
 
 @Component({
@@ -24,7 +30,9 @@ import { NavController } from 'ionic-angular';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
+
   rootPage: any = RegPage;
+
 
 
   constructor(

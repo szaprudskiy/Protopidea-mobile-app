@@ -1,0 +1,69 @@
+.popup-profile {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 100%;
+  height: 568px; }
+  .popup-profile__pad {
+    padding: 20px 10px 10px; }
+  .popup-profile__title {
+    padding: 0 20px; }
+    .popup-profile__title p {
+      color: #515151; }
+      .popup-profile__title p span {
+        color: #1295a9; }
+  .popup-profile__item {
+    background: url(../assets/img/bg-popup.png) no-repeat;
+    width: 308px;
+    height: 257px;
+    margin: auto; }
+  .popup-profile__textarea {
+    width: 288px;
+    border: 1px solid #d9eef1;
+    background: #fff;
+    resize: none;
+    border-radius: 30px;
+    padding: 20px;
+    color: #515151;
+    margin-top: 15px;
+    font-size: 16px; }
+  .popup-profile__button {
+    background: none;
+    border: none;
+    background: #deff0d;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #3c4500;
+    display: block;
+    width: 90%;
+    margin: 5px auto 20px; }
+  .popup-profile .popup-profile__button-col {
+    background: #e8920c;
+    color: #fff; }
+
+/* FAQ */
+.support-idea__holder--border {
+  border: 1px solid #d9eef1;
+  border-width: 1px 0 1px 0; }
+
+.faq-list {
+  margin-left: 20px; }
+  .faq-list__item {
+    padding: 10px 0; }
+  .faq-list__link {
+    color: #1295a9; }
+
+/* FAQ OPEN */
+.support-idea__holder--color {
+  border: 1px solid #1295a9;
+  border-width: 0 0 1px 0; }
+
+.support-idea__text--color-blue {
+  color: #1295a9; }
+
+.support-idea__text--color {
+  color: #1295a9; }
+
+.support-idea__text--pad {
+  padding-top: 0; }

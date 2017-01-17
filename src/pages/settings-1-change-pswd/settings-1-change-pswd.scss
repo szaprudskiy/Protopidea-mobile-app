@@ -1,0 +1,40 @@
+.change-password {
+  display: block;
+  color: #f7f7f7;
+  padding: 40px 0 17px 40px;
+  font-size: 14px;
+  position: relative; 
+  text-decoration: none;
+  }
+  .change-password:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/arr-left.png);
+    width: 9px;
+    height: 13px;
+    left: 24px;
+    top: 42px; }
+
+.main-change-pass {
+  padding: 155px 0 135px; }
+  .main-change-pass__button {
+    background: none;
+    border: none;
+    background: #deff0d;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #3c4500;
+    display: block;
+    width: 90%;
+    margin: 25px auto 20px; }
+  .main-change-pass__input {
+    display: block;
+    background: none;
+    border: none;
+    color: #9dbdc2;
+    width: 100%;
+    padding: 18px 0 18px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #d9eef1; }
+    .main-change-pass__input::-webkit-input-placeholder {
+      color: #9dbdc2; }
