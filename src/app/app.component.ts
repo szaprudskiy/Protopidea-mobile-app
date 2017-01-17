@@ -24,7 +24,7 @@ import { NavController } from 'ionic-angular';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = IdeaCreatePage;
+  rootPage: any = RegPage;
 
 
   constructor(
