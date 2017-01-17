@@ -1,0 +1,24 @@
+.report-problem-button {
+  position: relative;
+  display: block; }
+  .report-problem-button:after {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-message.png);
+    width: 18px;
+    height: 13px;
+    left: 90%;
+    top: 42px; }
+
+.report-problem {
+  padding-bottom: 170px; }
+  .report-problem__add {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #d9eef1; }
+  .report-problem__description {
+    margin: 5px 0 0 10px;
+    color: #515151; }
+  .report-problem .main-change-pass__button--mar {
+    margin: 10px auto; }
