@@ -24,7 +24,7 @@ import { NavController } from 'ionic-angular';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = RegPage;
+  rootPage: any = IdeaCreatePage;
 
 
   constructor(
@@ -38,7 +38,7 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      Splashscreen.hide();
+      //Splashscreen.hide();
     });
   
 
