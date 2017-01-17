@@ -1,0 +1,32 @@
+.profile-photo{
+	img{
+		border-radius: 50%;
+		border: 5px solid #52c6d8;
+	}
+	&__name{
+		margin-top: 20px;
+		font-family: "RobotoBold";
+	}
+}
+.profile-view{
+	margin-top: 20px;
+	border-bottom: 1px solid #42c5d8;
+	padding-bottom: 18px;
+	&__pad{
+		padding: 0 20px;
+	}
+	&__img{
+		float: left;
+
+	}
+	&__holder{
+		margin-left: 30px;
+	}
+	&__title{
+		font-size: 14px;
+		color: #00fffc;
+	}
+	&__description{
+		color: #f7f7f7;
+	}
+}

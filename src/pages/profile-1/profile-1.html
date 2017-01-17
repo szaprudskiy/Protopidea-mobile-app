@@ -1,0 +1,30 @@
+<ion-content class="background">
+<div class="user-profile">
+		<h5 class="user-profile__title">User Profile</h5>
+		<a class="user-profile__link-upload" href="">
+			<img src="assets/img/circle.png" alt="">
+		</a>
+		<ul class="user-profile__dots">
+			<li class="user-profile__item"><a class="user-profile__active" href="#"></a></li>
+			<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
+			<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
+		</ul>
+	</div>
+	<div class="form">
+		<form action="">
+			<input class="form__item-text" type="text" placeholder="First Name*" required>
+			<input class="form__item-text" type="text" placeholder="Family Name*" required>
+			<input class="form__item-text" type="email" placeholder="Email" required>
+			<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>
+				<div class="form-skills dn">
+					<input class="form__item-text form__item-icon" type="text" placeholder="First Skill*" required>
+					<input class="form__item-text form__item-icon" type="text" placeholder="Second Skill" required>
+					<input class="form__item-text form__item-icon" type="text" placeholder="Third Skill" required>
+					<input class="form__item-text form__item-icon" type="text" placeholder="Fourth Skill" required>
+					<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>
+				</div>  
+			<input class="form__item-text form__item-icon" type="text" placeholder="Laungage" required>
+			<button (click)="goToProfile2()" class="form__button">Saving skip</button>
+		</form>
+	</div>
+</ion-content>
