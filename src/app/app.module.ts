@@ -6,6 +6,12 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 //import { ListPage } from '../pages/list/list';
 import { Profile1Page } from '../pages/profile-1/profile-1';
 import { Profile2Page } from '../pages/profile-2/profile-2';
+import { Profile3Page } from '../pages/profile-3/profile-3';
+import { Profile4PopupCameraGalleryPage } from '../pages/profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
+import { Profile5UserProfilePage } from '../pages/profile-5-user-profile/profile-5-user-profile';
+import { Profile6PopupProfilePage } from '../pages/profile-6-popup-profile/profile-6-popup-profile';
+import { Profile7LogoutPage } from '../pages/profile-7-logout/profile-7-logout';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +20,12 @@ import { Profile2Page } from '../pages/profile-2/profile-2';
     //ItemDetailsPage,
     //ListPage
     Profile1Page,
-    Profile2Page
+    Profile2Page,
+    Profile3Page,
+    Profile4PopupCameraGalleryPage,
+    Profile5UserProfilePage,
+    Profile6PopupProfilePage,
+    Profile7LogoutPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, { scrollAssist: false, autoFocusAssist: false })
@@ -30,7 +41,12 @@ import { Profile2Page } from '../pages/profile-2/profile-2';
     //ItemDetailsPage,
     //ListPage
     Profile1Page,
-    Profile2Page
+    Profile2Page,
+    Profile3Page,
+    Profile4PopupCameraGalleryPage,
+    Profile5UserProfilePage,
+    Profile6PopupProfilePage,
+    Profile7LogoutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

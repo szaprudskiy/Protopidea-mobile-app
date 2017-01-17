@@ -1,0 +1,47 @@
+.popup-profile{
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+	height: 568px;
+	&__pad{
+		padding: 20px 10px 10px;
+	}
+	&__title{	
+		padding: 0 20px;
+		p{
+			color: #515151;
+			span{
+				color: #1295a9;
+			}
+		}
+	}
+	&__item{
+		background: url(../assets/img/bg-popup.png) no-repeat;
+		width: 308px;
+		height: 257px;
+		margin: auto;
+	}
+	&__textarea{
+		width: 288px;
+		border: 1px solid #d9eef1;
+		background: #fff;
+		resize: none;
+		//text-indent: 20px;
+		border-radius: 30px;
+		padding: 20px ;
+		color: #515151;
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	&__button{
+		background: none;
+	    border: none;
+	    background: #deff0d;
+	    padding: 15px 0;
+	    border-radius: 50px;
+	    color: #3c4500;
+	    display: block;
+	    width: 90%;
+	    margin: 7px auto 20px;
+	}
+}

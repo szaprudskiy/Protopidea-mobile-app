@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { Profile1Page } from '../pages/profile-1/profile-1';
+//import { Profile1Page } from './profile-1';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*

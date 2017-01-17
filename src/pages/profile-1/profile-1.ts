@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Profile2Page } from '../pages/profile-2/profile-2';
+// import { Profile2Page } from '../profile-2/profile-2';
 import { NavController, NavParams } from 'ionic-angular';
 
 
@@ -25,7 +25,7 @@ export class Profile1Page {
     console.log('ionViewDidLoad Profile1Page');
   }
   
-  goToProfile2() {
-      this.navCtrl.push(Profile2Page);
-   }
+  // goToProfile2() {
+  //     this.navCtrl.push(Profile2Page);
+  //  }
 }
