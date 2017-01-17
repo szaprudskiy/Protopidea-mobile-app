@@ -19,6 +19,10 @@ import { Settings5ReportProblemPage } from '../pages/settings-5-report-problem/s
 import { Settings6ReportListPage } from '../pages/settings-6-report-list/settings-6-report-list';
 import { Settings7ReportAnswerPage } from '../pages/settings-7-report-answer/settings-7-report-answer';
 import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
+import { Settings9NotificationsPage } from '../pages/settings-9-notifications/settings-9-notifications';
+import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
+import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
+import {  MyPage } from '../pages/menu/menu';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,7 @@ import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
     HelloIonicPage,
     //ItemDetailsPage,
     //ListPage
+     MyPage,
     Profile1Page,
     Profile2Page,
     Profile3Page,
@@ -40,7 +45,10 @@ import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
     Settings5ReportProblemPage,
     Settings6ReportListPage,
     Settings7ReportAnswerPage,
-    Settings8PopupPage 
+    Settings8PopupPage,
+    Settings9NotificationsPage,
+    Settings10FaqPage,
+    Settings11FaqOpenPage 
   ],
   imports: [
     IonicModule.forRoot(MyApp, { scrollAssist: false, autoFocusAssist: false })
@@ -55,6 +63,7 @@ import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
     HelloIonicPage,
     //ItemDetailsPage,
     //ListPage
+     MyPage,
     Profile1Page,
     Profile2Page,
     Profile3Page,
@@ -69,7 +78,10 @@ import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
     Settings5ReportProblemPage,
     Settings6ReportListPage,
     Settings7ReportAnswerPage,
-    Settings8PopupPage  
+    Settings8PopupPage,
+    Settings9NotificationsPage,
+    Settings10FaqPage,
+    Settings11FaqOpenPage   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
