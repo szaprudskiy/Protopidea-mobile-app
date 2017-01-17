@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { IdeaCreatePage } from '../idea-create/idea-create';
 
 
 @Component({
@@ -7,9 +8,12 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  constructor() {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     
+  }
 
+  goToIdeaCreate(){
+    this.navCtrl.push(IdeaCreatePage);
   }
 
 }

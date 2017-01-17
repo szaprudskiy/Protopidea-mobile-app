@@ -2,8 +2,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { RegPage} from '../pages/reg-page/reg-page';
+import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -12,7 +13,7 @@ import { NavController } from 'ionic-angular';
 })
 export class MyApp {
 
-  rootPage: any = HelloIonicPage;
+  rootPage: any = RegPage;
 
   constructor(
     public platform: Platform,
