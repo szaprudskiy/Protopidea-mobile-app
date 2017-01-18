@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HelloIonicPage } from '../hello-ionic/hello-ionic';
+import { MenuController } from 'ionic-angular';
 import { NavController, NavParams } from 'ionic-angular';
 
 
@@ -15,7 +16,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class RegPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(
+      public navCtrl: NavController, 
+      public navParams: NavParams,
+      public menuCtrl: MenuController, ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegPage');
@@ -23,5 +27,9 @@ export class RegPage {
 
   goToLogin(){
     this.navCtrl.push(HelloIonicPage);
+  }
+
+  menuOpen(){
+    this.menuCtrl.open();
   }
 }
