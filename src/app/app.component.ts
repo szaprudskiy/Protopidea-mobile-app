@@ -37,7 +37,7 @@ import { MenuTestPage } from '../pages/menu-test/menu-test';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = MenuTestPage;
+  rootPage: any = HelloIonicPage;
 
   constructor(
     public platform: Platform,

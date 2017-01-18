@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import {JsonpModule} from '@angular/http';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
@@ -56,6 +57,7 @@ import { MenuTestPage } from '../pages/menu-test/menu-test';
     MenuTestPage
   ],
   imports: [
+    JsonpModule,
     IonicModule.forRoot(MyApp, { 
       scrollAssist: false, 
       autoFocusAssist: false,
