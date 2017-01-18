@@ -23,6 +23,7 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { NavController } from 'ionic-angular';
+import { Ideabox1ScreenUploadPage } from '../pages/ideabox-1-screen-upload/ideabox-1-screen-upload';
 
 
 
@@ -34,7 +35,7 @@ import { NavController } from 'ionic-angular';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = MyPage;
+  rootPage: any = Ideabox1ScreenUploadPage;
 
   constructor(
     public platform: Platform,

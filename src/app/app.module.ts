@@ -23,6 +23,8 @@ import { Settings9NotificationsPage } from '../pages/settings-9-notifications/se
 import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
+import { Ideabox1ScreenUploadPage } from '../pages/ideabox-1-screen-upload/ideabox-1-screen-upload';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import {  MyPage } from '../pages/menu/menu';
     Settings8PopupPage,
     Settings9NotificationsPage,
     Settings10FaqPage,
-    Settings11FaqOpenPage 
+    Settings11FaqOpenPage,
+    Ideabox1ScreenUploadPage 
   ],
   imports: [
     IonicModule.forRoot(MyApp, { scrollAssist: false, autoFocusAssist: false })
@@ -81,7 +84,8 @@ import {  MyPage } from '../pages/menu/menu';
     Settings8PopupPage,
     Settings9NotificationsPage,
     Settings10FaqPage,
-    Settings11FaqOpenPage   
+    Settings11FaqOpenPage,
+    Ideabox1ScreenUploadPage   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
