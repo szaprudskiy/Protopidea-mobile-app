@@ -20,7 +20,13 @@ import { Settings5ReportProblemPage } from '../pages/settings-5-report-problem/s
 import { Settings6ReportListPage } from '../pages/settings-6-report-list/settings-6-report-list';
 import { Settings7ReportAnswerPage } from '../pages/settings-7-report-answer/settings-7-report-answer';
 import { Settings8PopupPage } from '../pages/settings-8-popup/settings-8-popup';
+import { Settings9NotificationsPage } from '../pages/settings-9-notifications/settings-9-notifications';
+import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
+import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
+import {  MyPage } from '../pages/menu/menu';
 import { NavController } from 'ionic-angular';
+
+
 
 
 @Component({
