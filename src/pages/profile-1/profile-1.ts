@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { Profile2Page } from '../profile-2/profile-2';
+import { Profile2Page } from '../profile-2/profile-2';
 import { NavController, NavParams } from 'ionic-angular';
 
 
@@ -10,7 +10,6 @@ import { NavController, NavParams } from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-
   selector: 'page-profile-1',
   templateUrl: 'profile-1.html',
 })
@@ -21,11 +20,20 @@ export class Profile1Page {
   
   }
 
+   formskill = false;
+    langdropdown = false;
   ionViewDidLoad() {
     console.log('ionViewDidLoad Profile1Page');
   }
   
-  // goToProfile2() {
-  //     this.navCtrl.push(Profile2Page);
-  //  }
+   goToProfile2() {
+       this.navCtrl.push(Profile2Page);
+    }
+
+  clickSkills() {
+    this.formskill = !this.formskill;
+  }
+    clickLanguage() {
+    this.langdropdown = !this.langdropdown;
+  }
 }

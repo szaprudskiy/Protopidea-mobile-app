@@ -12,18 +12,31 @@
 	</div>
 	<div class="form">
 		<form action="">
-			<input class="form__item-text" type="text" placeholder="First Name*" required>
-			<input class="form__item-text" type="text" placeholder="Family Name*" required>
+			<input class="form__item-text" type="text" placeholder="First Name" required>
+			<input class="form__item-text" type="text" placeholder="Family Name" required>
 			<input class="form__item-text" type="email" placeholder="Email" required>
-			<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>
-				<div class="form-skills dn">
-					<input class="form__item-text form__item-icon" type="text" placeholder="First Skill*" required>
+			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>-->
+				<a class="form__item-text form__item-icon" (click)="clickSkills()" href="#">Skills</a>
+				<div class="form-skills" *ngIf="formskill">
+					<a class="form__item-text form__item-icon" href="#">First Skill<span>*</span></a>
+					<a class="form__item-text form__item-icon" href="#">Second Skill</a>
+					<a class="form__item-text form__item-icon" href="#">Third Skill</a>
+					<a class="form__item-text form__item-icon" href="#">Fourth Skill</a>
+					<a class="form__item-text form__item-icon" href="#">Fifth Skill</a>
+					<!--<input class="form__item-text form__item-icon" type="text" placeholder="First Skill*" required>
 					<input class="form__item-text form__item-icon" type="text" placeholder="Second Skill" required>
 					<input class="form__item-text form__item-icon" type="text" placeholder="Third Skill" required>
 					<input class="form__item-text form__item-icon" type="text" placeholder="Fourth Skill" required>
-					<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>
+					<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>-->
 				</div>  
-			<input class="form__item-text form__item-icon" type="text" placeholder="Laungage" required>
+			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Language" required>-->
+			<a class="form__item-text form__item-icon" (click)="clickLanguage()" href="#">Language</a>
+
+			<div class="form-skills" *ngIf="langdropdown">
+				<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>
+				<a class="form__item-text form__item-icon--add" href="#">Add language</a>	
+			</div>
+				
 			<button (click)="goToProfile2()" class="form__button">Saving skip</button>
 		</form>
 	</div>

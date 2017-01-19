@@ -12,12 +12,24 @@
       </div>
       <div class="form">
         <form action="">
-          <input class="form__item-text" type="number" placeholder="Mobile phone" required>
-          <input class="form__item-text form__item-icon" type="text" placeholder="Adress" required>
-          <input class="form__item-text form__item-icon" type="text" placeholder="Gender" required>
-          <input class="form__item-text" type="text" placeholder="Your URL" required>
+          <input class="form__item-text" type="number" placeholder="Mobile phone">
+          <!--<input class="form__item-text form__item-icon" type="text" placeholder="Adress" required>
+          <input class="form__item-text form__item-icon" type="text" placeholder="Gender" required>-->
+          <a href="#" class="form__item-text form__item-icon" (click)="clickAdress()">Adress</a>
+          <div class="form-skills" *ngIf="adressdropdown">
+            <a class="form__item-text form__item-icon" href="#">Country<span>*</span></a>
+            <a class="form__item-text form__item-icon" href="#">City<span>*</span></a>	
+            <a class="form__item-text form__item-icon" href="#">House Number & Street Name</a>	  
+            <a class="form__item-text form__item-icon" href="#">Post Code</a>	
+		    	</div>
+          <a href="#" class="form__item-text form__item-icon" (click)="clickGender()">Gender</a>
+          <div class="form-skills" *ngIf="genderdropdown">
+            <a class="form__item-text form__item-icon" href="#">Male</a>
+            <a class="form__item-text form__item-icon" href="#">Female</a>	
+		    	</div>
+          <input class="form__item-text" type="text" placeholder="Your URL" >
           <button class="form__button-cv">Upload CV</button>
-          <button class="form__button">Saving skip</button>
+          <button class="form__button" (click)="goToProfile3()">Saving skip</button>
         </form>
   </div>
  </ion-content>  

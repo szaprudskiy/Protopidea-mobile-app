@@ -1,3 +1,122 @@
-page-idea-create {
+.header{
 
+	&__top{
+		margin-top: 44px;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__input{
+		background: none, url(../assets/img/loupe.png) no-repeat;
+		background-position: 93%;
+		border: 1px solid #52c6d8;
+		border-radius: 20px;
+		height: 40px;
+		color: #f0f9fb;
+		text-indent: 20px;
+		width: 198px;
+		&::-webkit-input-placeholder{
+			color: #f0f9fb;
+		}
+	}
+	
+	&__holder-menu{
+		display: flex;
+    	align-items: center;
+		a{
+			padding-right: 22px;
+		}
+	}
+	&__bot{
+		margin: 20px 30px 0 25px;
+	}
+	&__list{
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+	&__list-link{
+		display: block;
+		background: url(../assets/img/sprite-icon.png) no-repeat;
+		width: 30px;
+		height: 30px;
+	}
+	
+	&__list-link-goblet{
+		background-position: -80px;
+		
+	}
+	&__list-link-cloud{
+		background-position: -160px;
+		
+	}
+	&__list-link-bell{
+		background-position: -240px;
+		
+	}
+}
+/* SCREEN */
+.main{
+	background: #fff;
+	background-size: cover;
+	margin: 12px 0 30px;
+	// opacity: .6;
+	&__title{
+		color: #1295a9;
+		text-align: center;
+		padding: 20px 0;
+	}
+	&__upload-photo{
+		display: block;
+		text-align: center;
+	}
+	&__upload-files{
+		display: block;
+		text-align: center;
+		background: #e0edef;
+		margin: 15px 20px 0;
+		border-radius: 20px;
+		color: #56b2c0;
+		padding: 15px 0;
+		opacity: .7;
+	}
+	&__input{
+		background: none;
+		border: none;
+		text-indent: 20px;
+		padding: 20px 0;
+		width: 100%;
+		border-bottom: 1px solid #d9eef1;
+		color: #9dbdc2;
+		&::-webkit-input-placeholder{
+			color: #9dbdc2;
+		}
+	}
+	&__input--arrdown{
+		background: url(../assets/img/arr-down.png) no-repeat;
+		background-position: 95%; 
+		display: block;
+		text-decoration: none;
+	}
+	&__holder-links{
+		padding: 25px 0 20px;
+		display: flex;
+		justify-content: space-around;
+		a{
+			padding: 10px 0;
+			border-radius: 20px;
+			width: 40%;
+			display: block;
+			text-align: center;
+		}
+	}
+	&__link-public{
+		background: #deff0d;
+		color: #3c4500;
+		text-decoration: none;
+	}
+	&__link-hide{
+		background: rgba(225, 242, 244, .6);
+		text-decoration: none;
+		color: #1295a9;
+	}
 }
