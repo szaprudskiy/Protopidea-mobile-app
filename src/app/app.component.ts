@@ -28,8 +28,10 @@ import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
-
-
+import { IdeaboxListPage } from '../pages/ideabox-list/ideabox-list';
+import { IdeaboxFollowedGroupsPage } from '../pages/ideabox-followed-groups/ideabox-followed-groups';
+import { IdeaboxLikesPage } from '../pages/ideabox-likes/ideabox-likes';
+import { IdeaboxCommentsPage } from '../pages/ideabox-comments/ideabox-comments';
 
 
 
@@ -41,7 +43,7 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
-  rootPage: any = IdeaCreate2Page;
+  rootPage: any =  IdeaboxCommentsPage;
 
 
   constructor(

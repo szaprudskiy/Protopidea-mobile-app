@@ -20,6 +20,7 @@
 			</div>	
 		</div>
     <main class="main">
+		asd
       <div class="main-idea">	
 			<a href="#" class="main__title-screenidea">Name of the owner</a>	
 			<a href="#" class="main__imgidea"><img src="assets/img/idea-photo.png" alt=""></a>
@@ -28,21 +29,35 @@
 				<li><img src="assets/img/idea-photo2.png" alt=""></li>
 				<li><img src="assets/img/idea-photo2.png" alt=""></li>
 			</ul>
-			<a class="main__link-collaborate" href="#">Collaborate</a>
-			<input class="main__input main__input-color" type="text" placeholder="Awesome Big Idea">
-			<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="Category">
-			<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="Invention Description">
-			<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="Promotional Description">
+				<a class="main__link-collaborate" href="#">Collaborate</a>
+			
+			<!--<input class="main__input main__input-color" type="text" placeholder="Invention Name">-->
+			<p class="main__input main__input-color">Awesome Big Idea</p>
+			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="A brief description">-->
+			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickCategory()">Category</a>
+			<p class="categorydropdown" *ngIf="categorydrop">
+				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+			</p>
+			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="Promotional Description">-->
+			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickInvention()">Invention Description</a>
+			<p class="categorydropdown" *ngIf="inventiondrop">
+				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+			</p>
+			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="">-->
+			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickPromotion()">Promotion Description</a>
+			<p class="categorydropdown" *ngIf="promotiondrop">
+				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+			</p>
 		</div>
 		<div class="footer">
 			<ul class="footer__list">
 				<li>
-					<a href="#"><img src="assets/img/idea-icon.png" alt="">
+					<a href="#"><img class="footer__img-1" src="assets/img/idea-icon.png" alt="">
 						<p>5000</p>
 					</a>
 				</li>
 				<li>
-					<a href="#"><img src="assets/img/comments.png" alt="">
+					<a href="#"><img class="footer__img-2" src="assets/img/comments.png" alt="">
 						<p>5000</p>
 					</a>
 				</li>
@@ -52,6 +67,7 @@
 					</a>
 				</li>
 			</ul>
+		
 		</div>
     </main>
 </ion-content>
