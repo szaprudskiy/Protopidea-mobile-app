@@ -2,21 +2,21 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /*
-  Generated class for the Ideabox1ScreenUpload page.
+  Generated class for the IdeaCreate2 page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-ideabox-1-screen-upload',
-  templateUrl: 'ideabox-1-screen-upload.html'
+  selector: 'page-idea-create2',
+  templateUrl: 'idea-create2.html'
 })
-export class Ideabox1ScreenUploadPage {
+export class IdeaCreate2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Ideabox1ScreenUploadPage');
+    console.log('ionViewDidLoad IdeaCreate2Page');
   }
 
 }
