@@ -1,0 +1,11 @@
+{
+ "android": {
+     "release": {
+         "keystore":"G:/Projects/MyIonic2Project/proto-key.jks",
+         "storePassword":"7PbHWJum",
+         "alias":"protopidea",
+         "password":"7PbHWJum",
+         "keystoreType":""
+       }
+   }
+}

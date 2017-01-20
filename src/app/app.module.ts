@@ -4,6 +4,8 @@ import { MyApp } from './app.component';
 import {JsonpModule} from '@angular/http';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
+import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
+import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 //import { ItemDetailsPage } from '../pages/item-details/item-details';
 //import { ListPage } from '../pages/list/list';
@@ -57,8 +59,9 @@ import { Ideabox1ScreenUploadPage } from '../pages/ideabox-1-screen-upload/ideab
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
-    Ideabox1ScreenUploadPage 
-
+    Ideabox1ScreenUploadPage,
+    TermsAndConditionsPage,
+    ForgotPassPage,
   ],
   imports: [
     JsonpModule,
@@ -97,7 +100,9 @@ import { Ideabox1ScreenUploadPage } from '../pages/ideabox-1-screen-upload/ideab
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
-    Ideabox1ScreenUploadPage   
+    Ideabox1ScreenUploadPage,
+    TermsAndConditionsPage,
+    ForgotPassPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

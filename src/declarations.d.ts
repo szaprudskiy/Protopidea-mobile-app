@@ -12,3 +12,5 @@
   https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 */
 declare module '*';
+declare const facebookConnectPlugin: any;
+declare const TwitterConnect: any;    

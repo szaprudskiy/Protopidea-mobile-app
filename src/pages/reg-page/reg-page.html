@@ -3,7 +3,7 @@
   <div class="page-container" style="margin-top:5vh;">
 							<h1 class="fz32">Protopidea</h1>
 							<div class="social-reg df">
-								<a href="#"  id="facebook-login">
+								<a href="#" (click)="regWithFacebook()" id="facebook-login">
 									<img src="img/facebook-logo-button.svg" alt="">
 								</a>
 								<a href="index.html#">
@@ -24,36 +24,36 @@
 							</div>
 							<p class="fz18 reg-p">or</p>
 						</div>
-						<form action="#" method="get" id="registration-form">
+						<form  #form="ngForm"(ngSubmit)="regFormSend()" id="registration-form">
 							<div class="bor-bot">
 								<div class="page-container">
-									<input type="text" name="name" placeholder="Name" id="reg-name">
+									<input type="text" [(ngModel)]="regForm.name"  name="name" placeholder="Name" >
 								</div>
 							</div>
 							<div class="bor-bot">
 								<div class="page-container">
-									<input type="text" name="email" placeholder="E-mail" id="reg-email">
+									<input type="text" [(ngModel)]="regForm.email" name="email" placeholder="E-mail" >
 								</div>
 							</div>
 							<div class="bor-bot">
 								<div class="page-container">
-									<input type="password" name="password" placeholder="Password" id="reg-password">
+									<input type="password"  [(ngModel)]="regForm.password" name="password" placeholder="Password" >
 								</div>
 							</div>
 							<div class="bor-bot">
 								<div class="page-container">
-									<input type="checkbox"  placeholder="Password" id="reg-password">
-									<p>Terms and Conditions<p>
+									<input type="checkbox"  [(ngModel)]="regForm.terms" name="terms">
+									<p (click)="goToTerms()">Terms and Conditions<p>
 								</div>
 							</div>
 							<div class="page-container">
-								<input (click)="menuOpen()" type="submit" value="Sign Up" class="btn-app btn-app-yellow">
+								<input  type="submit" value="Sign Up" class="btn-app btn-app-yellow">
 							</div>
 						</form>
 						<div class="page-container">
 							<div class="login df mt-20">
                 <p id="login" (click)="goToLogin()">Login</p>
-								<p href="">Forgot password?</p>
+								<p (click)="goToForgotPass()">Forgot password?</p>
 							</div>
 						</div>
 </ion-content>
