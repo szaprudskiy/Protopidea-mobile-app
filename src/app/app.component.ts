@@ -46,7 +46,7 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
-  rootPage: any =  IdeaboxCommentsPage;
+  rootPage: any =  HelloIonicPage;
 
   constructor(
     public platform: Platform,
