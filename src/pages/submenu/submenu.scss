@@ -1,0 +1,72 @@
+.category-list--submenu {
+//   margin-left: 60px;
+//   margin-top: 90px; 
+}
+.menu--submenu{
+    margin-top: 0 !important;
+}
+.category-list__linka {
+  position: relative; }
+  .category-list__linka:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-lang.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    left: -25px;
+    top: 1px; }
+
+.category-list__links {
+  position: relative; }
+  .category-list__links:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-bell.png) no-repeat;
+    width: 20px;
+    height: 25px;
+    left: -23px;
+    top: 0; }
+
+.category-list__linkd {
+  position: relative; }
+  .category-list__linkd:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-key.png) no-repeat;
+    width: 20px;
+    height: 25px;
+    left: -25px;
+    top: 0; }
+
+.category-list__linkf {
+  position: relative; }
+  .category-list__linkf:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-supp.png) no-repeat;
+    width: 24px;
+    height: 23px;
+    left: -24px;
+    top: 0; }
+
+.category-list__linkg {
+  position: relative; }
+  .category-list__linkg:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-unknow.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    left: -25px;
+    top: 0; }
+
+.category-list__linkh {
+  position: relative; }
+  .category-list__linkh:before {
+    content: "";
+    position: absolute;
+    background: url(../assets/img/icon-message.png) no-repeat;
+    width: 18px;
+    height: 13px;
+    left: -25px;
+    top: 2px; }

@@ -1,3 +1,166 @@
-page-menu {
+.menu {
+  background: #52c6d8;
+  opacity: .9;
+  margin-top: 24px;
+  padding: 34px 0 25px;
+  padding-right: 20px; }
 
-}
+.burger {
+  display: block;
+  cursor: pointer;
+  float: right; }
+  .burger__item {
+    position: relative;
+    overflow: hidden;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    background: none; }
+  .burger__upper {
+    display: block;
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background: #fff; }
+  .burger__mid {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background: #fff; }
+  .burger__lower {
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
+    background: #fff; }
+
+.user {
+  clear: both;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0 0 0; 
+  justify-content: center;
+  }
+  .user__name {
+    font-family: "RobotoBold";
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-left: 20px; }
+
+.category-list {
+  margin-top: 25px;
+  margin-left: 90px; }
+  .category-list li {
+    margin-bottom: 20px; }
+    .category-list li a {
+      display: block;
+      color: #fff;
+      text-transform: uppercase; }
+  .category-list__linkq {
+    position: relative; }
+    .category-list__linkq:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/icon-skills.png);
+      width: 16px;
+      height: 14px;
+      left: -25px;
+      top: 1px; }
+  .category-list__linkw {
+    position: relative; }
+    .category-list__linkw:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/menu-icon2.png);
+      width: 22px;
+      height: 17px;
+      left: -25px;
+      top: 1px; }
+  .category-list__linke {
+    position: relative; }
+    .category-list__linke:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/menu-icon3.png);
+      width: 16px;
+      height: 18px;
+      left: -25px;
+      top: 0; }
+  .category-list__linkr {
+    position: relative; }
+    .category-list__linkr:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/icon-camera.png);
+      width: 22px;
+      height: 22px;
+      left: -26px;
+      top: -3px; }
+  .category-list__linkt {
+    position: relative; }
+    .category-list__linkt:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/icon-message.png);
+      width: 18px;
+      height: 15px;
+      left: -25px;
+      top: 1px; }
+  .category-list__linky {
+    position: relative; }
+    .category-list__linky:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/menu-icon5.png);
+      width: 18px;
+      height: 18px;
+      left: -25px;
+      top: 0px; }
+  .category-list__linku {
+    position: relative; }
+    .category-list__linku:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/icon-skills.png);
+      width: 16px;
+      height: 14px;
+      left: -25px;
+      top: 1px; }
+  .category-list__linki {
+    position: relative; }
+    .category-list__linki:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/menu-icon6.png);
+      width: 12px;
+      height: 16px;
+      left: -22px;
+      top: 0px; }
+  .category-list__linkp {
+    position: relative; }
+    .category-list__linkp:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/menu-icon7.png);
+      width: 16px;
+      height: 18px;
+      left: -24px;
+      top: -1px; }

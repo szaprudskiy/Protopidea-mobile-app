@@ -34,7 +34,11 @@ import { IdeaboxListPage } from '../pages/ideabox-list/ideabox-list';
 import { IdeaboxFollowedGroupsPage } from '../pages/ideabox-followed-groups/ideabox-followed-groups';
 import { IdeaboxLikesPage } from '../pages/ideabox-likes/ideabox-likes';
 import { IdeaboxCommentsPage } from '../pages/ideabox-comments/ideabox-comments';
-
+import { IdeaboxPopupPage } from '../pages/ideabox-popup/ideabox-popup';
+import { IdeaboxViewGroupPage } from '../pages/ideabox-view-group/ideabox-view-group';
+import { IdeaboxCategoriesPage } from '../pages/ideabox-categories/ideabox-categories';
+import { IdeaboxSharePage } from '../pages/ideabox-share/ideabox-share';
+import { SubmenuPage } from '../pages/submenu/submenu';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,12 @@ import { IdeaboxCommentsPage } from '../pages/ideabox-comments/ideabox-comments'
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
-     IdeaboxCommentsPage
+     IdeaboxCommentsPage,
+     IdeaboxPopupPage,
+     IdeaboxViewGroupPage,
+      IdeaboxCategoriesPage,
+      IdeaboxSharePage,
+      SubmenuPage 
   ],
   imports: [
     JsonpModule,
@@ -110,7 +119,12 @@ import { IdeaboxCommentsPage } from '../pages/ideabox-comments/ideabox-comments'
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
-     IdeaboxCommentsPage
+     IdeaboxCommentsPage,
+     IdeaboxPopupPage,
+     IdeaboxViewGroupPage ,
+      IdeaboxCategoriesPage,
+      IdeaboxSharePage,
+      SubmenuPage 
      
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

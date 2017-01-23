@@ -1,4 +1,4 @@
-<ion-menu [content]="mycontent">
+<!--<ion-menu [content]="mycontent">
   <ion-content>
     <ion-list>
     ...
@@ -6,4 +6,33 @@
   </ion-content>
 </ion-menu>
 
-<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>-->
+
+<ion-content class="background">
+    <div class="menu">
+
+						<div class="burger">
+							<!--<div class="burger__item">
+								<span class="burger__upper"></span>
+								<span class="burger__mid"></span>
+								<span class="burger__lower"></span>
+							</div>-->
+              <img src="assets/img/menu-icon.png" alt="">
+						</div>
+					<div class="user">
+						<img src="assets/img/user-photo.png" alt="">
+						<p class="user__name">Mikael Akerfeldt</p>
+					</div>
+					<ul class="category-list">
+						<li><a class="category-list__linkq" href="#">Categories</a></li>
+						<li><a class="category-list__linkw" href="#">Find collaborators</a></li>
+						<li><a class="category-list__linke" href="#">Shared with me</a></li>
+						<li><a class="category-list__linkr" href="#">Portfolio</a></li>
+						<li><a class="category-list__linkt" href="#">Give feedback</a></li>
+						<li><a class="category-list__linky" href="#">help and settings</a></li>
+						<li><a class="category-list__linku" href="#">terms of use</a></li>
+						<li><a class="category-list__linki" href="#">privacy police</a></li>
+						<li><a class="category-list__linkp" href="#">log out</a></li>
+					</ul>
+				</div>
+</ion-content>
