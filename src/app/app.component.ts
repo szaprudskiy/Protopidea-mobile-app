@@ -5,12 +5,8 @@ import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-<<<<<<< HEAD
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
-import { IdeaCreatePage } from '../pages/idea-create/idea-create';
-=======
->>>>>>> fb8af14fedd23cd0ca47026ce84654263e303353
 import { Profile1Page } from '../pages/profile-1/profile-1';
 import { Profile2Page } from '../pages/profile-2/profile-2';
 import { Profile3Page } from '../pages/profile-3/profile-3';
@@ -48,12 +44,7 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
-<<<<<<< HEAD
-  rootPage: any = RegPage;
-=======
   rootPage: any = IdeaCreate2Page;
->>>>>>> fb8af14fedd23cd0ca47026ce84654263e303353
-
 
   constructor(
     public platform: Platform,

@@ -4,12 +4,8 @@ import { MyApp } from './app.component';
 import {JsonpModule} from '@angular/http';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-<<<<<<< HEAD
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
-import { IdeaCreatePage } from '../pages/idea-create/idea-create';
-=======
->>>>>>> fb8af14fedd23cd0ca47026ce84654263e303353
 //import { ItemDetailsPage } from '../pages/item-details/item-details';
 //import { ListPage } from '../pages/list/list';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -64,14 +60,12 @@ import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
-<<<<<<< HEAD
-    Ideabox1ScreenUploadPage,
+    //Ideabox1ScreenUploadPage,
     TermsAndConditionsPage,
     ForgotPassPage,
-=======
      //ItemDetailsPage
      IdeaCreate2Page
->>>>>>> fb8af14fedd23cd0ca47026ce84654263e303353
+
   ],
   imports: [
     JsonpModule,
@@ -110,14 +104,12 @@ import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
-<<<<<<< HEAD
-    Ideabox1ScreenUploadPage,
+    //Ideabox1ScreenUploadPage,
     TermsAndConditionsPage,
-    ForgotPassPage
-=======
+    ForgotPassPage,
      //ItemDetailsPage
      IdeaCreate2Page
->>>>>>> fb8af14fedd23cd0ca47026ce84654263e303353
+
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
