@@ -1,9 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
+import { ReactiveFormsModule } from '@angular/forms';
 import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
+import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
+import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
 import { Profile2Page } from '../pages/profile-2/profile-2';
 import { Profile3Page } from '../pages/profile-3/profile-3';
@@ -48,7 +51,11 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
+
   rootPage: any = SubmenuPage;
+
+
+  //rootPage: any =  HelloIonicPage;
 
 
   constructor(

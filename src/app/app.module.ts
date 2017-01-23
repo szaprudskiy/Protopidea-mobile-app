@@ -4,6 +4,8 @@ import { MyApp } from './app.component';
 import {JsonpModule} from '@angular/http';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
+import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
+import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 //import { ItemDetailsPage } from '../pages/item-details/item-details';
 //import { ListPage } from '../pages/list/list';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -65,17 +67,25 @@ import { SubmenuPage } from '../pages/submenu/submenu';
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
+    //Ideabox1ScreenUploadPage,
+    TermsAndConditionsPage,
+    ForgotPassPage,
      //ItemDetailsPage
      IdeaCreate2Page,
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
+
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage,
       IdeaboxCategoriesPage,
       IdeaboxSharePage,
-      SubmenuPage 
+      SubmenuPage ,
+
+     IdeaboxCommentsPage
+
+
   ],
   imports: [
     JsonpModule,
@@ -114,18 +124,24 @@ import { SubmenuPage } from '../pages/submenu/submenu';
     Settings9NotificationsPage,
     Settings10FaqPage,
     Settings11FaqOpenPage,
+    //Ideabox1ScreenUploadPage,
+    TermsAndConditionsPage,
+    ForgotPassPage,
      //ItemDetailsPage
-     IdeaCreate2Page,
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
+
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage ,
       IdeaboxCategoriesPage,
       IdeaboxSharePage,
-      SubmenuPage 
+      SubmenuPage ,
      
+
+     IdeaboxCommentsPage
+
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

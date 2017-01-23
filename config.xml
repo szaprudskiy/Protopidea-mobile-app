@@ -25,7 +25,8 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="20"/>
-  
+  <preference name="TwitterConsumerKey" value="S7ADimbYLkDQIcsf0NKDAmfJW" />
+  <preference name="TwitterConsumerSecret" value="TgTT59s6bASrhzvmpVynIUmScyvqJo2XA0NHF5paayJBYEvBio" />
   <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize"/>
   <preference name="Fullscreen" value="false" />
   <preference name="KeyboardDisplayRequiresUserAction" value="true" />
