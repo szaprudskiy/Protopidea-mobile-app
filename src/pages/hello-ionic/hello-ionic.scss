@@ -1,21 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  box-sizing: border-box; }
-
-ul {
-  list-style-type: none; }
-
-a {
-  text-decoration: none;
-  transition: .35s; }
-
-button {
-  transition: .35s; }
-
-html, body {
-  font: 400 16px/1.1 'RobotoRegular', sans-serif; }
 
 .view {
   min-height: 100vh;
@@ -43,10 +25,10 @@ html, body {
     clear: both;
     display: block; }
 
-h1, h2, h4, p, a {
-  text-align: center;
-  color: #F7F7F7;
-  font-weight: normal; }
+// h1, h2, h4, p, a {
+//   text-align: center;
+//   color: #F7F7F7;
+//   font-weight: normal; }
 
 .df {
   display: -ms-flexbox;
@@ -57,12 +39,18 @@ h1, h2, h4, p, a {
 
 .fz18 {
   font-size: 18px;
-  line-height: 1.5; }
+  line-height: 1.5; 
+  color: #fff;
+  text-align: center;
+  }
 
 .fz32 {
   line-height: 1.5;
   font-size: 32px;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  text-align: center;
+  color: #fff;
+  }
 
 .mt-50 {
   margin-top: 10%; }
@@ -75,7 +63,9 @@ h1, h2, h4, p, a {
 
 .mt-20 {
   margin-top: 7%; }
-
+.mt-20 a{
+  color: #fff;
+}
 .pt-20 {
   padding-top: 7%; }
 
@@ -129,35 +119,35 @@ h1, h2, h4, p, a {
   margin-top: 20px;
   margin-bottom: 25px; }
 
-form input {
+.main-form input {
   border: none;
   text-align: center;
   width: 100%; }
 
-form ::-webkit-input-placeholder {
+.main-form ::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 16px; }
 
-form ::-moz-placeholder {
+.main-form ::-moz-placeholder {
   color: #ffffff;
   font-size: 16px; }
 
-form :-moz-placeholder {
+.main-form :-moz-placeholder {
   color: #ffffff;
   font-size: 16px; }
 
-form :-ms-input-placeholder {
+.main-form :-ms-input-placeholder {
   color: #ffffff;
   font-size: 16px; }
 
-form input[type="text"], form input[type="password"] {
+.main-form input[type="text"], form input[type="password"] {
   background: transparent;
   height: 49px; }
 
-form input[type="submit"] {
+.main-form input[type="submit"] {
   color: #fff; }
 
-form .bor-bot {
+.main-form .bor-bot {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100vw; }
 
@@ -181,7 +171,7 @@ form .bor-bot {
   .view-reg h1 {
     margin-bottom: 25px;
     padding-top: 9%; }
-  .view-reg form input[type="submit"] {
+  .view-reg .main-form input[type="submit"] {
     color: #3c4500;
     font-weight: 400; }
 
@@ -215,7 +205,7 @@ form .bor-bot {
    }
   .view-thank h1 {
     padding-top: 10%; }
-  .view-thank form {
+  .view-thank .main-form {
     margin-top: 30%;
     padding-bottom: 10%; }
 
@@ -223,6 +213,6 @@ form .bor-bot {
 .view-tryagain h1 {
   padding-top: 10%; }
 
-.view-tryagain form {
+.view-tryagain .main-form {
   margin-top: 30%;
   padding-bottom: 10%; }

@@ -52,7 +52,7 @@ export class MyApp {
 
 
 
-  rootPage: any = SubmenuPage;
+  rootPage: any = HelloIonicPage;
 
 
   //rootPage: any =  HelloIonicPage;
