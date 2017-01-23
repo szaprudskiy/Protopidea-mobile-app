@@ -1,0 +1,51 @@
+.main-idea-list{
+	background: #fff;
+	background-size: cover;
+	margin: 12px 0 90px;
+	padding: 0 0 1px;
+	&__title{
+		color: #1295a9;
+		margin: 20px 0 10px;
+	}
+	&__follow{
+		font-family: "RobotoBold";
+		color: #e8920c;
+		text-align: right;
+    	padding: 10px 20px 10px 0;
+		font-weight: bold;
+		border-bottom: 1px solid #d9eef1;
+		span{
+			color: #c3c4c3;
+			font-weight: normal;
+			padding-left: 5px;
+		}
+	}
+	&__img{
+		border-radius: 20px;
+	}
+	&__border{
+		border-bottom: 1px solid #d9eef1;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__border-pad{
+		padding-bottom: 15px;
+	}
+	&__icons{
+		margin: 10px 0;
+		display: flex;
+		justify-content: space-around;
+        align-items: center;
+	}
+	&__link-submit{
+		display: block;
+		text-align: center;
+		padding: 15px 0;
+		margin: 20px 20px;
+		border-radius: 30px;
+		color: #fffffe;
+		font-family: "RobotoBold";
+		background: #e8920c url(../assets/img/submit-icon.png) no-repeat;
+		background-position: 95%;
+	}
+}

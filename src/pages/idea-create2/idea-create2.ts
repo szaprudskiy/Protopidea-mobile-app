@@ -19,4 +19,18 @@ export class IdeaCreate2Page {
     console.log('ionViewDidLoad IdeaCreate2Page');
   }
 
+  categorydrop  = false;
+  inventiondrop = false;
+  promotiondrop = false;
+
+ clickCategory (){
+     this.categorydrop = !this.categorydrop;
+  }
+   clickInvention (){
+     this.inventiondrop = !this.inventiondrop;
+  }
+   clickPromotion (){
+     this.promotiondrop = !this.promotiondrop;
+  }
+
 }

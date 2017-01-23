@@ -16,7 +16,7 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .toolbar-background{
-    background-image: url(../img/bac-app.jpg);
+    background-image: url(../assets/img/bac-app.jpg);
 }
 *{
 	padding: 0; 
@@ -32,7 +32,7 @@ a {
 .background{
     font: 16px 'RobotoRegular', sans-serif;
 	overflow-x: hidden;
-	background: url(../assets/img/main-bg.png) repeat-y;
+	background: url(../assets/img/main-bg.png);
 	background-size: cover;
 }
 .main {

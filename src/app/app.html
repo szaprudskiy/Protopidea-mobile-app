@@ -1,7 +1,13 @@
 <ion-menu type=push side="right" [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Pages</ion-title>
+      <div class="burger">
+							<div class="burger__item">
+								<span class="burger__upper"></span>
+								<span class="burger__mid"></span>
+								<span class="burger__lower"></span>
+							</div>
+						</div>
     </ion-toolbar>
   </ion-header>
   <ion-content>
@@ -11,3 +17,5 @@
   </ion-content>
 </ion-menu>
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+
