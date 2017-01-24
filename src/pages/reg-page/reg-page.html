@@ -24,7 +24,7 @@
 							</div>
 							<p class="fz18 reg-p">or</p>
 						</div>
-						<form  #form="ngForm"(ngSubmit)="regFormSend()" id="registration-form">
+						<form  #form="ngForm"(ngSubmit)="regFormSend()" id="registration-form" class="main-form">
 							<div class="bor-bot">
 								<div class="page-container">
 									<input type="text" [(ngModel)]="regForm.name"  name="name" placeholder="Name" >
@@ -43,7 +43,7 @@
 							<div class="bor-bot">
 								<div class="page-container">
 									<input type="checkbox"  [(ngModel)]="regForm.terms" name="terms">
-									<p (click)="goToTerms()">Terms and Conditions<p>
+									<p class="fz18" (click)="goToTerms()">Terms and Conditions<p>
 								</div>
 							</div>
 							<div class="page-container">
@@ -52,8 +52,8 @@
 						</form>
 						<div class="page-container">
 							<div class="login df mt-20">
-                <p id="login" (click)="goToLogin()">Login</p>
-								<p (click)="goToForgotPass()">Forgot password?</p>
+                <p class="fz18" id="login" (click)="goToLogin()">Login</p>
+								<p class="fz18" (click)="goToForgotPass()">Forgot password?</p>
 							</div>
 						</div>
 </ion-content>

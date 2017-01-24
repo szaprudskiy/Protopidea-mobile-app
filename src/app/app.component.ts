@@ -27,7 +27,6 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { NavController } from 'ionic-angular';
-import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
@@ -54,7 +53,20 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = FindCollaboratorsPage;
+
+ 
+
+
+
+
+  rootPage: any = MyPage;
+
+
+  //rootPage: any =  HelloIonicPage;
+
+
+
+
 
   constructor(
     public platform: Platform,
