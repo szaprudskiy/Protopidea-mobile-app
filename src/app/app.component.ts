@@ -54,7 +54,7 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = ButtonsCollaborations2Page;
+  rootPage: any = FindCollaboratorsPage;
 
   constructor(
     public platform: Platform,
