@@ -39,16 +39,21 @@ import { IdeaboxViewGroupPage } from '../pages/ideabox-view-group/ideabox-view-g
 import { IdeaboxCategoriesPage } from '../pages/ideabox-categories/ideabox-categories';
 import { IdeaboxSharePage } from '../pages/ideabox-share/ideabox-share';
 import { SubmenuPage } from '../pages/submenu/submenu';
-
-
+import { FindCollaboratorsPage } from '../pages/find-collaborators/find-collaborators';
+import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
+import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
+import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
+import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
 
 @Component({
   templateUrl: 'app.html'
   
+
 })
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
+<<<<<<< HEAD
 
 
   rootPage: any = IdeaCreatePage;
@@ -56,6 +61,9 @@ export class MyApp {
 
   //rootPage: any =  HelloIonicPage;
 
+=======
+  rootPage: any = ButtonsCollaborations2Page;
+>>>>>>> 1155b70a79bc6659d48729cb0ece8ac47c914cd6
 
   constructor(
     public platform: Platform,

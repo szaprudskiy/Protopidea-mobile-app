@@ -145,3 +145,49 @@ a {
 		top: 5px;
 	}
 }
+
+// buttons-collaborations
+.form__button-cv--icon{
+    border: none;
+    background: #52c6d8 url(../assets/img/submit-icon.png) no-repeat;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #f3fbfc;
+    display: block;
+    margin: 25px auto 20px;
+    background-position: 60px 10px;
+}
+.form__button-cv--icon-second{
+	 border: none;
+    background: #52c6d8 url(.../assets/img/shared.png) no-repeat;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #f3fbfc;
+    display: block;
+    margin: 25px auto 20px;
+    background-position: 100px 13px;
+}
+.form__button-cv--icon-third{
+	 border: none;
+    background: #e8920c url(../assets/img/submit-icon.png) no-repeat;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #f3fbfc;
+    display: block;
+    margin: 25px auto 20px;
+   	background-position: 60px 10px;
+}
+.form__button-cv--icon-fourth{
+	border: none;
+    background: #deff0d url(../assets/img/share-icon.png) no-repeat;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #3c4500;
+    display: block;
+    margin: 25px auto 20px;
+  	background-position: 100px 13px;
+}

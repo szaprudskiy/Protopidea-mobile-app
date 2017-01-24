@@ -1,0 +1,26 @@
+.main-idea-list{
+	&__folders{
+		padding: 0 20px;
+		margin-top: 20px;
+		
+	}
+    &__link{
+			display: block;
+			padding: 50px;
+			background: #e1eef0;
+			border-radius: 20px;
+			color: #1295a9;
+			margin: 20px 0;
+			text-align: center;
+			font-size: 14px;
+			opacity: .7;
+    }
+	&__title-folders{
+		color: #1295a9;
+		padding-top: 20px;
+	}
+}
+
+.main__link-collaborate--mar{
+	margin-bottom: 20px;
+}
