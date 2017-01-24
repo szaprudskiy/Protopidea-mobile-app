@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Profile2Page } from '../profile-2/profile-2';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 
 /*
   Generated class for the Profile1 page.
@@ -36,4 +36,9 @@ export class Profile1Page {
     clickLanguage() {
     this.langdropdown = !this.langdropdown;
   }
+
+  clickAvatar(){
+    this.navCtrl.push(Profile4PopupCameraGalleryPage);
+  }
+  
 }
