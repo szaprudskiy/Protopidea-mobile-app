@@ -34,11 +34,11 @@
         <ion-searchbar
           (ionInput)="categorySearch($event)">
         </ion-searchbar>
-        <ion-list>
-          <button *ngFor="let categ of categories" (click)="setCat($event)" value="{{categ}}">
+      <ul>
+          <li *ngFor="let categ of categories" ><button (click)="setCat($event)" value="{{categ}}">
               {{categ}}
-          </button>
-        </ion-list>
+          </button></li>
+        </ul>
       </div>
       <div class="main__holder-links">
         <a class="main__link-public" href="#">Go public</a>
