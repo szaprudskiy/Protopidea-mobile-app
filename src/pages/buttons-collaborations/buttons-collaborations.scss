@@ -1,0 +1,27 @@
+.form__button-cv--icon{
+    border: none;
+    background: #52c6d8 url(../assets/img/submit-icon.png) no-repeat !important;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #f3fbfc;
+    display: block;
+    margin: 25px auto 20px !important;
+    background-position: 60px 10px !important;
+}
+.form__button-cv--icon-second{
+	 border: none;
+    background: #52c6d8 url(../assets/img/shared.png) no-repeat !important;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #f3fbfc;
+    display: block;
+    margin: 25px auto 20px !important;
+    background-position: 100px 13px !important;
+}
+.holder-buttons{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}

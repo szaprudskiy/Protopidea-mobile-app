@@ -41,6 +41,12 @@ import { IdeaboxViewGroupPage } from '../pages/ideabox-view-group/ideabox-view-g
 import { IdeaboxCategoriesPage } from '../pages/ideabox-categories/ideabox-categories';
 import { IdeaboxSharePage } from '../pages/ideabox-share/ideabox-share';
 import { SubmenuPage } from '../pages/submenu/submenu';
+import { FindCollaboratorsPage } from '../pages/find-collaborators/find-collaborators';
+import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
+import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
+import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
+import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
+
 
 @NgModule({
   declarations: [
@@ -75,15 +81,18 @@ import { SubmenuPage } from '../pages/submenu/submenu';
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
-
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage,
       IdeaboxCategoriesPage,
       IdeaboxSharePage,
       SubmenuPage ,
-
-     IdeaboxCommentsPage
+     IdeaboxCommentsPage,
+     FindCollaboratorsPage,
+     PortfolioOwnerPage,
+     SharedGroupsPage,
+     ButtonsCollaborationsPage,
+     ButtonsCollaborations2Page 
 
 
   ],
@@ -131,16 +140,18 @@ import { SubmenuPage } from '../pages/submenu/submenu';
      IdeaboxListPage,
      IdeaboxFollowedGroupsPage,
      IdeaboxLikesPage,
-
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage ,
       IdeaboxCategoriesPage,
       IdeaboxSharePage,
       SubmenuPage ,
-     
-
-     IdeaboxCommentsPage
+     IdeaboxCommentsPage,
+     FindCollaboratorsPage,
+     PortfolioOwnerPage,
+     SharedGroupsPage,
+     ButtonsCollaborationsPage,
+     ButtonsCollaborations2Page 
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
