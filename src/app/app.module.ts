@@ -28,6 +28,7 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
@@ -49,6 +50,8 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
 import { RegThankPage} from '../pages/reg-thank/reg-thank';
+
+
 
 
 @NgModule({

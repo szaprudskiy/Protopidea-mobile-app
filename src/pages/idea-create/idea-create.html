@@ -26,10 +26,12 @@
 			<input class="main__input" type="text" placeholder="Invention Name">
 			<input class="main__input" type="text" placeholder="Title">
       <a class="main__input main__input--arrdown" href="#"  (click)="focusDesc()">A brief description</a>
-      <textarea *ngIf="showDesc"></textarea>
+      <div class="holder-description-text">
+        <textarea *ngIf="showDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
+      </div> 
 			<!--<input class="main__input" type="text" placeholder="Promotional Description">-->
       <a class="main__input main__input--arrdown" href="#"  (click)="focusPromDesc()">Promotional Description</a>
-      <textarea *ngIf="showProDesc"></textarea>
+      <textarea *ngIf="showProDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
 			<!--<input class="main__input main__input-arrdown" type="text" placeholder="Category">-->
       <a href="#" class="main__input main__input--arrdown" (click)="catTogleList()">Categories</a>
       <a href="#" *ngIf="showCatList" class="main__input main__input--arrdown" (click)="catTogle()">{{category}}</a>
@@ -38,7 +40,7 @@
           (ionInput)="categorySearch($event)">
         </ion-searchbar>
       <ul>
-          <li *ngFor="let categ of categories" ><button (click)="setCat($event)" value="{{categ}}">
+          <li *ngFor="let categ of categories" ><button (click)="setCat($event)" class="select-category" value="{{categ}}">
               {{categ}}
           </button></li>
         </ul>

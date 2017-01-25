@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { MenuController } from 'ionic-angular';
-import { NavController, NavParams } from 'ionic-angular';
+import { MenuController, NavController, NavParams } from 'ionic-angular';
+import { SubmenuPage } from '../submenu/submenu';
+import { FindCollaboratorsPage } from '../find-collaborators/find-collaborators';
+
 
 @Component({
   selector: 'page-menu',
@@ -8,22 +10,35 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MyPage {
 
- constructor(public menuCtrl: MenuController,
-             public navCtrl: NavController,) {
 
- }
+//  constructor(public menuCtrl: MenuController) {
 
- openMenu() {
-   this.menuCtrl.open();
- }
 
- closeMenu() {
-   this.menuCtrl.close();
- }
 
- toggleMenu() {
-   this.menuCtrl.toggle();
- }
+//  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  }
+  
+   goToCollaborators() {
+       this.navCtrl.push(FindCollaboratorsPage);
+    }
+
+  goToSettings() {
+       this.navCtrl.push(SubmenuPage);
+    }
+
+//  openMenu() {
+//    this.menuCtrl.open();
+//  }
+
+//  closeMenu() {
+//    this.menuCtrl.close();
+//  }
+
+//  toggleMenu() {
+//    this.menuCtrl.toggle();
+//  }
 
  back(){
    this.navCtrl.pop();

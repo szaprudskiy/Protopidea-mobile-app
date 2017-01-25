@@ -1,27 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { MyPage } from '../menu/menu';
 
 /*
-  Generated class for the Submenu page.
+  Generated class for the SearchResults page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-submenu',
-  templateUrl: 'submenu.html'
+  selector: 'page-search-results',
+  templateUrl: 'search-results.html'
 })
-export class SubmenuPage {
+export class SearchResultsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SubmenuPage');
+    console.log('ionViewDidLoad SearchResultsPage');
   }
-
-   backmenu() {
-       this.navCtrl.pop();
-    }
 
 }

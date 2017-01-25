@@ -1,8 +1,29 @@
 <ion-content class="background">
-    <a class="change-password" href="#">Find Collaborators</a>
-    <a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickCollaborators()">Invention Description</a>
-    		<p class="categorycoll" *ngIf="collaboratorsdrop">
-				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
-			</p>    
+    <a class="change-password find-coll-border " (click)="clickbackmenu()" href="#">Find Collaborators</a>
+		<a class="form__item-text form__item-icon" href="#" (click)="clickCollaborators()">Skills</a>
+		<a class="form__item-text form__item-icon form__item-coll-bor" href="#" *ngIf="collaboratorsdrop" (click)="clickIt()">IT</a>
+    	<ion-list *ngIf="itdrop" class="coll-checkbox">
+			<ion-item >
+				<ion-label>Skill</ion-label>
+				<ion-checkbox [(ngModel)]="Skill"></ion-checkbox>
+ 			 </ion-item>
+			  <ion-item>
+				<ion-label>Second Skill</ion-label>
+				<ion-checkbox [(ngModel)]="Second"></ion-checkbox>
+ 			 </ion-item>
+			  <ion-item>
+				<ion-label>Third Skill</ion-label>
+				<ion-checkbox [(ngModel)]="Third"></ion-checkbox>
+ 			 </ion-item>
+		</ion-list>	
+		<a class="form__item-text form__item-icon" href="#">Media</a>
+		<a class="form__item-text form__item-icon" href="#">Tech</a>
+		<a class="form__item-text form__item-icon" href="#">Music</a>
+		<a class="form__item-text form__item-icon" href="#" (click)="clickSience()">Science</a> 
+		<div class="holder-coll-items coll-checkbox" *ngIf="itemsdrop">
+			<a class="form__item-text form__item-icon" href="#">Language</a>
+			<a class="form__item-text form__item-icon" href="#">Location</a>
+		</div>	
+		<button class="form__button form__button--bold">Find Collaborator</button>
 </ion-content>
     

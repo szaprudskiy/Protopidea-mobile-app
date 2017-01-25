@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { MyPage } from '../menu/menu';
 /*
   Generated class for the FindCollaborators page.
 
@@ -20,11 +20,24 @@ export class FindCollaboratorsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FindCollaboratorsPage');
   }
-
+  clickbackmenu(){
+    this.navCtrl.pop(MyPage);
+  }
     collaboratorsdrop = false;
+    itdrop = false;
+    itemsdrop = false;
 
- clickCategory (){
+ clickCollaborators(){
      this.collaboratorsdrop = !this.collaboratorsdrop;
+
+  }
+  
+  clickIt(){
+     this. itdrop = !this. itdrop;
+  }
+
+  clickSience(){
+    this. itemsdrop = !this. itemsdrop;
   }
 
 }
