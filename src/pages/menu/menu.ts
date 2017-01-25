@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { MenuController } from 'ionic-angular';
+import { MenuController, NavController, NavParams } from 'ionic-angular';
+import { SubmenuPage } from '../submenu/submenu';
+import { FindCollaboratorsPage } from '../find-collaborators/find-collaborators';
 
 @Component({
   selector: 'page-menu',
@@ -7,20 +9,31 @@ import { MenuController } from 'ionic-angular';
 })
 export class MyPage {
 
- constructor(public menuCtrl: MenuController) {
+//  constructor(public menuCtrl: MenuController) {
 
- }
+//  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  }
+  
+   goToCollaborators() {
+       this.navCtrl.push(FindCollaboratorsPage);
+    }
 
- openMenu() {
-   this.menuCtrl.open();
- }
+  goToSettings() {
+       this.navCtrl.push(SubmenuPage);
+    }
 
- closeMenu() {
-   this.menuCtrl.close();
- }
+//  openMenu() {
+//    this.menuCtrl.open();
+//  }
 
- toggleMenu() {
-   this.menuCtrl.toggle();
- }
+//  closeMenu() {
+//    this.menuCtrl.close();
+//  }
+
+//  toggleMenu() {
+//    this.menuCtrl.toggle();
+//  }
 
 }

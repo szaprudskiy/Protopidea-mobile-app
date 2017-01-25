@@ -5,6 +5,7 @@ import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';

@@ -28,6 +28,7 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
@@ -46,6 +47,8 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
+
+
 
 
 @NgModule({
@@ -92,7 +95,8 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      PortfolioOwnerPage,
      SharedGroupsPage,
      ButtonsCollaborationsPage,
-     ButtonsCollaborations2Page 
+     ButtonsCollaborations2Page,
+     RegThankPage 
 
 
   ],
@@ -151,7 +155,8 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      PortfolioOwnerPage,
      SharedGroupsPage,
      ButtonsCollaborationsPage,
-     ButtonsCollaborations2Page 
+     ButtonsCollaborations2Page,
+     RegThankPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

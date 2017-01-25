@@ -1,12 +1,3 @@
-<!--<ion-menu [content]="mycontent">
-  <ion-content>
-    <ion-list>
-    ...
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
-<ion-nav #mycontent [root]="rootPage"></ion-nav>-->
 
 <ion-content class="background">
     <div class="menu">
@@ -25,13 +16,13 @@
 					</div>
 					<ul class="category-list">
 						<li><a class="category-list__linkq" href="#">Categories</a></li>
-						<li><a class="category-list__linkw" href="#">Find collaborators</a></li>
+						<li><a class="category-list__linkw" href="#" (click)="goToCollaborators()">Find collaborators</a></li>
 						<li><a class="category-list__linke" href="#">Shared with me</a></li>
 						<li><a class="category-list__linkr" href="#">Portfolio</a></li>
 						<li><a class="category-list__linkt" href="#">Give feedback</a></li>
-						<li><a class="category-list__linky" href="#">help and settings</a></li>
+						<li><a class="category-list__linky" href="#" (click)="goToSettings()">help and settings</a></li>
 						<li><a class="category-list__linku" href="#">terms of use</a></li>
-						<li><a class="category-list__linki" href="#">privacy police</a></li>
+						<li><a class="category-list__linki" href="#">privacy policy</a></li>
 						<li><a class="category-list__linkp" href="#">log out</a></li>
 					</ul>
 				</div>
