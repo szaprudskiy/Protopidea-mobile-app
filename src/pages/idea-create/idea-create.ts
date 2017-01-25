@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams,ModalController,ViewController } from 'ionic-angular';
 import { MyPage} from '../menu/menu';
+import { Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 
 /*
   Generated class for the IdeaCreate page.
@@ -14,7 +15,7 @@ import { MyPage} from '../menu/menu';
 })
 export class IdeaCreatePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.initializeCategories();
   }
   category = 'Category'
@@ -68,6 +69,11 @@ export class IdeaCreatePage {
 
   focusPromDesc(){
     this.showProDesc=!this.showProDesc;
+  }
+
+  modalUploadPhoto(){
+    let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
+   uploadPhotoModal.present();
   }
 
 }

@@ -46,6 +46,9 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
+import { FailedLoginPage } from '../pages/failed-login/failed-login';
+import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
 
 
 @NgModule({
@@ -92,7 +95,10 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      PortfolioOwnerPage,
      SharedGroupsPage,
      ButtonsCollaborationsPage,
-     ButtonsCollaborations2Page 
+     ButtonsCollaborations2Page,
+     FailedLoginPage,
+     QuotesPagePage,
+     RegThankPage
 
 
   ],
@@ -151,7 +157,10 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      PortfolioOwnerPage,
      SharedGroupsPage,
      ButtonsCollaborationsPage,
-     ButtonsCollaborations2Page 
+     ButtonsCollaborations2Page,
+     FailedLoginPage,
+     QuotesPagePage,
+     RegThankPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

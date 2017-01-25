@@ -44,6 +44,10 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
+import { FailedLoginPage } from '../pages/failed-login/failed-login';
+import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -53,7 +57,7 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = IdeaCreatePage;
+  rootPage: any = RegPage;
 
   //rootPage: any =  HelloIonicPage;
 

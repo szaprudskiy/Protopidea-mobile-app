@@ -1,3 +1,218 @@
-page-failed-login {
 
+.view {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;}
+  .view:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0; }
+.page-content{
+  background-image: url('../img/bac-app.jpg');
 }
+.page-container {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  background: none;
+}
+  .page-container:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+// h1, h2, h4, p, a {
+//   text-align: center;
+//   color: #F7F7F7;
+//   font-weight: normal; }
+
+.df {
+  display: -ms-flexbox;
+  display: flex; }
+
+.ma {
+  margin: auto; }
+
+.fz18 {
+  font-size: 18px;
+  line-height: 1.5; 
+  color: #fff;
+  text-align: center;
+  }
+
+.fz32 {
+  line-height: 1.5;
+  font-size: 32px;
+  text-transform: uppercase; 
+  text-align: center;
+  color: #fff;
+  }
+
+.mt-50 {
+  margin-top: 10%; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-50 {
+  margin-bottom: 10%; }
+
+.mt-20 {
+  margin-top: 7%; }
+.mt-20 a{
+  color: #fff;
+}
+.pt-20 {
+  padding-top: 7%; }
+
+.m-t-b-50 {
+  margin: 50px auto; }
+
+.btn-app {
+  width: 100%;
+  height: 42px;
+  background: #e8920c;
+  color: #FFF;
+  font: 16px 'Conv_RobotoBold', sans-serif;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 700; }
+
+.btn-app-yellow {
+  background: #DEFF0D; }
+
+.social-reg {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 0 35px; }
+  .social-reg a {
+    background: #3CABD0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    position: relative; }
+    .social-reg a img {
+      position: relative;
+      z-index: 3; }
+    .social-reg a:after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1) 35%, transparent 50%);
+      -ms-transform: rotateX(70deg) translateZ(-25px);
+      transform: rotateX(70deg) translateZ(-25px); }
+
+.reg-p {
+  margin-top: 20px;
+  margin-bottom: 25px; }
+
+.main-form input {
+  border: none;
+  text-align: center;
+  width: 100%; }
+
+.main-form ::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px; }
+
+.main-form ::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px; }
+
+.main-form :-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px; }
+
+.main-form :-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px; }
+
+.main-form input[type="text"], form input[type="password"] {
+  background: transparent;
+  height: 49px; }
+
+.main-form input[type="submit"] {
+  color: #fff; }
+
+.main-form .bor-bot {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100vw; }
+
+.login {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-bottom: 15%; }
+  .login .login-item {
+    color: #DEFF0D;
+    font-family: 'Conv_RobotoBold', sans-serif; }
+
+/* =====view-main==== */
+.view-main {
+   }
+  .view-main h1 {
+    margin-bottom: 50px; }
+
+/* =====view-reg==== */
+.view-reg {
+   }
+  .view-reg h1 {
+    margin-bottom: 25px;
+    padding-top: 9%; }
+  .view-reg .main-form input[type="submit"] {
+    color: #3c4500;
+    font-weight: 400; }
+
+/* =====view-cheng-pas==== */
+.view-cheng-pas {
+   }
+  .view-cheng-pas .page-container {
+    margin-top: 50px; }
+  .view-cheng-pas .form-cheng-pas {
+    margin-top: 25vh;
+    margin-bottom: 50px; }
+
+/* =====view-forgot-pas==== */
+.view-forgot-pas {
+   }
+  .view-forgot-pas h1 {
+    margin-bottom: 25px;
+    padding-top: 9%; }
+  .view-forgot-pas .login {
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .view-forgot-pas .login .login-item {
+       }
+
+/* =====view-ch-world==== */
+.view-ch-world {
+   }
+
+/* =====view-thank==== */
+.view-thank {
+   }
+  .view-thank h1 {
+    padding-top: 10%; }
+  .view-thank .main-form {
+    margin-top: 30%;
+    padding-bottom: 10%; }
+
+/* =====view-tryagain==== */
+.view-tryagain h1 {
+  padding-top: 10%; }
+
+.view-tryagain .main-form {
+  margin-top: 30%;
+  padding-bottom: 10%; }
