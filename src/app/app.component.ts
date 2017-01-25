@@ -47,7 +47,6 @@ import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/butto
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
-import { RegThankPage} from '../pages/reg-thank/reg-thank';
 
 
 @Component({
@@ -58,7 +57,7 @@ import { RegThankPage} from '../pages/reg-thank/reg-thank';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = RegPage;
+  rootPage: any = IdeaCreatePage;
 
   //rootPage: any =  HelloIonicPage;
 
