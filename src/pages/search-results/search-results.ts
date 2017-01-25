@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { MyPage } from '../menu/menu';
+import { FindCollaboratorsPage } from '../find-collaborators/find-collaborators';
 /*
   Generated class for the SearchResults page.
 
@@ -18,5 +19,8 @@ export class SearchResultsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchResultsPage');
   }
-
+  
+   clickbackmenu(){
+    this.navCtrl.pop(FindCollaboratorsPage);
+  }
 }

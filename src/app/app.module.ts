@@ -47,7 +47,7 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
-
+import { SearchResultsPage } from '../pages/search-results/search-results';
 
 
 
@@ -96,7 +96,8 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-     RegThankPage 
+     RegThankPage,
+     SearchResultsPage 
 
 
   ],
@@ -156,7 +157,8 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-     RegThankPage
+     RegThankPage,
+     SearchResultsPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
