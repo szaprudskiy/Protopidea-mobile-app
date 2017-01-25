@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "485661605292",
+    "firebase_url": "https://test-beae0.firebaseio.com",
+    "project_id": "test-beae0",
+    "storage_bucket": "test-beae0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485661605292:android:c04cea0c3cb09da4",
+        "android_client_info": {
+          "package_name": "com.protopidea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485661605292-lvg9a4dt6tkmpkhk7mhkcqlujm895n24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.protopidea",
+            "certificate_hash": "0B2F17A71BC4F3ED24C743F80C3FDAA0A3A767F3"
+          }
+        },
+        {
+          "client_id": "485661605292-v5il4ttnjcri8k7ekmndn6ugd9ts9gft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3iZFRPigUlwTaS7TSIBz3S1z8HiP6VQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485661605292-v5il4ttnjcri8k7ekmndn6ugd9ts9gft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

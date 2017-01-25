@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MyPage} from '../menu/menu';
 
 /*
   Generated class for the IdeaCreate page.
@@ -21,7 +22,12 @@ export class IdeaCreatePage {
   searchQuery: string = ''
   showCat=false
   showCatList=false
+  showDesc=false
+  showProDesc=false
 
+  goToMenu(){
+    this.navCtrl.push(MyPage);
+  }
   initializeCategories() {
     this.categories = [ "DIGITAL SERVICE","ELECTRONICS","GADGETS & ACCESSORIES","HEALTH CARE","HOBBYS & TOYS" ,"HOME & OFFICE","INDUSTRIAL","LUXURY GOODS" ,"PC & MOBILES","SCIENCES","SMART FOOD & BEVERAGES" ,"SMART PACKAGING","SMART WEARABLES","SOFTWARE & APPS","SPORT & OUTDOORS" ,"TECHNOLOGY","MOBILITY & TRANSPORT"
     ];
@@ -54,6 +60,14 @@ export class IdeaCreatePage {
 
   catTogleList(){
     this.showCatList=!this.showCatList;
+  }
+
+  focusDesc(){
+    this.showDesc=!this.showDesc;
+  }
+
+  focusPromDesc(){
+    this.showProDesc=!this.showProDesc;
   }
 
 }

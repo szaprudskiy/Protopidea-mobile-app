@@ -46,16 +46,16 @@ export class HelloIonicPage {
                 console.log(error.error); // error message as string
                 console.log(error.headers);
 
-      });*/
+      });
     this._jsonp.get('http://protopidea.pdigit.top/en/api/user/login?email=zvezdo4et89@gmail.com&password=max89_max89&callback=JSONP_CALLBACK').map(res => res.json()).subscribe(data => {
         console.log(data.errors);
-        /*this.loginInfo = data;
+        this.loginInfo = data;
         let alert = this.alertCtrl.create({
         title: 'login info',
         subTitle: data,
         buttons: ['OK']
-      });*/
-    });
+      });
+    });*/
   }
 
 }

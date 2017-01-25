@@ -54,19 +54,9 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-
- 
-
-
-
-
-  rootPage: any = MyPage;
-
+  rootPage: any = IdeaCreatePage;
 
   //rootPage: any =  HelloIonicPage;
-
-
-
 
 
   constructor(
