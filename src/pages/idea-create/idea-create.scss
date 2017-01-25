@@ -120,3 +120,24 @@
 		color: #1295a9;
 	}
 }
+
+.holder-description{
+	text-align: center;
+	
+	&__text{
+		resize: none;
+		border: none;
+		
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px 20px;	
+	}
+}
+
+.select-category{
+	color: #515151;
+	background: transparent;
+	padding: 10px 20px;
+	font: 14px 'RobotoRegular' ;
+}
+    
