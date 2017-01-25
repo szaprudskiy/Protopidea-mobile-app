@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-menu',
@@ -7,7 +8,8 @@ import { MenuController } from 'ionic-angular';
 })
 export class MyPage {
 
- constructor(public menuCtrl: MenuController) {
+ constructor(public menuCtrl: MenuController,
+             public navCtrl: NavController,) {
 
  }
 
@@ -23,4 +25,7 @@ export class MyPage {
    this.menuCtrl.toggle();
  }
 
+ back(){
+   this.navCtrl.pop();
+ }
 }
