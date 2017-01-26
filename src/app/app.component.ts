@@ -5,7 +5,7 @@ import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-import { RegThankPage} from '../pages/reg-thank/reg-thank';
+//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -46,6 +46,13 @@ import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
 import { SearchResultsPage } from '../pages/search-results/search-results';
+import { FailedLoginPage } from '../pages/failed-login/failed-login';
+import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
+import { MyGroupsPage } from '../pages/my-groups/my-groups';
+import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
+import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
+import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 
 
 @Component({
@@ -54,7 +61,11 @@ import { SearchResultsPage } from '../pages/search-results/search-results';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = SearchResultsPage;
+
+  rootPage: any =  ProtopideaChallengeListPage;
+
+ // rootPage: any = RegPage;
+
 
   //rootPage: any =  HelloIonicPage;
 

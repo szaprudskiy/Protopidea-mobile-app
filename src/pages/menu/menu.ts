@@ -20,8 +20,8 @@ export class MyPage {
   
   }
   
-   goToCollaborators() {
-       this.navCtrl.push(FindCollaboratorsPage);
+  goToCollaborators() {
+       this.navCtrl.push( FindCollaboratorsPage );
     }
 
   goToSettings() {

@@ -28,7 +28,7 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
-import { RegThankPage} from '../pages/reg-thank/reg-thank';
+//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
@@ -47,15 +47,14 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
-<<<<<<< HEAD
 import { SearchResultsPage } from '../pages/search-results/search-results';
-=======
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
 import { RegThankPage} from '../pages/reg-thank/reg-thank';
-
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
-
+import { MyGroupsPage } from '../pages/my-groups/my-groups';
+import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
+import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
+import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 
 
 @NgModule({
@@ -103,15 +102,15 @@ import { RegThankPage} from '../pages/reg-thank/reg-thank';
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-<<<<<<< HEAD
      RegThankPage,
-     SearchResultsPage 
-=======
+     SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
-     RegThankPage
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
-
+     RegThankPage,
+     MyGroupsPage,
+     PopupFeedbackPage,
+     ProtopideaChallengePage,
+     ProtopideaChallengeListPage
 
   ],
   imports: [
@@ -170,15 +169,15 @@ import { RegThankPage} from '../pages/reg-thank/reg-thank';
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-<<<<<<< HEAD
      RegThankPage,
-     SearchResultsPage
-=======
+     SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
-     RegThankPage
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
-
+     RegThankPage,
+     MyGroupsPage,
+     PopupFeedbackPage,
+     ProtopideaChallengePage,
+     ProtopideaChallengeListPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
