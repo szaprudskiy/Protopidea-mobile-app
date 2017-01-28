@@ -1,0 +1,32 @@
+.bg-challenge{
+    background: #fff;
+    &__title{
+        text-align: center;
+        color: #1295a9;
+        font-weight: normal;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+}
+.holder-img-prize{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1295a9;
+}
+.bnt-par{
+    border: none;
+    background: #deff0d ;
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 50px;
+    color: #3c4500;
+    display: block;
+    margin: 25px auto 20px !important;
+  	background-position: 100px 13px !important;
+}
+.challenge-text{
+    color: #515151;
+    padding: 20px 0 20px 20px;
+}

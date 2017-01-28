@@ -5,7 +5,7 @@ import {Keyboard} from 'ionic-native';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-import { RegThankPage} from '../pages/reg-thank/reg-thank';
+//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -48,6 +48,11 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
 import { SearchResultsPage } from '../pages/search-results/search-results';
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
+import { MyGroupsPage } from '../pages/my-groups/my-groups';
+import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
+import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
+import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 
 
 
@@ -58,9 +63,9 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
+
   rootPage: any = QuotesPagePage;
 
-  //rootPage: any =  HelloIonicPage;
 
 
   constructor(

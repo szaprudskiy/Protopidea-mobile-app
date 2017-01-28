@@ -20,7 +20,9 @@ export class SearchResultsPage {
     console.log('ionViewDidLoad SearchResultsPage');
   }
   
-   clickbackmenu(){
-    this.navCtrl.pop(FindCollaboratorsPage);
-  }
+ clickbackfindcoll() {
+       this.navCtrl.push( FindCollaboratorsPage );
+    }
+
+
 }

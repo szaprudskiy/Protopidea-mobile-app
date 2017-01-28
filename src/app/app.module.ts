@@ -28,7 +28,7 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
-import { RegThankPage} from '../pages/reg-thank/reg-thank';
+//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
@@ -50,7 +50,11 @@ import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/but
 import { SearchResultsPage } from '../pages/search-results/search-results';
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
-
+import { RegThankPage} from '../pages/reg-thank/reg-thank';
+import { MyGroupsPage } from '../pages/my-groups/my-groups';
+import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
+import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
+import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 
 
 
@@ -103,7 +107,12 @@ import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
      SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
-     RegThankPage
+
+     RegThankPage,
+     MyGroupsPage,
+     PopupFeedbackPage,
+     ProtopideaChallengePage,
+     ProtopideaChallengeListPage
 
 
   ],
@@ -167,7 +176,11 @@ import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
      SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
-     RegThankPage
+     RegThankPage,
+     MyGroupsPage,
+     PopupFeedbackPage,
+     ProtopideaChallengePage,
+     ProtopideaChallengeListPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

@@ -1,5 +1,5 @@
 <ion-content class="background">
-    <a class="change-password find-coll-border " (click)="clickbackmenu()" href="#">Find Collaborators</a>
+    <a class="change-password find-coll-border"  href="#" (click)="clickbackmenu()">Find Collaborators</a>
 		<a class="form__item-text form__item-icon" href="#" (click)="clickCollaborators()">Skills</a>
 		<a class="form__item-text form__item-icon form__item-coll-bor" href="#" *ngIf="collaboratorsdrop" (click)="clickIt()">IT</a>
     	<ion-list *ngIf="itdrop" class="coll-checkbox">
@@ -24,6 +24,6 @@
 			<a class="form__item-text form__item-icon" href="#">Language</a>
 			<a class="form__item-text form__item-icon" href="#">Location</a>
 		</div>	
-		<button class="form__button form__button--bold">Find Collaborator</button>
+		<button class="form__button form__button--bold" (click)="clickfindcoll()">Find Collaborator</button>
 </ion-content>
     
