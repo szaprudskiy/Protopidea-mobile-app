@@ -47,14 +47,10 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
-<<<<<<< HEAD
 import { SearchResultsPage } from '../pages/search-results/search-results';
-=======
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
 
-
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
 
 
 
@@ -103,14 +99,11 @@ import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-<<<<<<< HEAD
      RegThankPage,
-     SearchResultsPage 
-=======
+     SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
      RegThankPage
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
 
 
   ],
@@ -170,14 +163,11 @@ import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
      SharedGroupsPage,
      ButtonsCollaborationsPage,
      ButtonsCollaborations2Page,
-<<<<<<< HEAD
      RegThankPage,
-     SearchResultsPage
-=======
+     SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
      RegThankPage
->>>>>>> 6167788793fdd32939d27ecca615106661b5f6b8
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

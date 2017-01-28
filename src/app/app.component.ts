@@ -45,12 +45,10 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
-<<<<<<< HEAD
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
-=======
 import { SearchResultsPage } from '../pages/search-results/search-results';
->>>>>>> dc0af51c253b7b4e904abee4a010ba355a8c1c2d
+
 
 
 @Component({
@@ -59,11 +57,8 @@ import { SearchResultsPage } from '../pages/search-results/search-results';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-<<<<<<< HEAD
-  rootPage: any = IdeaCreatePage;
-=======
-  rootPage: any = SearchResultsPage;
->>>>>>> dc0af51c253b7b4e904abee4a010ba355a8c1c2d
+
+  rootPage: any = QuotesPagePage;
 
   //rootPage: any =  HelloIonicPage;
 
