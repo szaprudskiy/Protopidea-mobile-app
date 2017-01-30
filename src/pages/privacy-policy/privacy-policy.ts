@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+
 /*
   Generated class for the PrivacyPolicy page.
 
@@ -18,5 +19,6 @@ export class PrivacyPolicyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PrivacyPolicyPage');
   }
+
 
 }

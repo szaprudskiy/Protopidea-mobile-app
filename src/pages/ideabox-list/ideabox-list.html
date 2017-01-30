@@ -6,15 +6,15 @@
           </form>
           <div class="header__holder-menu">
             <a href="#"><img src="/assets/img/slack-icon.png" alt=""></a>
-            <a href="#"><img src="/assets/img/menu-icon.png" alt=""></a>
+            <a href="#" (click)="goToMenu()" ><img src="/assets/img/menu-icon.png" alt=""></a>
           </div>
         </div>
         <div class="header__bot">
           <ul class="header__list">
-            <li><a class="header__list-link header__list-link-idea" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-goblet" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-cloud" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-bell" href="#"></a></li>
+						<li><a class="header__list-link header__list-link-idea" href="#"></a></li>
+            <li><a class="header__list-link header__list-link-goblet" href="#" (click)="goToChallenges()" ></a></li>
+            <li><a class="header__list-link header__list-link-cloud" href="#" (click)="goToCreateIdea()" ></a></li>
+            <li><a class="header__list-link header__list-link-bell" href="#"  ></a></li>
           </ul>
         </div>	
       </div>
@@ -80,6 +80,6 @@
 					</ul>
 				</div>
 			</div>	
-			<a class="main-idea-list__link-submit" href="#">Submit your idea</a>
+			<a class="main-idea-list__link-submit" href="#" (click)="goToCreateIdea()" >Submit your idea</a>
 		</div>
 </ion-content>

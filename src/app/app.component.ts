@@ -1,11 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { ReactiveFormsModule } from '@angular/forms';
-import {Keyboard} from 'ionic-native';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar, Splashscreen, SecureStorage } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -53,23 +51,28 @@ import { MyGroupsPage } from '../pages/my-groups/my-groups';
 import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
 import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
+import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
+import {UserController} from '../providers/user-controller';
+import { Storage } from '@ionic/storage';
+
 
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [Storage]
 })
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-
-
+ 
   rootPage: any = QuotesPagePage;
 
 
 
   constructor(
     public platform: Platform,
+    public storage: Storage
   ) {
 
     
@@ -77,9 +80,8 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      //Splashscreen.hide();
+      Splashscreen.hide();
+
     });
   
 

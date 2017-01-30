@@ -28,8 +28,6 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
-//import { RegThankPage} from '../pages/reg-thank/reg-thank';
-import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
@@ -55,6 +53,7 @@ import { MyGroupsPage } from '../pages/my-groups/my-groups';
 import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
 import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
+import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
 
 
 
@@ -112,7 +111,8 @@ import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/
      MyGroupsPage,
      PopupFeedbackPage,
      ProtopideaChallengePage,
-     ProtopideaChallengeListPage
+     ProtopideaChallengeListPage,
+     ChallengeListPage
 
 
   ],
@@ -180,7 +180,8 @@ import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/
      MyGroupsPage,
      PopupFeedbackPage,
      ProtopideaChallengePage,
-     ProtopideaChallengeListPage
+     ProtopideaChallengeListPage,
+     ChallengeListPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

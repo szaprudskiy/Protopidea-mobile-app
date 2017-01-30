@@ -13,7 +13,7 @@ import 'rxjs/add/operator/map';
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html',
-  providers: [UserController]
+  providers : [UserController],
 })
 export class HelloIonicPage {
   constructor(public navCtrl: NavController,
@@ -26,7 +26,10 @@ export class HelloIonicPage {
     
   }
 
-  loginInfo : any;
+  regForm = {
+    email: '',
+    password: '',
+  }
 
   goToIdeaCreate(){
     this.navCtrl.push(IdeaCreatePage);
@@ -37,8 +40,8 @@ export class HelloIonicPage {
   }
 
 
-  login(){
-    this.userCtrl.login();
+  regFormSend(){
+    this.userCtrl.login(this.regForm.email,this.regForm.password);
   }
 
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { RegPage} from '../reg-page/reg-page';
+import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
+import { Storage } from '@ionic/storage';
 
 /*
   Generated class for the QuotesPage page.
@@ -14,16 +16,22 @@ import { RegPage} from '../reg-page/reg-page';
 })
 export class QuotesPagePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad QuotesPagePage');
     let random=Math.floor((Math.random() * 10));
     this.quote = this.quotes[random].quote;
     this.author = this.quotes[random].author;
-    setTimeout(() => { // <=== 
-        this.navCtrl.push(RegPage);
-        this.navCtrl.setRoot(RegPage);
+    setTimeout(() => { // <===
+        this.storage.get('token')
+        .then((val) => {
+              if (val !=null){
+                this.navCtrl.setRoot(IdeaboxListPage);
+              } else {
+                this.navCtrl.setRoot(RegPage);
+              }
+        });
       }, 5000);
         }
 
