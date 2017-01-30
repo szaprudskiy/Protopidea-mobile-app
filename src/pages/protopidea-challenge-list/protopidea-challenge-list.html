@@ -19,17 +19,15 @@
         </div>	
       </div>
       <div class="bg-challenge">
-        <h5 class="bg-challenge__title">PROTOPIDEA is offering a 100 prize</h5>
-          <div class="holder-img-prize">
-            <img src="assets/img/challenge-img.png" alt="">
-            <p>prize</p>
-          </div>
-		    	  <button class="bnt-par">Participate</button>
-             <a href="#" class="main__input main__input--arrdown">Description</a>
-             <a href="#" class="main__input main__input--arrdown">Process</a>
-             <a href="#" class="main__input main__input--arrdown">Rules</a>
-             <a href="#" class="main__input main__input--arrdown">Time Line</a>
-             <a href="#" class="main__input main__input--arrdown">Prize</a>
-             <p class="challenge-text">Terms and Condicions</p>
+          <ion-list class="coll-checkbox coll-checkbox--flex">
+                <ion-item class="checkbox-text-color">
+                  <ion-label>Companies</ion-label>
+                  <ion-checkbox [(ngModel)]="company"></ion-checkbox>
+                </ion-item>
+                <ion-item class="checkbox-text-color">
+                  <ion-label>Protopidea</ion-label>
+                <ion-checkbox [(ngModel)]="Protopidea"></ion-checkbox>
+                </ion-item>
+          </ion-list>	
       </div>
 </ion-content>

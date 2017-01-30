@@ -1,54 +1,53 @@
 <ion-content class="background">
-  <div class="header">
-        <div class="header__top">
-          <form action="">
-            <input class="header__input" type="text" placeholder="Search">
-          </form>
-          <div class="header__holder-menu">
-            <a href="#"><img src="/assets/img/slack-icon.png" alt=""></a>
-            <a href="#" (click)="goToMenu()"><img src="/assets/img/menu-icon.png" alt=""></a>
+    <div class="header">
+          <div class="header__top">
+            <form action="">
+              <input class="header__input" type="text" placeholder="Search">
+            </form>
+            <div class="header__holder-menu">
+              <a href="#"><img src="assets/img/slack-icon.png" alt=""></a>
+              <a href="#" (click)="goToMenu()"><img src="assets/img/menu-icon.png" alt=""></a>
+            </div>
           </div>
+          <div class="header__bot">
+            <ul class="header__list">
+              <li class="header__item"><a (click)="goToIdeaList()" class="header__list-link header__list-link-idea" href="#"></a></li>
+              <li class="header__item "><a class="header__list-link header__list-link-goblet" href="#"></a></li>
+              <li class="header__item header__item--active"><a class="header__list-link header__list-link-cloud--active" href="#"></a></li>
+              <li class="header__item "><a class="header__list-link header__list-link-bell" href="#"></a></li>
+            </ul>
+          </div>	
         </div>
-        <div class="header__bot">
-          <ul class="header__list">
-            <li><a class="header__list-link header__list-link-idea" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-goblet" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-cloud" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-bell" href="#"></a></li>
+      <!-- SCREEN UPLOAD -->
+      <div class="main">
+        <h4 class="main__title">Submit your idea</h4>
+        <a class="main__upload-photo" href="#" (click)="modalUploadPhoto()" ><img src="assets/img/upload-photo.png" alt=""></a>
+        <!--<a class="main__upload-files" href="#">Upload files</a>-->
+        <input class="main__input" type="text" placeholder="Invention Name">
+        <input class="main__input" type="text" placeholder="Title">
+        <a class="main__input main__input--arrdown" href="#"  (click)="focusDesc()">A brief description</a>
+        <div class="holder-description-text">
+          <textarea *ngIf="showDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
+        </div> 
+        <!--<input class="main__input" type="text" placeholder="Promotional Description">-->
+        <a class="main__input main__input--arrdown" href="#"  (click)="focusPromDesc()">Promotional Description</a>
+        <textarea *ngIf="showProDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
+        <!--<input class="main__input main__input-arrdown" type="text" placeholder="Category">-->
+        <a href="#" class="main__input main__input--arrdown" (click)="catTogleList()">Categories</a>
+        <a href="#" *ngIf="showCatList" class="main__input main__input--arrdown" (click)="catTogle()">{{category}}</a>
+        <div  *ngIf="showCat">
+          <ion-searchbar
+            (ionInput)="categorySearch($event)">
+          </ion-searchbar>
+        <ul>
+            <li *ngFor="let categ of categories"><button (click)="setCat($event)" class="select-category" value="{{categ}}">
+                {{categ}}
+            </button></li>
           </ul>
-        </div>	
-      </div>
-		<!-- SCREEN UPLOAD -->
-		<div class="main">
-			<h4 class="main__title">Submit your idea</h4>
-      <a class="main__upload-photo" href="#" (click)="modalUploadPhoto()" ><img src="assets/img/upload-photo.png" alt=""></a>
-			<!--<a class="main__upload-files" href="#">Upload files</a>-->
-			<input class="main__input" type="text" placeholder="Invention Name">
-			<input class="main__input" type="text" placeholder="Title">
-      <a class="main__input main__input--arrdown" href="#"  (click)="focusDesc()">A brief description</a>
-      <div class="holder-description-text">
-        <textarea *ngIf="showDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
-      </div> 
-			<!--<input class="main__input" type="text" placeholder="Promotional Description">-->
-      <a class="main__input main__input--arrdown" href="#"  (click)="focusPromDesc()">Promotional Description</a>
-      <textarea *ngIf="showProDesc" class="holder-description__text" placeholder="Type the text..."></textarea>
-			<!--<input class="main__input main__input-arrdown" type="text" placeholder="Category">-->
-      <a href="#" class="main__input main__input--arrdown" (click)="catTogleList()">Categories</a>
-      <a href="#" *ngIf="showCatList" class="main__input main__input--arrdown" (click)="catTogle()">{{category}}</a>
-      <div  *ngIf="showCat">
-        <ion-searchbar
-          (ionInput)="categorySearch($event)">
-        </ion-searchbar>
-      <ul>
-          <li *ngFor="let categ of categories" ><button (click)="setCat($event)" class="select-category" value="{{categ}}">
-              {{categ}}
-          </button></li>
-        </ul>
-      </div>
-      <div class="main__holder-links">
-        <a class="main__link-public" href="#">Go public</a>
-        <a class="main__link-hide" href="#">Hide</a>
-      </div>
-    
-	</div>
+        </div>
+        <div class="main__holder-links">
+          <a class="main__link-public" href="#" (click)="goPublic()">Go public</a>
+          <a class="main__link-hide" href="#">Hide</a>
+        </div>
+    </div>
 </ion-content>

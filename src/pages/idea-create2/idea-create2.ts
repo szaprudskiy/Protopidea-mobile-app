@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
+import { MyPage } from '../menu/menu';
 /*
   Generated class for the IdeaCreate2 page.
 
@@ -32,5 +33,10 @@ export class IdeaCreate2Page {
    clickPromotion (){
      this.promotiondrop = !this.promotiondrop;
   }
+  
+goToIdeaList(){
+    this.navCtrl.push( IdeaboxListPage );
+  }
+  
 
 }

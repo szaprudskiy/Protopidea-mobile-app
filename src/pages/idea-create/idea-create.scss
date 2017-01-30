@@ -1,5 +1,5 @@
-.header{
 
+.header{
 	&__top{
 		margin-top: 8px;
 		display: flex;
@@ -33,33 +33,50 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: flex-end;
+		
 	}
+	
 	&__list-link{
 		display: block;
-		background: url(../assets/img/sprite-icon.png) no-repeat;
+		// background: url(../assets/img/sprite-icon.png) no-repeat;
+		// width: 30px;
+		// height: 30px;
+	}
+	&__list-link-idea{
+		background: url(../assets/img/idea-icon.png) no-repeat;
 		width: 30px;
 		height: 30px;
 	}
-	
 	&__list-link-goblet{
 		background-position: -80px;
-		
+		background: url(../assets/img/goblet-icon.png) no-repeat;
+		width: 26px;
+		height: 24px;
 	}
-	&__list-link-cloud{
+	// &__list-link-cloud{
+	// 	background-position: -160px;
+	// 	background: url(../assets/img/cloud.png) no-repeat;
+	// 	width: 28px;
+    // 	height: 24px;
+	// 	margin-bottom: -4px;
+	// }
+	&__list-link-cloud--active{
 		background-position: -160px;
-		
+		background: url(../assets/img/cloud-active.png) no-repeat !important;
+		width: 28px;
+    	height: 24px;
+		margin-bottom: 3px;
 	}
 	&__list-link-bell{
 		background-position: -240px;
-		
+		background: url(../assets/img/bell.png) no-repeat;
+		width: 20px;
+		height: 25px;
 	}
 }
 /* SCREEN */
 .main{
-	background: #fff;
-	background-size: cover;
-	margin: 12px 0 30px;
-	// opacity: .6;
+	
 	&__title{
 		color: #1295a9;
 		text-align: center;
@@ -114,6 +131,7 @@
 		color: #3c4500;
 		text-decoration: none;
 	}
+
 	&__link-hide{
 		background: rgba(225, 242, 244, .6);
 		text-decoration: none;
@@ -122,8 +140,7 @@
 }
 
 .holder-description{
-	text-align: center;
-	
+		text-align: center;
 	&__text{
 		resize: none;
 		border: none;

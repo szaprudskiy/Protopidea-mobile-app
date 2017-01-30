@@ -1,7 +1,12 @@
+page-ideabox-followed-groups{
 .header__input--width{
 	width: 260px;
 }
-
+.main-idea-list{
+  background: #fff; 
+  background-size: cover;
+      margin-top: 10px;
+}
 .link-back{
 	display: block;
 	margin: 12px 0 0 10px;
@@ -42,4 +47,5 @@
 	&__name-color{
 		color: #1295a9;
 	}
+}
 }

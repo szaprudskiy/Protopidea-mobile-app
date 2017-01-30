@@ -15,6 +15,9 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+h1,h2,h3,h4,h5{
+	margin: 0 !important;
+}
 .toolbar-background{
     background-image: url(../assets/img/bac-app.jpg);
 }
@@ -33,6 +36,15 @@ a {
 body{
 	font: 16px 'RobotoRegular', sans-serif;
 }
+.header{
+	&__item{
+		padding: 0 20px 15px;
+	}
+	&__item--active{
+		padding: 0 15px 7px;
+		border-bottom: 4px solid #deff0d;
+	}
+}
 .background{
     font: 16px 'RobotoRegular', sans-serif;
 	overflow-x: hidden;
@@ -41,7 +53,10 @@ body{
 }
 .main {
   background: #fff; 
+  background-size: cover;
+ // margin: -12px 0 30px !important;
 }
+
 .change-password{
 	padding: 15px 0 2px 40px !important;
 	&:before{
@@ -194,3 +209,5 @@ body{
     margin: 25px auto 20px;
   	background-position: 100px 13px;
 }
+
+

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams,ModalController,ViewController } from 'ionic-angular';
 import { MyPage} from '../menu/menu';
 import { Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
+import { IdeaCreate2Page } from '../idea-create2/idea-create2';
+import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
 
 /*
   Generated class for the IdeaCreate page.
@@ -50,7 +52,7 @@ export class IdeaCreatePage {
   }
   
   catTogle(){
-    this.showCat=!this.showCat;
+    this.showCat = !this.showCat;
   }
 
   setCat(event : any){
@@ -76,4 +78,12 @@ export class IdeaCreatePage {
    uploadPhotoModal.present();
   }
 
+  goPublic(){
+      this.navCtrl.push( IdeaCreate2Page );
+  }
+  
+  goToIdeaList(){
+    this.navCtrl.push( IdeaboxListPage );
+  }
+  
 }

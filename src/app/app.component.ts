@@ -53,16 +53,19 @@ import { MyGroupsPage } from '../pages/my-groups/my-groups';
 import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
 import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopidea-challenge';
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
+import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
+import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
 
 
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
 
-  rootPage: any =  ProtopideaChallengeListPage;
+  rootPage: any = IdeaCreatePage;
 
  // rootPage: any = RegPage;
 

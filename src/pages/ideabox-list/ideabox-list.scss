@@ -1,8 +1,8 @@
+page-ideabox-list {
 .main-idea-list{
 	background: #fff;
 	background-size: cover;
-	margin: 12px 0 90px;
-	padding: 0 0 1px;
+	padding-bottom: 1px;
 	&__title{
 		color: #1295a9;
 		margin: 20px 0 10px;
@@ -47,5 +47,21 @@
 		font-family: "RobotoBold";
 		background: #e8920c url(../assets/img/submit-icon.png) no-repeat;
 		background-position: 95%;
+	}
+}
+
+	.header{
+			&__list-link-idea--active{
+			background: url(../assets/img/idea-active.png) no-repeat;
+			width: 30px;
+			height: 30px;
+			margin-bottom: 3px;
+		}
+			&__list-link-cloud{
+			background-position: -160px;
+			background: url(../assets/img/cloud.png) no-repeat ;
+			width: 28px;
+			height: 24px;
+		}
 	}
 }

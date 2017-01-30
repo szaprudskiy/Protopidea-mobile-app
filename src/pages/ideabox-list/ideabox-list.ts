@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { IdeaCreatePage } from '../idea-create/idea-create';
+import { IdeaCreate2Page } from '../idea-create2/idea-create2';
 /*
   Generated class for the IdeaboxList page.
 
@@ -18,5 +19,9 @@ export class IdeaboxListPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdeaboxListPage');
   }
+  
 
+  goToIdeaCreate(){
+    this.navCtrl.pop( IdeaCreatePage )
+  }
 }
