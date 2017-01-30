@@ -6,6 +6,7 @@ import { Facebook } from 'ionic-native';
 import {TwitterConnect} from 'ionic-native';
 import { TermsAndConditionsPage} from '../terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../forgot-pass/forgot-pass';
+import {UserController} from '../../providers/user-controller';
 
 
 /*
@@ -16,8 +17,8 @@ import { ForgotPassPage } from '../forgot-pass/forgot-pass';
 */
 @Component({
   selector: 'page-reg',
-  templateUrl: 'reg-page.html'
-})
+  templateUrl: 'reg-page.html',
+  providers : [UserController],})
 export class RegPage {
 
   
@@ -25,7 +26,8 @@ export class RegPage {
   constructor(
       public navCtrl: NavController, 
       public navParams: NavParams,
-      public menuCtrl: MenuController) {}
+      public menuCtrl: MenuController,
+      public userCtrl: UserController) {}
   regForm = {
     name: '',
     email: '',
@@ -44,7 +46,7 @@ export class RegPage {
 
 
   regFormSend (){
-    console.log(this.regForm);
+    this.userCtrl.register(this.regForm.email,this.regForm.password);
   }
 
   goToTerms(){

@@ -28,8 +28,6 @@ import { Settings10FaqPage } from '../pages/settings-10-faq/settings-10-faq';
 import { Settings11FaqOpenPage } from '../pages/settings-11-faq-open/settings-11-faq-open';
 import {  MyPage } from '../pages/menu/menu';
 import { MenuController } from 'ionic-angular';
-//import { RegThankPage} from '../pages/reg-thank/reg-thank';
-import { MenuTestPage } from '../pages/menu-test/menu-test';
 //import {  ItemDetailsPage } from '../pages/item-details/item-details';
 import { IdeaCreatePage } from '../pages/idea-create/idea-create';
 import { IdeaCreate2Page } from '../pages/idea-create2/idea-create2';
@@ -57,6 +55,10 @@ import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopide
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
+import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
+
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -106,6 +108,7 @@ import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challen
      SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
+
      RegThankPage,
      MyGroupsPage,
      PopupFeedbackPage,
@@ -113,7 +116,9 @@ import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challen
      ProtopideaChallengeListPage,
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
-     IdeaCreate2Page
+     IdeaCreate2Page,
+     ChallengeListPage
+
 
     
   ],
@@ -182,9 +187,13 @@ import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challen
      PopupFeedbackPage,
      ProtopideaChallengePage,
      ProtopideaChallengeListPage,
+
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
-     IdeaCreate2Page
+     IdeaCreate2Page,
+     ChallengeListPage
+
+
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

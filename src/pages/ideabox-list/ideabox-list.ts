@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { IdeaCreatePage } from '../idea-create/idea-create';
 import { IdeaCreate2Page } from '../idea-create2/idea-create2';
+import { MyPage } from '../menu/menu';
+import { ProtopideaChallengeListPage } from '../protopidea-challenge-list/protopidea-challenge-list';
+
 /*
   Generated class for the IdeaboxList page.
 
@@ -21,7 +24,19 @@ export class IdeaboxListPage {
   }
   
 
-  goToIdeaCreate(){
-    this.navCtrl.pop( IdeaCreatePage )
+
+  goToCreateIdea(){
+    this.navCtrl.push(IdeaCreatePage)
+  }
+
+  goToMenu(){
+    this.navCtrl.push(MyPage)
+  }
+
+  goToChallenges(){
+    this.navCtrl.push(ProtopideaChallengeListPage)
+  }
+
+  goToNotifications(){
   }
 }

@@ -13,4 +13,5 @@
 */
 declare module '*';
 declare const facebookConnectPlugin: any;
-declare const TwitterConnect: any;    
+declare const TwitterConnect: any; 
+   

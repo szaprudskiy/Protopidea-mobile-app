@@ -1,11 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 import { ReactiveFormsModule } from '@angular/forms';
-import {Keyboard} from 'ionic-native';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar, Splashscreen, SecureStorage } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-//import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
@@ -45,9 +43,9 @@ import { PortfolioOwnerPage } from '../pages/portfolio-owner/portfolio-owner';
 import { SharedGroupsPage } from '../pages/shared-groups/shared-groups';
 import { ButtonsCollaborationsPage } from '../pages/buttons-collaborations/buttons-collaborations';
 import { ButtonsCollaborations2Page } from '../pages/buttons-collaborations2/buttons-collaborations2';
-import { SearchResultsPage } from '../pages/search-results/search-results';
 import { FailedLoginPage } from '../pages/failed-login/failed-login';
 import { QuotesPagePage } from '../pages/quotes-page/quotes-page';
+import { SearchResultsPage } from '../pages/search-results/search-results';
 import { RegThankPage} from '../pages/reg-thank/reg-thank';
 import { MyGroupsPage } from '../pages/my-groups/my-groups';
 import { PopupFeedbackPage } from '../pages/popup-feedback/popup-feedback';
@@ -55,17 +53,25 @@ import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopide
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
+import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
+import {UserController} from '../providers/user-controller';
+import { Storage } from '@ionic/storage';
+
+
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [Storage]
 })
 
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
+ 
+  rootPage: any = QuotesPagePage;
 
-  rootPage: any = IdeaCreatePage;
+
 
  // rootPage: any = RegPage;
 
@@ -73,8 +79,10 @@ export class MyApp {
   //rootPage: any =  HelloIonicPage;
 
 
+
   constructor(
     public platform: Platform,
+    public storage: Storage
   ) {
 
     
@@ -82,9 +90,8 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      //Splashscreen.hide();
+      Splashscreen.hide();
+
     });
   
 

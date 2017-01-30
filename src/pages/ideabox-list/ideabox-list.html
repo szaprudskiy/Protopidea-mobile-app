@@ -6,15 +6,18 @@
           </form>
           <div class="header__holder-menu">
             <a href="#"><img src="assets/img/slack-icon.png" alt=""></a>
-            <a href="#"><img src="assets/img/menu-icon.png" alt=""></a>
+            <a href="#" (click)="goToMenu()" ><img src="assets/img/menu-icon.png" alt=""></a>
+
           </div>
         </div>
         <div class="header__bot">
           <ul class="header__list">
+
             <li class="header__item header__item--active"><a class="header__list-link header__list-link-idea--active" href="#"></a></li>
             <li class="header__item"><a class="header__list-link header__list-link-goblet" href="#"></a></li>
             <li class="header__item"><a (click)="goToIdeaCreate()" class="header__list-link header__list-link-cloud" href="#"></a></li>
             <li class="header__item"><a class="header__list-link header__list-link-bell" href="#"></a></li>
+
           </ul>
         </div>	
       </div>
@@ -23,7 +26,7 @@
 			<div class="main-idea-list__border">
 				<div class="main-idea-list__item">
 					<p class="main-idea-list__title">Awesome Big Idea</p>
-					<img class="main-idea-list__img" src="/assets/img/idea-list1.png" alt="" width="130px" height="70px">
+					<img class="main-idea-list__img" src="assets/img/idea-list1.png" alt="" width="130px" height="70px">
 					<ul class="main-idea-list__icons"> 
 						<li><a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a></li>
 						<li><a href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a></li>
@@ -32,7 +35,7 @@
 				</div>
 				<div class="main-idea-list__item">
 					<p class="main-idea-list__title">Other Good Idea</p>
-					<img class="main-idea-list__img"  src="/assets/img/idea-list2.png" alt="" width="130px" height="70px">
+					<img class="main-idea-list__img"  src="assets/img/idea-list2.png" alt="" width="130px" height="70px">
 					<ul class="main-idea-list__icons">
 						<li><a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a></li>
 						<li><a href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a></li>
@@ -63,7 +66,7 @@
 			<div class="main-idea-list__border">
 				<div class="main-idea-list__item">
 					<p class="main-idea-list__title">Another Insane Idea</p>
-					<img class="main-idea-list__img" src="/assets/img/idea-list5.png" alt="" width="130px" height="70px">
+					<img class="main-idea-list__img" src="assets/img/idea-list5.png" alt="" width="130px" height="70px">
 					<ul class="main-idea-list__icons"> 
 						<li><a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a></li>
 						<li><a href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a></li>
@@ -72,7 +75,7 @@
 				</div>
 				<div class="main-idea-list__item">
 					<p class="main-idea-list__title">Some Huge Idea</p>
-					<img class="main-idea-list__img"  src="/assets/img/idea-list6.png" alt="" width="130px" height="70px">
+					<img class="main-idea-list__img"  src="assets/img/idea-list6.png" alt="" width="130px" height="70px">
 					<ul class="main-idea-list__icons">
 						<li><a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a></li>
 						<li><a href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a></li>
@@ -80,6 +83,6 @@
 					</ul>
 				</div>
 			</div>	
-			<a class="main-idea-list__link-submit" href="#">Submit your idea</a>
+			<a class="main-idea-list__link-submit" href="#" (click)="goToCreateIdea()" >Submit your idea</a>
 		</div>
 </ion-content>
