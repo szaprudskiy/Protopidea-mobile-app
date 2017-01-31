@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { ImagePicker } from 'ionic-native';
 import { Camera } from 'ionic-native';
 
@@ -15,11 +15,13 @@ import { Camera } from 'ionic-native';
 })
 export class Profile4PopupCameraGalleryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Profile4PopupCameraGalleryPage');
   }
+
+  image: any
 
   uploadFromGallery(){
     let options ={maximumImagesCount:1}
@@ -43,15 +45,11 @@ export class Profile4PopupCameraGalleryPage {
 
   uploadFromCamera(){
     Camera.getPicture().then((imageData) => {
-      // imageData is either a base64 encoded string or a file URI
-      // If it's base64:
-      let base64Image = 'data:image/jpeg;base64,' + imageData;
-      alert(base64Image);
+      this.viewCtrl.dismiss(imageData);
       }, (err) => {
       // Handle error
       });
   }
-
 
 
 }

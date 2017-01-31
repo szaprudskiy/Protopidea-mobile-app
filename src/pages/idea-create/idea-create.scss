@@ -1,4 +1,7 @@
-
+.cat-container{
+	border-bottom: 1px solid #deff0d;
+	border-top: 1px solid #deff0d;  
+}
 .header{
 	&__top{
 		margin-top: 8px;
@@ -156,5 +159,10 @@
 	background: transparent;
 	padding: 10px 20px;
 	font: 14px 'RobotoRegular' ;
+}
+
+.main__upload-photo img{
+	width : 300px;
+	border-radius: 20px;
 }
     

@@ -4,6 +4,7 @@ import { MyPage} from '../menu/menu';
 import { Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 import { IdeaCreate2Page } from '../idea-create2/idea-create2';
 import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
+import { Storage } from '@ionic/storage';
 
 /*
   Generated class for the IdeaCreate page.
@@ -17,14 +18,30 @@ import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
 })
 export class IdeaCreatePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public modalCtrl: ModalController,
+              public storage: Storage) {
     this.initializeCategories();
   }
-  category = 'Category'
+
+  idea = {
+    image:'assets/img/upload-photo.png',
+    name:'',
+    title:'',
+    briefDesc:'',
+    promDesc:'',
+    categories: [],
+  }
+  category1 = 'First Category'
+  category2 = 'Second Category'
+  category3 = 'Third Category'
   categories: string[]
   searchQuery: string = ''
-  showCat=false
+  showCat1=false
   showCatList=false
+  showCat2=false
+  showCat3=false
   showDesc=false
   showProDesc=false
 
@@ -51,14 +68,29 @@ export class IdeaCreatePage {
     }
   }
   
-  catTogle(){
-    this.showCat = !this.showCat;
+  catTogle1(){
+    this.showCat1 = !this.showCat1;
   }
-
-  setCat(event : any){
+  catTogle2(){
+    this.showCat2 = !this.showCat2;
+  }
+  catTogle3(){
+    this.showCat3 = !this.showCat3;
+  }
+  setCat1(event : any){
     var val = event.target.value
     console.log(val);
-    this.category = val;
+    this.category1 = val;
+  }
+  setCat2(event : any){
+    var val = event.target.value
+    console.log(val);
+    this.category2 = val;
+  }
+  setCat3(event : any){
+    var val = event.target.value
+    console.log(val);
+    this.category3 = val;
   }
 
   catTogleList(){
@@ -75,11 +107,19 @@ export class IdeaCreatePage {
 
   modalUploadPhoto(){
     let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
+    uploadPhotoModal.onDidDismiss(data => {
+     this.idea.image = data;
+
+   });
    uploadPhotoModal.present();
   }
 
   goPublic(){
-      this.navCtrl.push( IdeaCreate2Page );
+      this.navCtrl.push( IdeaboxListPage );
+      this.storage.get('ideas').then(val=>{
+          val.push(this.idea);
+          this.storage.set('ideas',val);
+      });
   }
   
   goToIdeaList(){

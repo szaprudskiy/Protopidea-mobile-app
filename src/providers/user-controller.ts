@@ -3,6 +3,7 @@ import { AlertController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { NavController, NavParams } from 'ionic-angular';
 import { IdeaboxListPage } from '../pages/ideabox-list/ideabox-list';
+import { HelloIonicPage} from '../pages/hello-ionic/hello-ionic';
 import { Http,Jsonp } from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -55,6 +56,11 @@ export class UserController {
 
   checkLogin(){
     return true;
+  }
+
+  logout(){
+     this.storage.remove(`token`);
+     this.navCtrl.setRoot(HelloIonicPage);
   }
 
 }

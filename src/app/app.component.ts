@@ -91,7 +91,6 @@ export class MyApp {
   initializeApp() {
     this.platform.ready().then(() => {
       Splashscreen.hide();
-
     });
   
 

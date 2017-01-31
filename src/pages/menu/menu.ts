@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
-import { MenuController, NavController, NavParams } from 'ionic-angular';
+import { MenuController, NavController, NavParams, ModalController } from 'ionic-angular';
 import { SubmenuPage } from '../submenu/submenu';
 import { FindCollaboratorsPage } from '../find-collaborators/find-collaborators';
 import { Profile1Page } from '../profile-1/profile-1';
 import { TermsAndConditionsPage} from '../terms-and-conditions/terms-and-conditions';
+import { PrivacyPolicyPage} from '../privacy-policy/privacy-policy';
+import { UserController } from '../../providers/user-controller';
 
 
 @Component({
   selector: 'page-menu',
-  templateUrl: 'menu.html'
+  templateUrl: 'menu.html',
+  providers:[UserController]
 })
 export class MyPage {
 
@@ -18,7 +21,10 @@ export class MyPage {
 
 
 //  }
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              public modalCtrl: ModalController,
+               public userCtrl: UserController, ) {
   
   }
   
@@ -35,7 +41,18 @@ export class MyPage {
   }
 
   goToTerms(){
-    this.navCtrl.push(TermsAndConditionsPage);
+    let shareModal = this.modalCtrl.create(TermsAndConditionsPage);
+    shareModal.present();
+  }
+
+  openPrivacy()
+  {
+    let shareModal = this.modalCtrl.create(PrivacyPolicyPage);
+    shareModal.present();
+  }
+
+  goToLogOut(){
+    this.userCtrl.logout();
   }
 
 //  openMenu() {

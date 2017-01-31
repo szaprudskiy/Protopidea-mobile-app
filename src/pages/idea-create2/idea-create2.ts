@@ -14,7 +14,12 @@ import { MyPage } from '../menu/menu';
 })
 export class IdeaCreate2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  idea: any
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.idea = navParams.get('idea');
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdeaCreate2Page');
