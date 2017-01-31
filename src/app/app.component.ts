@@ -69,7 +69,7 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
  
-  rootPage: any = QuotesPagePage;
+  rootPage: any = ProtopideaChallengePage;
 
 
 

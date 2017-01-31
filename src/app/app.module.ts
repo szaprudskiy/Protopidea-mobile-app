@@ -187,7 +187,6 @@ import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
      PopupFeedbackPage,
      ProtopideaChallengePage,
      ProtopideaChallengeListPage,
-
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,

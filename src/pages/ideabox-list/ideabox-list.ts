@@ -25,7 +25,7 @@ export class IdeaboxListPage {
   
 
 
-  goToCreateIdea(){
+  goToIdeaCreate(){
     this.navCtrl.push(IdeaCreatePage)
   }
 
@@ -39,4 +39,6 @@ export class IdeaboxListPage {
 
   goToNotifications(){
   }
+
+  
 }
