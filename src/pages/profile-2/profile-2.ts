@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams,ModalController,ViewController } from 'ionic-angular';
 import { Profile3Page } from '../profile-3/profile-3';
 import {Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
+import { Storage } from '@ionic/storage';
 /*
   Generated class for the Profile2 page.
 
@@ -15,16 +16,30 @@ import {Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/
 })
 export class Profile2Page {
   
-  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public modalCtrl: ModalController,
+              public storage: Storage) {
+      this.storage.get('profile')
+                .then((val) => {
+                      if (val ==null){
+                        this.storage.set('profile',{});
+                        console.log('profile created');
+                      } else{
+                        this.profile = val;
+                      }
+                });
  
   }
-
+  profile={}
   ionViewDidLoad() {
     console.log('ionViewDidLoad Profile2Page');
   }
 
    goToProfile3() {
-       this.navCtrl.push(Profile3Page);
+    console.log(this.profile)
+    this.storage.set('profile',this.profile);
+    this.navCtrl.push(Profile3Page);
     }
 
   adressdropdown = false;

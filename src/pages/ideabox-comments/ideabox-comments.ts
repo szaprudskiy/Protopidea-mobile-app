@@ -19,4 +19,7 @@ export class IdeaboxCommentsPage {
     console.log('ionViewDidLoad IdeaboxCommentsPage');
   }
 
+  close() {
+    this.navCtrl.pop();
+  }
 }

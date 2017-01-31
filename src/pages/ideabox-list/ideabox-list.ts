@@ -9,6 +9,8 @@ import { File } from 'ionic-native';
 import { IdeaboxLikesPage } from '../ideabox-likes/ideabox-likes';
 import { IdeaboxSharePage } from '../ideabox-share/ideabox-share';
 import { IdeaboxPopupPage } from '../ideabox-popup/ideabox-popup';
+import { IdeaboxCommentsPage } from '../ideabox-comments/ideabox-comments';
+import { IdeaboxFollowedGroupsPage } from '../ideabox-followed-groups/ideabox-followed-groups';
 import { Storage } from '@ionic/storage';
 
 /*
@@ -30,7 +32,8 @@ export class IdeaboxListPage {
                public platform: Platform,
                public modalCtrl: ModalController,
                public storage: Storage,
-               public viewCtrl: ViewController) {}
+               public viewCtrl: ViewController) {
+               }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdeaboxListPage');
@@ -86,8 +89,13 @@ export class IdeaboxListPage {
     shareModal.present();
   }
 
-  openMessage(){
-    let messageModal = this.modalCtrl.create(IdeaboxPopupPage);
-    messageModal.present();
+  openMessages(){
+    let messagesModal = this.modalCtrl.create(IdeaboxCommentsPage);
+    messagesModal.present();
+  }
+
+  openFollowedGroups(){
+    let groupsModal = this.modalCtrl.create(IdeaboxFollowedGroupsPage);
+    groupsModal.present();
   }
 }

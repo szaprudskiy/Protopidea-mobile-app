@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HelloIonicPage} from '../hello-ionic/hello-ionic';
 
 /*
   Generated class for the RegThank page.
@@ -19,4 +20,7 @@ export class RegThankPage {
     console.log('ionViewDidLoad RegThankPage');
   }
 
+  goToLogin(){
+    this.navCtrl.push(HelloIonicPage);
+  }
 }

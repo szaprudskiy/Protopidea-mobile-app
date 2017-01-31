@@ -4,6 +4,7 @@ import { Storage } from '@ionic/storage';
 import { NavController, NavParams } from 'ionic-angular';
 import { IdeaboxListPage } from '../pages/ideabox-list/ideabox-list';
 import { HelloIonicPage} from '../pages/hello-ionic/hello-ionic';
+import { RegThankPage } from '../pages/reg-thank/reg-thank';
 import { Http,Jsonp } from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -50,7 +51,7 @@ export class UserController {
     this._jsonp.get('http://protopidea.pdigit.top/en/api/user/register?email='+email+'&password='+pass+'&callback=JSONP_CALLBACK').map(res => res.json()).subscribe(data => {
         console.log(data.errors);
         this.loginInfo = JSON.stringify(data.errors);
-        alert(this.loginInfo);
+        this.navCtrl.push(RegThankPage);
     });
   }
 
