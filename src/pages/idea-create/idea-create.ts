@@ -83,7 +83,7 @@ export class IdeaCreatePage {
   }
   
   goToIdeaList(){
-    this.navCtrl.push( IdeaboxListPage );
+    this.navCtrl.push( IdeaboxListPage,{},{animate: true, direction: 'left', });
   }
   
 }

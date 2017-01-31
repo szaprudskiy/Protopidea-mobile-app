@@ -13,5 +13,7 @@
 */
 declare module '*';
 declare const facebookConnectPlugin: any;
-declare const TwitterConnect: any; 
+declare var TwitterConnect: any;
+declare var cordova: any;
+declare var cordovaHTTP: any;
    

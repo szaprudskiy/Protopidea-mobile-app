@@ -6,19 +6,19 @@
 								<a href="#" (click)="regWithFacebook()" id="facebook-login">
 									<img src="img/facebook-logo-button.svg" alt="">
 								</a>
-								<a href="index.html#">
+								<a href="#" (click)="regWithGoogle()">
 									<img src="img/google-plus-logo-button.svg" class="coming-soon" alt="">
 								</a>
-								<a href="index.html#">
+								<a href="#" (click)="regWithInstagram()">
 									<img src="img/instagram-logo.svg" class="coming-soon" alt="">
 								</a>
-								<a href="index.html#" id="twitter-login">
+								<a href="#" id="twitter-login" (click)="regWithTwitter()">
 									<img src="img/twitter-logo-button.svg" alt="">
 								</a>
-								<a href="index.html#" class="coming-soon" >
+								<a href="#" class="coming-soon" >
 									<img src="img/linkedin-button.svg"  alt="">
 								</a>
-								<a href="index.html#" class="coming-soon">
+								<a href="#" (click)="regWithXing()" class="coming-soon">
 									<img src="img/xing-social-logotype.svg" alt="">
 								</a>
 							</div>
@@ -43,7 +43,7 @@
 							<div class="bor-bot">
 								<div class="page-container">
 									<input type="checkbox"  [(ngModel)]="regForm.terms" name="terms">
-									<p class="fz18" (click)="goToTerms()">Terms and Conditions<p>
+									<label class="fz18" (click)="goToTerms()">Terms and Conditions</label>
 								</div>
 							</div>
 							<div class="page-container">
