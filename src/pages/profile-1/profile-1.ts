@@ -3,6 +3,7 @@ import { Profile2Page } from '../profile-2/profile-2';
 import { NavController, NavParams,ModalController,ViewController } from 'ionic-angular';
 import {Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 import { Storage } from '@ionic/storage';
+import {Crop} from 'ionic-native';
 
 /*
   Generated class for the Profile1 page.
@@ -33,6 +34,7 @@ constructor(public navCtrl: NavController,
             }
   
   profile={
+    avatar:'assets/img/circle.png',
     firstName: '',
     familyName: '',
     email: '',
@@ -71,5 +73,15 @@ constructor(public navCtrl: NavController,
   clickAvatar(){
     let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
    uploadPhotoModal.present();
+   uploadPhotoModal.onDidDismiss(data => {
+      Crop.crop(data, {quality: 75})
+      .then(
+        newImage => {
+          alert("new image path is: " + newImage);
+          this.profile.avatar = newImage;
+      },
+        error => alert("Error cropping image" + error)
+      );
+   });
   }
 }

@@ -60,7 +60,7 @@ export class UserController {
   }
 
   logout(){
-     this.storage.remove(`token`);
+     this.storage.clear();
      this.navCtrl.setRoot(HelloIonicPage);
   }
 

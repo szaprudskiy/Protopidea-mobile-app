@@ -25,11 +25,10 @@ export class Profile4PopupCameraGalleryPage {
 
   uploadFromGallery(){
     let options ={maximumImagesCount:1}
-    ImagePicker.requestReadPermission();
     if (ImagePicker.hasReadPermission()){
       ImagePicker.getPictures(options).then((results) => {
         for (var i = 0; i < results.length; i++) {
-            alert('Image URI: ' + results[i]);
+            this.viewCtrl.dismiss(results[i]);
         }
     }, (err) => { alert(err)});
     } else
@@ -37,7 +36,7 @@ export class Profile4PopupCameraGalleryPage {
       ImagePicker.requestReadPermission();
       ImagePicker.getPictures(options).then((results) => {
         for (var i = 0; i < results.length; i++) {
-            alert('Image URI: ' + results[i]);
+            this.viewCtrl.dismiss(results[i]);
         }
     }, (err) => { alert(err)});
     }

@@ -56,6 +56,7 @@ import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
 import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
+import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
 
 
 
@@ -117,7 +118,8 @@ import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
-     ChallengeListPage
+     ChallengeListPage,
+     PrivacyPolicyPage
 
 
     
@@ -191,7 +193,8 @@ import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
-     ChallengeListPage
+     ChallengeListPage,
+     PrivacyPolicyPage
 
 
   ],

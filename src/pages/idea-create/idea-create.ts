@@ -109,7 +109,6 @@ export class IdeaCreatePage {
     let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
     uploadPhotoModal.onDidDismiss(data => {
      this.idea.image = data;
-
    });
    uploadPhotoModal.present();
   }
