@@ -1,3 +1,35 @@
 page-protopidea-challenge-folders {
-
+    .main-idea-list{
+        background: #fff;
+        background-size: cover;
+        margin-top: -20px;
+        padding-bottom: 1px;
+    }
+    .form__button-cv--icon-third{
+        border: none;
+        background: #e8920c !important;
+        width: 90%;
+        padding: 15px 0;
+        border-radius: 50px;
+        color: #f3fbfc;
+        display: block;
+        margin: 25px auto 20px ;
+        background-position: 60px 10px;
+    }
+    .header{
+        &__list-link-goblet--active{
+            background-position: -80px;
+            background: url(../assets/img/goblet-active.png) no-repeat;
+            width: 26px;
+            height: 24px;
+            margin-bottom: 3px;
+	    }
+        &__list-link-cloud{
+            background-position: -160px;
+            background: url(../assets/img/cloud.png) no-repeat ;
+            width: 28px;
+            height: 24px;
+           
+	    }
+    }        
 }

@@ -56,8 +56,13 @@ import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
 import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
+import { GroupsPortfolioOwnerPage } from '../pages/groups-portfolio-owner/groups-portfolio-owner';
+import { SharedWithPage } from '../pages/shared-with/shared-with';
+import { ImagesAndVideoPage } from '../pages/images-and-video/images-and-video';
+import { PopupProjectPage } from '../pages/popup-project/popup-project';
+import { PopupProjectItemsPage } from '../pages/popup-project-items/popup-project-items';
+import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-cloud';
 import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
-
 
 
 
@@ -119,10 +124,17 @@ import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
      ChallengeListPage,
+     GroupsPortfolioOwnerPage,
+     SharedWithPage,
+     ImagesAndVideoPage,
+     PopupProjectPage,
+     PopupProjectItemsPage,
+     UploadFilesCloudPage,
      PrivacyPolicyPage
 
 
     
+
   ],
   imports: [
     JsonpModule,
@@ -189,12 +201,18 @@ import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
      PopupFeedbackPage,
      ProtopideaChallengePage,
      ProtopideaChallengeListPage,
-
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
      ChallengeListPage,
+     GroupsPortfolioOwnerPage,
+     SharedWithPage,
+     ImagesAndVideoPage,
+     PopupProjectPage,
+     PopupProjectItemsPage,
+     UploadFilesCloudPage,
      PrivacyPolicyPage
+
 
 
   ],

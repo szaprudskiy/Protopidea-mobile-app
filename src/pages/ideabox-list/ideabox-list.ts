@@ -58,9 +58,10 @@ export class IdeaboxListPage {
         });
   }
 
-
+  
   goToCreateIdea(){
     this.navCtrl.push(IdeaCreatePage,{},{animate: true, direction: 'right', })
+
   }
 
   goToMenu(){
@@ -98,4 +99,5 @@ export class IdeaboxListPage {
     let groupsModal = this.modalCtrl.create(IdeaboxFollowedGroupsPage);
     groupsModal.present();
   }
+
 }
