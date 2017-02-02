@@ -19,4 +19,7 @@ export class IdeaboxFollowedGroupsPage {
     console.log('ionViewDidLoad IdeaboxFollowedGroupsPage');
   }
 
+  close() {
+    this.navCtrl.pop();
+  }
 }

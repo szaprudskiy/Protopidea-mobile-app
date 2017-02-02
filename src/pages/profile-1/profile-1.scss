@@ -12,9 +12,11 @@
 	&__title{
 		margin-bottom: 20px;
 	}
-	&__link-upload{
-
-		
+	&__link-upload {
+		img{
+			width: 100px;
+			border-radius: 50%
+		}
 	}
 	&__dots{
 		margin-top: 20px;

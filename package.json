@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "Protopidea",
+  "author": "Point Digital",
+  "homepage": "www.protopidea.com",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",

@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Platform } from 'ionic-angular';
+import { NavController, NavParams, Platform, ModalController,ViewController } from 'ionic-angular';
 import { IdeaCreatePage } from '../idea-create/idea-create';
 import { IdeaCreate2Page } from '../idea-create2/idea-create2';
 import { MyPage } from '../menu/menu';
 import { ProtopideaChallengeListPage } from '../protopidea-challenge-list/protopidea-challenge-list';
 import { ProtopideaChallengePage} from '../protopidea-challenge/protopidea-challenge';
 import { File } from 'ionic-native';
+import { IdeaboxLikesPage } from '../ideabox-likes/ideabox-likes';
+import { IdeaboxSharePage } from '../ideabox-share/ideabox-share';
+import { IdeaboxPopupPage } from '../ideabox-popup/ideabox-popup';
+import { IdeaboxCommentsPage } from '../ideabox-comments/ideabox-comments';
+import { IdeaboxFollowedGroupsPage } from '../ideabox-followed-groups/ideabox-followed-groups';
+import { Storage } from '@ionic/storage';
 
 /*
   Generated class for the IdeaboxList page.
@@ -19,31 +25,39 @@ import { File } from 'ionic-native';
 })
 export class IdeaboxListPage {
 
-  storageDirectory:string = ''
+  ideas = []
+
   constructor(public navCtrl: NavController,
                public navParams: NavParams,
-               public platform: Platform) {}
+               public platform: Platform,
+               public modalCtrl: ModalController,
+               public storage: Storage,
+               public viewCtrl: ViewController) {
+               }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdeaboxListPage');
-
-      if(!this.platform.is('cordova')) {
-        return false;
-      }
-
-      if (this.platform.is('ios')) {
-        this.storageDirectory = cordova.file.documentsDirectory;
-      }
-      else if(this.platform.is('android')) {
-        this.storageDirectory = cordova.file.dataDirectory;
-        alert(this.storageDirectory);
-      }
-      else {
-        // exit otherwise, but you could add further types here e.g. Windows
-        return false;
-      }
-    File.checkDir(this.storageDirectory, '').then(_ => alert('yay')).catch(err => alert('boooh'));
+    //this.storage.set('ideas',[]);
+    this.storage.get('ideas')
+        .then((val) => {
+              if (val ==null){
+                this.storage.set('ideas',[]);
+              } else{
+                this.ideas = val;
+              }
+        });
   }
+  ionViewDidEnter(){
+    this.storage.get('ideas')
+        .then((val) => {
+              if (val ==null){
+                this.storage.set('ideas',[]);
+              } else{
+                this.ideas = val;
+              }
+        });
+  }
+
   
   goToCreateIdea(){
     this.navCtrl.push(IdeaCreatePage,{},{animate: true, direction: 'right', })
@@ -62,5 +76,28 @@ export class IdeaboxListPage {
     this.navCtrl.push(IdeaCreate2Page)
   }
 
-  
+  goToIdea(params : any){
+    this.navCtrl.push(IdeaCreate2Page,{idea:params});
+  }
+
+  openLikes(){
+    let likesModal = this.modalCtrl.create(IdeaboxLikesPage);
+    likesModal.present();
+  }
+
+  openShare(){
+    let shareModal = this.modalCtrl.create(IdeaboxSharePage);
+    shareModal.present();
+  }
+
+  openMessages(){
+    let messagesModal = this.modalCtrl.create(IdeaboxCommentsPage);
+    messagesModal.present();
+  }
+
+  openFollowedGroups(){
+    let groupsModal = this.modalCtrl.create(IdeaboxFollowedGroupsPage);
+    groupsModal.present();
+  }
+
 }

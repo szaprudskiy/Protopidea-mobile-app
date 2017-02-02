@@ -62,6 +62,8 @@ import { ImagesAndVideoPage } from '../pages/images-and-video/images-and-video';
 import { PopupProjectPage } from '../pages/popup-project/popup-project';
 import { PopupProjectItemsPage } from '../pages/popup-project-items/popup-project-items';
 import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-cloud';
+import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
+
 
 
 @NgModule({
@@ -127,7 +129,12 @@ import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-c
      ImagesAndVideoPage,
      PopupProjectPage,
      PopupProjectItemsPage,
-     UploadFilesCloudPage
+     UploadFilesCloudPage,
+     PrivacyPolicyPage
+
+
+    
+
   ],
   imports: [
     JsonpModule,
@@ -203,7 +210,10 @@ import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-c
      ImagesAndVideoPage,
      PopupProjectPage,
      PopupProjectItemsPage,
-     UploadFilesCloudPage 
+     UploadFilesCloudPage,
+     PrivacyPolicyPage
+
+
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

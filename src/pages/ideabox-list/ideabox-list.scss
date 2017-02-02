@@ -64,4 +64,16 @@ page-ideabox-list {
 			height: 24px;
 		}
 	}
+
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+	
+	.clearfix{
+		clear: both;
+	}
+
 }

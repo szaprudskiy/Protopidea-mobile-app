@@ -19,4 +19,8 @@ export class IdeaboxPopupPage {
     console.log('ionViewDidLoad IdeaboxPopupPage');
   }
 
+  close(){
+    this.navCtrl.pop();
+  }
+
 }

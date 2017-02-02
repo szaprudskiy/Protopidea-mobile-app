@@ -19,4 +19,7 @@ export class TermsAndConditionsPage {
     console.log('ionViewDidLoad TermsAndConditionsPage');
   }
 
+  close(){
+    this.navCtrl.pop();
+  }
 }

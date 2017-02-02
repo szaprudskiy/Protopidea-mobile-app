@@ -20,5 +20,8 @@ export class PrivacyPolicyPage {
     console.log('ionViewDidLoad PrivacyPolicyPage');
   }
 
+  close(){
+    this.navCtrl.pop();
+  }
 
 }

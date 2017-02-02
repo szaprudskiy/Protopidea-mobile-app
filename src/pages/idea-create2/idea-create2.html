@@ -23,16 +23,16 @@
 		
       <div class="main-idea">	
 			<a href="#" class="main__title-screenidea">Name of the owner</a>	
-			<a href="#" class="main__imgidea"><img src="assets/img/idea-photo.png" alt=""></a>
-			<ul class="main__listidea">
+			<a href="#" class="main__imgidea"><img style="width:300px;"src="{{idea.image}}" alt=""></a>
+			<!--<ul class="main__listidea">
 				<li><img src="assets/img/idea-photo2.png" alt=""></li>
 				<li><img src="assets/img/idea-photo2.png" alt=""></li>
 				<li><img src="assets/img/idea-photo2.png" alt=""></li>
-			</ul>
+			</ul>-->
 				<a class="main__link-collaborate" href="#">Collaborate</a>
 			
 			<!--<input class="main__input main__input-color" type="text" placeholder="Invention Name">-->
-			<p class="main__input main__input-color">Awesome Big Idea</p>
+			<p class="main__input main__input-color">{{idea.title}}</p>
 			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="A brief description">-->
 			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickCategory()">Category</a>
 			<p class="categorydropdown" *ngIf="categorydrop">
@@ -40,13 +40,11 @@
 			</p>
 			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="Promotional Description">-->
 			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickInvention()">Invention Description</a>
-			<p class="categorydropdown" *ngIf="inventiondrop">
-				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+			<p class="categorydropdown" *ngIf="inventiondrop">{{idea.briefDesc}}
 			</p>
 			<!--<input class="main__input main__input-arrdown main__input-color" type="text" placeholder="">-->
 			<a href="#" class="main__input main__input--arrdown main__input-color" (click)="clickPromotion()">Promotion Description</a>
-			<p class="categorydropdown" *ngIf="promotiondrop">
-				Sportsman delighted improving dashwoods gay instantly happiness six. Ham now amounted absolute not mistaken way pleasant whatever. At an these still no dried folly stood thing. Rapid it on hours hills it seven years. If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective. Confined so graceful building opinions whatever trifling in. Insisted out differed ham man endeavor expenses. At on he total their he songs. Related compact effects is on settled do. 
+			<p class="categorydropdown" *ngIf="promotiondrop">{{idea.promDesc}}
 			</p>
 		</div>
 		<div class="footer">

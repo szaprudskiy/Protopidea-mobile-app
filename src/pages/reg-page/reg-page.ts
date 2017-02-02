@@ -9,6 +9,7 @@ import { TermsAndConditionsPage} from '../terms-and-conditions/terms-and-conditi
 import { ForgotPassPage } from '../forgot-pass/forgot-pass';
 import { UserController } from '../../providers/user-controller';
 import { Http } from '@angular/http';
+import { Storage } from '@ionic/storage';
 import {InAppBrowser} from 'ionic-native';
 import 'rxjs/add/operator/map';
 
@@ -26,14 +27,13 @@ import 'rxjs/add/operator/map';
   })
 export class RegPage {
 
-  
-
   constructor(
       public navCtrl: NavController, 
       public navParams: NavParams,
       public menuCtrl: MenuController,
       public userCtrl: UserController,
-      public http: Http) {}
+      public http: Http,
+      public storage: Storage) {}
   regForm = {
     name: '',
     email: '',
@@ -65,18 +65,19 @@ export class RegPage {
 
   regWithFacebook(){
     facebookConnectPlugin.login(['email'], function(response) {
-            alert('Logged in');
             alert(JSON.stringify(response.authResponse));
+            this.storage.set('facebook',response.authResponse);
         }, function(error){
             alert(error);
         });
   }
   onSuccess(response) {
-    console.log(response);
+    alert(JSON.stringify(response));
+    this.storage.set('twitter',response);
   }
 
   onError(response) {
-    console.log(response);
+    alert(JSON.stringify(response));
   }
 
   regWithTwitter(){
@@ -90,8 +91,11 @@ export class RegPage {
       'offline': true
     }
     )
-      .then(res => alert(res))
-      .catch(err => alert(err));
+      .then(res => {
+        alert(JSON.stringify(res));
+        this.storage.set('google',res);
+        })
+      .catch(err => alert(JSON.stringify(err)));
   }
 
   regWithXing(){

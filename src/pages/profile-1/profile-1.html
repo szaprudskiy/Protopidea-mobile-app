@@ -2,7 +2,7 @@
 <div class="user-profile">
 		<h5 class="user-profile__title">User Profile</h5>
 		<a class="user-profile__link-upload" href="#" (click)="clickAvatar()">
-			<img src="assets/img/circle.png" alt="">
+			<img src="{{profile.avatar}}" alt="">
 		</a>
 		<ul class="user-profile__dots">
 			<li class="user-profile__item"><a class="user-profile__active" href="#"></a></li>
@@ -12,9 +12,9 @@
 	</div>
 	<div class="form">
 		<form action="">
-			<input class="form__item-text" type="text" placeholder="First Name" required>
-			<input class="form__item-text" type="text" placeholder="Family Name" required>
-			<input class="form__item-text" type="email" placeholder="Email" required>
+			<input class="form__item-text" [(ngModel)]="profile.firstName" name="name" type="text" placeholder="First Name" required>
+			<input class="form__item-text" [(ngModel)]="profile.familyName" name="last" type="text" placeholder="Family Name" required>
+			<input class="form__item-text" [(ngModel)]="profile.email" name="email" type="email" placeholder="Email" required>
 			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>-->
 				<a class="form__item-text form__item-icon" (click)="clickSkills()" href="#">Skills</a>
 				<div class="form-skills" *ngIf="formskill">

@@ -12,7 +12,7 @@
       </div>
       <div class="form">
         <form action="">
-          <input class="form__item-text" type="number" placeholder="Mobile phone">
+          <input class="form__item-text" [(ngModel)]="profile.mobilePhone" name="mobile" type="number" placeholder="Mobile phone">
           <!--<input class="form__item-text form__item-icon" type="text" placeholder="Adress" required>
           <input class="form__item-text form__item-icon" type="text" placeholder="Gender" required>-->
           <a href="#" class="form__item-text form__item-icon" (click)="clickAdress()">Adress</a>
@@ -27,7 +27,7 @@
             <a class="form__item-text form__item-icon" href="#">Male</a>
             <a class="form__item-text form__item-icon" href="#">Female</a>	
 		    	</div>
-          <input class="form__item-text" type="text" placeholder="Your URL" >
+          <input class="form__item-text" [(ngModel)]="profile.url" name="url" type="text" placeholder="Your URL" >
           <button class="form__button-cv">Upload CV</button>
           <button class="form__button" (click)="goToProfile3()">Saving skip</button>
         </form>
