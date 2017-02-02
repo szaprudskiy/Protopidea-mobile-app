@@ -15,7 +15,7 @@
 
             <li class="header__item header__item--active"><a class="header__list-link header__list-link-idea--active" href="#"></a></li>
             <li class="header__item"><a class="header__list-link header__list-link-goblet" href="#"></a></li>
-            <li class="header__item"><a (click)="goToIdeaCreate()" class="header__list-link header__list-link-cloud" href="#"></a></li>
+            <li class="header__item"><a (click)="goToCreateIdea()" class="header__list-link header__list-link-cloud" href="#"></a></li>
             <li class="header__item"><a class="header__list-link header__list-link-bell" href="#"></a></li>
 
           </ul>
@@ -83,6 +83,11 @@
 					</ul>
 				</div>
 			</div>	
-			<a class="main-idea-list__link-submit" href="#" (click)="goToCreateIdea()" >Submit your idea</a>
+		
 		</div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    	<a class="main-idea-list__link-submit" href="#" (click)="goToCreateIdea()" >Submit your idea</a>
+  </ion-toolbar>
+</ion-footer>

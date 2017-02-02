@@ -23,7 +23,6 @@ export class HelloIonicPage {
               public _jsonp: Jsonp,
               public userCtrl: UserController,
                ) {
-    
   }
 
   regForm = {

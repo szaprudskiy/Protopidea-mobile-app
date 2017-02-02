@@ -59,6 +59,7 @@ import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -108,7 +109,6 @@ import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
      SearchResultsPage,
      FailedLoginPage,
      QuotesPagePage,
-
      RegThankPage,
      MyGroupsPage,
      PopupFeedbackPage,
