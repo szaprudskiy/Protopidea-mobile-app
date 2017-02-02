@@ -54,10 +54,14 @@ import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
 import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
-import {UserController} from '../providers/user-controller';
+import { UserController } from '../providers/user-controller';
 import { Storage } from '@ionic/storage';
-
-
+import { GroupsPortfolioOwnerPage } from '../pages/groups-portfolio-owner/groups-portfolio-owner';
+import { SharedWithPage } from '../pages/shared-with/shared-with';
+import { ImagesAndVideoPage } from '../pages/images-and-video/images-and-video';
+import { PopupProjectPage } from '../pages/popup-project/popup-project';
+import { PopupProjectItemsPage } from '../pages/popup-project-items/popup-project-items';
+import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-cloud';
 
 
 @Component({
@@ -69,7 +73,7 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
  
-  rootPage: any = ProtopideaChallengePage;
+  rootPage: any = UploadFilesCloudPage;
 
 
 

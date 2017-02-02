@@ -1,38 +1,43 @@
- .find-coll-border{
-     border-bottom: 1px solid #42c4d7;
-    padding: 16px 0 14px 40px !important;
+ page-find-collaborators{
+    .find-coll-border{
+        border-bottom: 1px solid #42c4d7;
+        padding: 16px 0 14px 40px !important;
+    }
+    .main__input-white{
+        color: #fff !important;
+    }
+    .item-md{
+        background: transparent;
+        color: #fff;
+            border-bottom: 1px solid #42c5d8;
+    }
+    .checkbox-md .checkbox-icon{
+        background: transparent;
+        border-color: #6ecddb;
+        
+    }
+    .item.item-md .checkbox-md{
+        margin: 9px 20px 9px 4px;
+    }
+    .list-md .item-block .item-inner{
+        border-bottom: none;
+    }
+    .form__item-coll-bor{
+        border-top: 1px solid #deff0d !important;
+        
+    }
+    .coll-checkbox{
+        border: 1px solid #deff0d !important;
+        border-width: 1px 0 1px 0 !important;
+        font-family: "RobotoRegular";
+    }
+    .form__button--bold{
+        font-weight: bold;
+    }
+
+    // ios
+    // .item-ios{
+    //     background-color: transparent;
+    // }
+
  }
- .main__input-white{
-     color: #fff !important;
- }
- .item-md{
-     background: transparent;
-      color: #fff;
-          border-bottom: 1px solid #42c5d8;
- }
- .checkbox-md .checkbox-icon{
-    background: transparent;
-    border-color: #6ecddb;
-    
- }
- .item.item-md .checkbox-md{
-     margin: 9px 20px 9px 4px;
- }
- .list-md .item-block .item-inner{
-     border-bottom: none;
- }
- .form__item-coll-bor{
-     border-top: 1px solid #deff0d !important;
-     
- }
- .coll-checkbox{
-     border: 1px solid #deff0d !important;
-    border-width: 1px 0 1px 0 !important;
-    font-family: "RobotoRegular";
- }
- .form__button--bold{
-     font-weight: bold;
- }
-//  .button-effect{
-//      background: none;
-//  }

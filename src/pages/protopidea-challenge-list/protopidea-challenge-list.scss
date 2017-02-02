@@ -1,15 +1,70 @@
-.checkbox-text-color{
-    color: #1295a9;
-}
-.coll-checkbox--flex{
-    display: flex;
-    border: none !important;
-}
-.main-idea-list__title-folders--center{
-    text-align: center;
-}
-.main__link-collaborate--orange{
-    background: #e8920c;
-    color: #fff;
-    font-family: "RobotoRegular";
-}
+   
+        .bg-challenge{
+           background: #fff;
+           padding-bottom: 10px;
+       }
+       .challenge-item{
+           text-align: center;
+           &__img{
+               img{
+                    border-radius: 20px !important; 
+               }
+           }
+           &__icon{
+               background: url(../assets/img/challenge-share.png) no-repeat;
+               background-position: 88% 0;
+                margin: 10px 0;
+                color: #1295a9;
+           }
+       }
+       .list-md{
+           margin: 0;
+       }
+        .checkbox-text-color{
+            color: #1295a9 !important;
+        }
+        .coll-checkbox--flex{
+            display: flex;
+            border: none !important;
+            padding: 0 0 0 20px;
+        }
+        .main-idea-list__title-folders--center{
+            text-align: center;
+        }
+        .main__link-collaborate--orange{
+            background: #e8920c;
+            color: #fff;
+            font-family: "RobotoRegular";
+        }
+        .item-md{
+            background: transparent;
+            color: #fff;
+           // border-bottom: 1px solid #42c5d8;
+        }
+        .checkbox-md .checkbox-icon{
+           // background: transparent;
+            border-color: #6ecddb;
+            
+        }
+        .item.item-md .checkbox-md{
+            margin: 9px 20px 9px 4px;
+        }
+        .list-md .item-block .item-inner{
+            border-bottom: none;
+        }
+        .header{
+                &__list-link-goblet--active{
+                    background-position: -80px;
+                    background: url(../assets/img/goblet-active.png) no-repeat;
+                    width: 26px;
+                    height: 24px;
+                    margin-bottom: 3px;
+                }
+                &__list-link-cloud{
+                    background-position: -160px;
+                    background: url(../assets/img/cloud.png) no-repeat ;
+                    width: 28px;
+                    height: 24px;
+                
+                }
+            }   

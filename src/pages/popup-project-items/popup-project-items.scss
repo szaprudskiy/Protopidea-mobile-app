@@ -1,0 +1,27 @@
+page-popup-project-items {
+      .holder-links{
+        &__title{
+            text-align: center;
+            color: #f7f7f7;
+            font-size: 18px;
+        }
+    }  
+    .main__link-hide--color{
+        background: rgba(83, 199, 217, .6);
+        color: #fefefe;
+    }
+    .project-items{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        // &__link{
+        //     width: 90px;
+        //     height: 60px;
+        //     border-radius: 20px;
+        //     background: rgba(83, 199, 217, .6);
+        // }
+    }
+    .holder-links--mar{
+        margin-top: 110px;
+    }
+}

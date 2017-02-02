@@ -5,29 +5,37 @@
             <input class="header__input" type="text" placeholder="Search">
           </form>
           <div class="header__holder-menu">
-            <a href="#"><img src="/assets/img/slack-icon.png" alt=""></a>
+            <a href="#"><img src="assets/img/slack-icon.png" alt=""></a>
             <a href="#" (click)="goToMenu()"><img src="/assets/img/menu-icon.png" alt=""></a>
           </div>
         </div>
         <div class="header__bot">
           <ul class="header__list">
-            <li><a class="header__list-link header__list-link-idea" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-goblet" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-cloud" href="#"></a></li>
-            <li><a class="header__list-link header__list-link-bell" href="#"></a></li>
+            <li class="header__item"><a class="header__list-link header__list-link-idea" href="#"></a></li>
+            <li class="header__item header__item--active"><a class="header__list-link header__list-link-goblet--active" href="#"></a></li>
+            <li class="header__item"><a class="header__list-link header__list-link-cloud" href="#"></a></li>
+            <li class="header__item"><a class="header__list-link header__list-link-bell" href="#"></a></li>
           </ul>
         </div>	
       </div>
       <div class="bg-challenge">
-          <ion-list class="coll-checkbox coll-checkbox--flex">
-                <ion-item class="checkbox-text-color">
-                  <ion-label>Companies</ion-label>
-                  <ion-checkbox [(ngModel)]="company"></ion-checkbox>
-                </ion-item>
-                <ion-item class="checkbox-text-color">
-                  <ion-label>Protopidea</ion-label>
-                <ion-checkbox [(ngModel)]="Protopidea"></ion-checkbox>
-                </ion-item>
-          </ion-list>	
+            <ion-list class="coll-checkbox coll-checkbox--flex">
+                  <ion-item class="checkbox-text-color ">
+                    <ion-label >Companies</ion-label>
+                    <ion-checkbox [(ngModel)]="company"></ion-checkbox>
+                  </ion-item>
+                  <ion-item class="checkbox-text-color">
+                    <ion-label>Protopidea</ion-label>
+                  <ion-checkbox [(ngModel)]="Protopidea"></ion-checkbox>
+                  </ion-item>
+            </ion-list>	
+            <div class="challenge-item">
+              <p class="challenge-item__img"><img src="assets/img/idea-photo.png" alt=""></p>
+               <p class="challenge-item__icon">Ya llega el Logitech Challenge! </p>  
+            </div> 
+            <div class="challenge-item">
+              <p class="challenge-item__img"><img src="assets/img/idea-photo.png" alt=""></p>
+               <p class="challenge-item__icon">Ya llega el Logitech Challenge! </p>  
+            </div> 
       </div>
 </ion-content>
