@@ -33,7 +33,15 @@
 			<a class="form__item-text form__item-icon" (click)="clickLanguage()" href="#">Language</a>
 
 			<div class="form-skills" *ngIf="langdropdown">
-				<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>
+				<!--<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>-->
+				<ion-list>
+					<ion-item>
+						<ion-label>First Language</ion-label>
+						<ion-select [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
+							<ion-option *ngFor=" let lang of languages" [value]="lang.name">{{lang.name}}</ion-option>
+						</ion-select>
+					</ion-item>
+				</ion-list>
 				<a class="form__item-text form__item-icon--add" href="#">Add language</a>	
 			</div>
 				

@@ -28,8 +28,7 @@
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
     <preference name="Fullscreen" value="false" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-    <preference name="SplashScreenDelay" value="0"/>
-    <preference name="SplashScreen" value="none"/>
+    <preference name="SplashScreenDelay" value="10000" />
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>

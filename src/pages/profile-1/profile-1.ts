@@ -3,6 +3,7 @@ import { Profile2Page } from '../profile-2/profile-2';
 import { NavController, NavParams,ModalController,ViewController } from 'ionic-angular';
 import {Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 import { Storage } from '@ionic/storage';
+import { ProfileProvider} from '../../providers/profile-provider';
 import {Crop} from 'ionic-native';
 
 /*
@@ -14,6 +15,7 @@ import {Crop} from 'ionic-native';
 @Component({
   selector: 'page-profile-1',
   templateUrl: 'profile-1.html',
+  providers: [ProfileProvider]
 })
 export class Profile1Page {
  
@@ -21,7 +23,8 @@ export class Profile1Page {
 constructor(public navCtrl: NavController,
             public navParams: NavParams,
             public modalCtrl: ModalController,
-            public storage: Storage) {
+            public storage: Storage,
+            public profilePr: ProfileProvider) {
               this.storage.get('profile')
                 .then((val) => {
                       if (val ==null){
@@ -31,6 +34,14 @@ constructor(public navCtrl: NavController,
                         this.profile = val;
                       }
                 });
+              this.profilePr.getCountries().then(data => {
+                this.countries = data;
+                console.log(this.countries)
+              });
+              this.profilePr.getLanguages().then(data => {
+                this.languages = data;
+                 console.log(this.languages)
+              });
             }
   
   profile={
@@ -49,6 +60,9 @@ constructor(public navCtrl: NavController,
     gender: '',
     url:'',
   }
+  languages : any;
+  language: any;
+  countries: any;
   formskill = false;
   langdropdown = false;
   ionViewDidLoad() {
