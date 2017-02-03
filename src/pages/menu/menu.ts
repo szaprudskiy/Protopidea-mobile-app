@@ -6,6 +6,8 @@ import { Profile1Page } from '../profile-1/profile-1';
 import { TermsAndConditionsPage} from '../terms-and-conditions/terms-and-conditions';
 import { PrivacyPolicyPage} from '../privacy-policy/privacy-policy';
 import { UserController } from '../../providers/user-controller';
+import { PopupFeedbackPage } from '../popup-feedback/popup-feedback'
+import { IdeaboxCategoriesPage } from '../ideabox-categories/ideabox-categories'
 
 
 @Component({
@@ -53,6 +55,16 @@ export class MyPage {
 
   goToLogOut(){
     this.userCtrl.logout();
+  }
+
+  goToFeedback(){
+    let feedback = this.modalCtrl.create(PopupFeedbackPage)
+    feedback.present()
+  }
+
+  goToCategories(){
+    let categories = this.modalCtrl.create(IdeaboxCategoriesPage)
+    categories.present()
   }
 
 //  openMenu() {

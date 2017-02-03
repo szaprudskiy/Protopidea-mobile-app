@@ -5,6 +5,7 @@ import { Profile4PopupCameraGalleryPage} from '../profile-4-popup-camera-gallery
 import { IdeaCreate2Page } from '../idea-create2/idea-create2';
 import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
 import { Storage } from '@ionic/storage';
+import {IdeaboxController}  from '../../providers/ideabox-controller'
 
 /*
   Generated class for the IdeaCreate page.
@@ -14,15 +15,20 @@ import { Storage } from '@ionic/storage';
 */
 @Component({
   selector: 'page-idea-create',
-  templateUrl: 'idea-create.html'
+  templateUrl: 'idea-create.html',
+  providers: [IdeaboxController]
 })
 export class IdeaCreatePage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public modalCtrl: ModalController,
-              public storage: Storage) {
-    this.initializeCategories();
+              public storage: Storage,
+              public ideaCtrl: IdeaboxController) {
+              this.ideaCtrl.getCategories().then(data => {
+                    this.categories = data;
+                    console.log(this.categories)
+                  });
   }
 
   idea = {
@@ -36,7 +42,8 @@ export class IdeaCreatePage {
   category1 = 'First Category'
   category2 = 'Second Category'
   category3 = 'Third Category'
-  categories: string[]
+  categories: any
+  search: any
   searchQuery: string = ''
   showCat1=false
   showCatList=false
@@ -49,8 +56,7 @@ export class IdeaCreatePage {
     this.navCtrl.push(MyPage);
   }
   initializeCategories() {
-    this.categories = [ "DIGITAL SERVICE","ELECTRONICS","GADGETS & ACCESSORIES","HEALTH CARE","HOBBYS & TOYS" ,"HOME & OFFICE","INDUSTRIAL","LUXURY GOODS" ,"PC & MOBILES","SCIENCES","SMART FOOD & BEVERAGES" ,"SMART PACKAGING","SMART WEARABLES","SOFTWARE & APPS","SPORT & OUTDOORS" ,"TECHNOLOGY","MOBILITY & TRANSPORT"
-    ];
+    this.search = this.categories
   }
 
   ionViewDidLoad() {
