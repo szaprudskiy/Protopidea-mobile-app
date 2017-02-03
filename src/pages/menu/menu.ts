@@ -8,6 +8,7 @@ import { PrivacyPolicyPage} from '../privacy-policy/privacy-policy';
 import { UserController } from '../../providers/user-controller';
 import { PopupFeedbackPage } from '../popup-feedback/popup-feedback'
 import { IdeaboxCategoriesPage } from '../ideabox-categories/ideabox-categories'
+import { SharedGroupsPage} from '../shared-groups/shared-groups'
 
 
 @Component({
@@ -67,6 +68,10 @@ export class MyPage {
     categories.present()
   }
 
+  goToShared(){
+    let shared = this.modalCtrl.create(SharedGroupsPage)
+    shared.present()
+  }
 //  openMenu() {
 //    this.menuCtrl.open();
 //  }

@@ -12,12 +12,12 @@
 						</div>
 					<div class="user">
 						<img src="assets/img/user-photo.png" alt="" (click)='goToProfile()'>
-						<p class="user__name">Mikael Akerfeldt</p>
+						<p class="user__name" (click)='goToProfile()'>Mikael Akerfeldt</p>
 					</div>
 					<ul class="category-list">
 						<li><a class="category-list__linkq" href="#" (click)="goToCategories()">Categories</a></li>
 						<li><a class="category-list__linkw" href="#" (click)="goToCollaborators()">Find collaborators</a></li>
-						<li><a class="category-list__linke" href="#">Shared with me</a></li>
+						<li><a class="category-list__linke" href="#" (click)="goToShared()"> Shared with me</a></li>
 						<li><a class="category-list__linkr" href="#">Portfolio</a></li>
 						<li><a class="category-list__linkt" href="#" (click)="goToFeedback()">Give feedback</a></li>
 						<li><a class="category-list__linky" href="#" (click)="goToSettings()">help and settings</a></li>
