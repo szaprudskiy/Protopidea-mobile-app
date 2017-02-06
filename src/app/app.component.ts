@@ -83,7 +83,7 @@ export class MyApp {
 
  
 
-  rootPage: any = NotificationsPage;
+  rootPage: any = Settings10FaqPage;
 
  // rootPage: any = QuotesPagePage;
 
