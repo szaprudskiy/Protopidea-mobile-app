@@ -19,35 +19,17 @@
 			</div>	
 		</div>
     <div class="main-idea-list">
-			<div class="main-idea-list__border ">
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Awesome Big Idea</p>
-					<img class="main-idea-list__img" src="assets/img/idea-list1.png" alt="" width="130px" height="70px">
-				</div>
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Other Good Idea</p>
-					<img class="main-idea-list__img"  src="assets/img/idea-list2.png" alt="" width="130px" height="70px">
-				</div>
-			</div>	
-			<div class="main-idea-list__border ">
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Another Insane Idea</p>
-					<img class="main-idea-list__img"  src="assets/img/idea-list3.png" alt="" width="130px" height="70px">
-				</div>
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Some Huge Idea</p>
-					<img class="main-idea-list__img"  src="assets/img/idea-list4.png" alt="" width="130px" height="70px">
-				</div>
-			</div>	
-			<div class="main-idea-list__border ">
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Another Insane Idea</p>
-					<img class="main-idea-list__img" src="assets/img/idea-list5.png" alt="" width="130px" height="70px">
-				</div>
-				<div class="main-idea-list__item">
-					<p class="main-idea-list__title">Some Huge Idea</p>
-					<img class="main-idea-list__img"  src="assets/img/idea-list6.png" alt="" width="130px" height="70px">
-				</div>
-			</div>	
-		</div>
+		<ion-grid>
+  			<ion-row wrap>
+				<ion-col width-50 *ngFor="let cat of categories" >
+					<div class="main-idea-list__border ">
+						<div class="main-idea-list__item">
+							<p class="main-idea-list__title">{{cat.name}}</p>
+							<img class="main-idea-list__img" src="assets/img/idea-list1.png" alt="" width="130px" height="70px">
+						</div>
+					</div>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
 </ion-content>

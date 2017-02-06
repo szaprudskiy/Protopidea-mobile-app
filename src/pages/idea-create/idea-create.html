@@ -5,7 +5,7 @@
               <input class="header__input" type="text" placeholder="Search">
             </form>
             <div class="header__holder-menu">
-              <a href="slack://channel?id=<CHANNEL-ID>&team=<TEAM-ID>"><img src="assets/img/slack-icon.png" alt=""></a>
+              <a href="slack://"><img src="assets/img/slack-icon.png" alt=""></a>
               <a href="#" (click)="goToMenu()"><img src="assets/img/menu-icon.png" alt=""></a>
             </div>
           </div> 
@@ -34,18 +34,6 @@
         <!--<input class="main__input main__input-arrdown" type="text" placeholder="Category">-->
         <a href="#" class="main__input main__input--arrdown" (click)="catTogleList()">Categories</a>
 
-        <a href="#" *ngIf="showCatList" class="main__input main__input--arrdown" (click)="catTogle()">{{category}}</a>
-        <div  *ngIf="showCat">
-          <ion-searchbar (ionInput)="categorySearch($event)">
-          </ion-searchbar>
-            <ul>
-              <li *ngFor="let categ of categories">
-                <button (click)="setCat($event)" class="select-category" value="{{categ}}">
-                    {{categ}}
-                </button>
-              </li>
-            </ul>
-
         <div *ngIf="showCatList" class="cat-container">
             <a href="#" class="main__input main__input--arrdown" (click)="catTogle1()">{{category1}}</a>
             <div  *ngIf="showCat1">
@@ -54,7 +42,7 @@
               </ion-searchbar>
             <ul>
                 <li *ngFor="let categ of categories"><button (click)="setCat1($event)" class="select-category" value="{{categ}}">
-                    {{categ}}
+                    {{categ.name}}
                 </button></li>
               </ul>
             </div>
@@ -65,7 +53,7 @@
               </ion-searchbar>
             <ul>
                 <li *ngFor="let categ of categories"><button (click)="setCat2($event)" class="select-category" value="{{categ}}">
-                    {{categ}}
+                    {{categ.name}}
                 </button></li>
               </ul>
             </div>
@@ -76,7 +64,7 @@
               </ion-searchbar>
             <ul>
                 <li *ngFor="let categ of categories"><button (click)="setCat3($event)" class="select-category" value="{{categ}}">
-                    {{categ}}
+                    {{categ.name}}
                 </button></li>
               </ul>
             </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { IdeaboxController} from '../../providers/ideabox-controller'
 
 /*
   Generated class for the IdeaboxCategories page.
@@ -9,14 +10,25 @@ import { NavController, NavParams } from 'ionic-angular';
 */
 @Component({
   selector: 'page-ideabox-categories',
-  templateUrl: 'ideabox-categories.html'
+  templateUrl: 'ideabox-categories.html',
+  providers: [IdeaboxController]
 })
 export class IdeaboxCategoriesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              public ideaCtrl: IdeaboxController,
+              ) {
+                 this.ideaCtrl.getCategories().then(data => {
+                    this.categories = data;
+                    console.log(this.categories)
+                  });
+              }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IdeaboxCategoriesPage');
   }
+
+  categories : any
 
 }

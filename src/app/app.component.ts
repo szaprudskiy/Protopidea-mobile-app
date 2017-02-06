@@ -80,7 +80,11 @@ export class MyApp {
   @ViewChild('myNav') nav: NavController
 
  
+
   rootPage: any = PopupDelete5Page;
+
+ // rootPage: any = QuotesPagePage;
+
 
 
 
