@@ -63,8 +63,14 @@ import { PopupProjectPage } from '../pages/popup-project/popup-project';
 import { PopupProjectItemsPage } from '../pages/popup-project-items/popup-project-items';
 import { UploadFilesCloudPage } from '../pages/upload-files-cloud/upload-files-cloud';
 import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
-
-
+import {UserController} from '../providers/user-controller';
+import { InvitePeoplePopupPage } from '../pages/invite-people-popup/invite-people-popup';
+import { InvitePopupUserPage } from '../pages/invite-popup-user/invite-popup-user';
+import { PopupDeletePage } from '../pages/popup-delete/popup-delete';
+import { PopupDelete2Page } from '../pages/popup-delete2/popup-delete2';
+import { PopupDelete3Page } from '../pages/popup-delete3/popup-delete3';
+import { PopupDelete4Page } from '../pages/popup-delete4/popup-delete4';
+import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
 
 @NgModule({
   declarations: [
@@ -130,10 +136,14 @@ import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
      PopupProjectPage,
      PopupProjectItemsPage,
      UploadFilesCloudPage,
-     PrivacyPolicyPage
-
-
-    
+     PrivacyPolicyPage,
+     InvitePeoplePopupPage,
+     InvitePopupUserPage,
+     PopupDeletePage,
+     PopupDelete2Page,
+     PopupDelete3Page,
+     PopupDelete4Page,
+     PopupDelete5Page
 
   ],
   imports: [
@@ -211,11 +221,16 @@ import { PrivacyPolicyPage } from '../pages/privacy-policy/privacy-policy';
      PopupProjectPage,
      PopupProjectItemsPage,
      UploadFilesCloudPage,
-     PrivacyPolicyPage
-
-
+     PrivacyPolicyPage,
+     InvitePeoplePopupPage,
+     InvitePopupUserPage,
+     PopupDeletePage,
+     PopupDelete2Page,
+     PopupDelete3Page,
+     PopupDelete4Page,
+     PopupDelete5Page
 
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},UserController]
 })
 export class AppModule {}
