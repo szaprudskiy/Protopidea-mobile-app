@@ -69,6 +69,8 @@ import { PopupDelete2Page } from '../pages/popup-delete2/popup-delete2';
 import { PopupDelete3Page } from '../pages/popup-delete3/popup-delete3';
 import { PopupDelete4Page } from '../pages/popup-delete4/popup-delete4';
 import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
+import { NotificationsPage } from '../pages/notifications/notifications';
+
 
 
 @Component({
@@ -81,7 +83,7 @@ export class MyApp {
 
  
 
-  rootPage: any = PopupDelete5Page;
+  rootPage: any = NotificationsPage;
 
  // rootPage: any = QuotesPagePage;
 

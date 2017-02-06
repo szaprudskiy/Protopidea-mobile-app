@@ -71,6 +71,8 @@ import { PopupDelete2Page } from '../pages/popup-delete2/popup-delete2';
 import { PopupDelete3Page } from '../pages/popup-delete3/popup-delete3';
 import { PopupDelete4Page } from '../pages/popup-delete4/popup-delete4';
 import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
+import { NotificationsPage } from '../pages/notifications/notifications';
+
 
 @NgModule({
   declarations: [
@@ -108,9 +110,9 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage,
-      IdeaboxCategoriesPage,
-      IdeaboxSharePage,
-      SubmenuPage ,
+     IdeaboxCategoriesPage,
+     IdeaboxSharePage,
+     SubmenuPage ,
      IdeaboxCommentsPage,
      FindCollaboratorsPage,
      PortfolioOwnerPage,
@@ -143,7 +145,8 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      PopupDelete2Page,
      PopupDelete3Page,
      PopupDelete4Page,
-     PopupDelete5Page
+     PopupDelete5Page,
+     NotificationsPage
 
   ],
   imports: [
@@ -228,7 +231,8 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      PopupDelete2Page,
      PopupDelete3Page,
      PopupDelete4Page,
-     PopupDelete5Page
+     PopupDelete5Page,
+     NotificationsPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},UserController]

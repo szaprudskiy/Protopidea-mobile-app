@@ -1,0 +1,73 @@
+<ion-content class="background">
+    <div class="header">
+          <div class="header__top">
+            <form action="">
+              <input class="header__input" type="text" placeholder="Search">
+            </form>
+            <div class="header__holder-menu">
+              <a href="slack://"><img src="assets/img/slack-icon.png" alt=""></a>
+              <a href="#" (click)="goToMenu()"><img src="assets/img/menu-icon.png" alt=""></a>
+            </div>
+          </div> 
+          <div class="header__bot">
+            <ul class="header__list">
+              <li class="header__item"><a (click)="goToIdeaList()" class="header__list-link header__list-link-idea" href="#"></a></li>
+              <li class="header__item"><a class="header__list-link header__list-link-goblet" href="#"></a></li>
+              <li class="header__item"><a class="header__list-link header__list-link-cloud" href="#"></a></li>
+              <li class="header__item header__item--active"><a class="header__list-link header__list-link-bell--active" href="#"></a></li>
+            </ul>
+          </div>
+      </div>
+        <div class="main-idea-list">
+			<div class="found-items">
+				<img class="found-items__img" src="assets/img/user-photo.png" alt="">
+				<div class="found-items__text">
+					<p class="found-items__name-color">Stanley White <span>liked your  Flying Car idea on ideabox and some</span></p>
+          <div class="found-items__time">
+              <a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a>
+              <span>Five hours ago</span>
+          </div>
+				</div>
+			</div>
+			<div class="found-items">
+				<img class="found-items__img" src="assets/img/user-photo.png" alt="">
+				<div class="found-items__text">
+					<p class="found-items__name-color">John Doe <span>liked comment your idea on Smart Pills </span></p>
+					 <div class="found-items__time">
+              <a href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a>
+              <span>Five hours ago</span>
+          </div>
+				</div>
+			</div>	
+			<div class="found-items">
+				<img class="found-items__img" src="assets/img/user-photo.png" alt="">
+				<div class="found-items__text">
+					<p class="found-items__name-color">Stanley White <span>followed your idea on Smart Pills</span></p>
+					 <div class="found-items__time">
+              <a href="#"><img src="assets/img/idea-list-icon3.png" alt=""></a>
+              <span>Five hours ago</span>
+          </div>
+				</div>
+			</div>	
+			<div class="found-items">
+				<img class="found-items__img" src="assets/img/user-photo.png" alt="">
+				<div class="found-items__text">
+					<p class="found-items__name-color">Stanley White <span>liked your Flying Car idea on ideabox and some </span></p>
+					 <div class="found-items__time">
+              <a href="#"><img src="assets/img/idea-list-icon1.png" alt=""></a>
+              <span>Five hours ago</span>
+          </div>
+				</div>
+			</div>
+      	<div class="found-items">
+				<img class="found-items__img" src="assets/img/user-photo.png" alt="">
+				<div class="found-items__text">
+					<p class="found-items__name-color">John Doe <span>liked comment your idea on Smart Pills </span></p>
+           <div class="found-items__time">
+              <a class="found-items__time-link" href="#"><img src="assets/img/idea-list-icon2.png" alt=""></a>
+              <span>Five hours ago</span>
+          </div>
+				</div>
+			</div>		
+		</div>
+</ion-content>

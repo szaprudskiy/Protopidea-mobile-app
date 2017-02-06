@@ -1,0 +1,38 @@
+page-notifications {
+    .main-idea-list{
+        background: #fff;
+    }
+    .header{
+        	&__list-link-bell--active{
+                background-position: -240px;
+                background: url(../assets/img/bell-active.png) no-repeat;
+                width: 20px;
+                height: 25px;
+                margin-bottom: 3px;
+	    }
+    }
+    .found-items{
+        &__img{
+            border: 4px solid #e7f4f6;
+            border-radius: 50%;
+        }
+        &__time{
+            display: flex;
+            align-items: center; 
+            margin-top: 5px;
+            a{
+                margin-right: 5px;
+                display: flex;
+            } 
+            span{
+                color: #b0b0b0;
+            }
+        }
+
+    }
+    .found-items__name-color{
+        span{
+            color: #515151;
+        }
+    }
+}
