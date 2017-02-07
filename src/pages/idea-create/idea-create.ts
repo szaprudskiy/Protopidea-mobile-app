@@ -27,7 +27,6 @@ export class IdeaCreatePage {
               public ideaCtrl: IdeaboxController) {
               this.ideaCtrl.getCategories().then(data => {
                     this.categories = data;
-                    console.log(this.categories)
                   });
   }
 

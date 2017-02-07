@@ -41,7 +41,7 @@
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat1($event)" class="select-category" value="{{categ}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat1($event)" class="select-category" value="{{categ.name}}">
                     {{categ.name}}
                 </button></li>
               </ul>
@@ -52,7 +52,7 @@
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat2($event)" class="select-category" value="{{categ}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat2($event)" class="select-category" value="{{categ.name}}">
                     {{categ.name}}
                 </button></li>
               </ul>
@@ -63,7 +63,7 @@
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat3($event)" class="select-category" value="{{categ}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat3($event)" class="select-category" value="{{categ.name}}">
                     {{categ.name}}
                 </button></li>
               </ul>
@@ -74,5 +74,4 @@
           <a class="main__link-hide" href="#">Hide</a>
         </div>
     </div>
-      </div>
 </ion-content>

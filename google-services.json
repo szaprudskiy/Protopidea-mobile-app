@@ -13,14 +13,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "43710822134-i9cfao4r2ngabn5pr1id3ujnekrdrk6g.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.protopidea",
-            "certificate_hash": "0A1D5B778EEB7A1A8152629F5BED1B2D7DC4A4AA"
-          }
-        },
-        {
           "client_id": "43710822134-s71fs2pkdcj2boiltujde0ncfpfael2m.apps.googleusercontent.com",
           "client_type": 3
         }

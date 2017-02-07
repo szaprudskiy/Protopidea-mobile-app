@@ -55,7 +55,6 @@ import { ProtopideaChallengePage } from '../pages/protopidea-challenge/protopide
 import { ProtopideaChallengeListPage } from '../pages/protopidea-challenge-list/protopidea-challenge-list';
 import { ProtopideaChallengeFoldersPage } from '../pages/protopidea-challenge-folders/protopidea-challenge-folders';
 import { ProtopideaChallengePopupButtonsPage } from '../pages/protopidea-challenge-popup-buttons/protopidea-challenge-popup-buttons';
-import { ChallengeListPage } from '../pages/challenge-list/challenge-list';
 import { GroupsPortfolioOwnerPage } from '../pages/groups-portfolio-owner/groups-portfolio-owner';
 import { SharedWithPage } from '../pages/shared-with/shared-with';
 import { ImagesAndVideoPage } from '../pages/images-and-video/images-and-video';
@@ -71,6 +70,7 @@ import { PopupDelete2Page } from '../pages/popup-delete2/popup-delete2';
 import { PopupDelete3Page } from '../pages/popup-delete3/popup-delete3';
 import { PopupDelete4Page } from '../pages/popup-delete4/popup-delete4';
 import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
+import { PopupPage} from '../pages/popup/popup';
 
 @NgModule({
   declarations: [
@@ -129,7 +129,7 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
-     ChallengeListPage,
+     //ChallengeListPage,
      GroupsPortfolioOwnerPage,
      SharedWithPage,
      ImagesAndVideoPage,
@@ -143,7 +143,8 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      PopupDelete2Page,
      PopupDelete3Page,
      PopupDelete4Page,
-     PopupDelete5Page
+     PopupDelete5Page,
+     PopupPage
 
   ],
   imports: [
@@ -214,7 +215,7 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      ProtopideaChallengeFoldersPage,
      ProtopideaChallengePopupButtonsPage,
      IdeaCreate2Page,
-     ChallengeListPage,
+     //ChallengeListPage,
      GroupsPortfolioOwnerPage,
      SharedWithPage,
      ImagesAndVideoPage,
@@ -228,7 +229,8 @@ import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
      PopupDelete2Page,
      PopupDelete3Page,
      PopupDelete4Page,
-     PopupDelete5Page
+     PopupDelete5Page,
+     PopupPage
 
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},UserController]
