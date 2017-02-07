@@ -46,6 +46,10 @@ export class IdeaboxListPage {
                 this.ideas = val;
               }
         });
+    var unregister = this.platform.registerBackButtonAction(() => {
+      alert('Press back one more time to exit app');
+      unregister();
+    });
   }
   ionViewDidEnter(){
     this.storage.get('ideas')
@@ -65,7 +69,7 @@ export class IdeaboxListPage {
   }
 
   goToMenu(){
-    this.navCtrl.push(MyPage)
+    this.navCtrl.setRoot(MyPage)
   }
 
   goToChallenges(){

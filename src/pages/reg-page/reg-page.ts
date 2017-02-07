@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HelloIonicPage } from '../hello-ionic/hello-ionic';
 import { MenuController } from 'ionic-angular';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { Facebook } from 'ionic-native';
 import { GooglePlus } from 'ionic-native';
 import { TwitterConnect } from 'ionic-native';
@@ -11,6 +11,8 @@ import { UserController } from '../../providers/user-controller';
 import { Http } from '@angular/http';
 import { Storage } from '@ionic/storage';
 import {InAppBrowser} from 'ionic-native';
+import { IdeaboxListPage } from '../ideabox-list/ideabox-list'
+import { PopupPage} from '../popup/popup';
 import 'rxjs/add/operator/map';
 
 
@@ -33,7 +35,8 @@ export class RegPage {
       public menuCtrl: MenuController,
       public userCtrl: UserController,
       public http: Http,
-      public storage: Storage) {}
+      public storage: Storage,
+      public modalCtrl: ModalController) {}
   regForm = {
     name: '',
     email: '',
@@ -52,7 +55,11 @@ export class RegPage {
 
 
   regFormSend (){
-    this.userCtrl.register(this.regForm.email,this.regForm.password);
+    var regmodal = this.modalCtrl.create(PopupPage)
+    regmodal.present()
+    regmodal.onDidDismiss(() => {
+      this.userCtrl.register(this.regForm.email,this.regForm.password);
+    });
   }
 
   goToTerms(){
@@ -63,59 +70,81 @@ export class RegPage {
     this.navCtrl.push(ForgotPassPage);
   }
 
-  regWithFacebook(){
-    facebookConnectPlugin.login(['email'], function(response) {
-            alert(JSON.stringify(response.authResponse));
-            this.storage.set('facebook',response.authResponse);
-        }, function(error){
+  facebookReg(){
+    let facebook: {}
+    return new Promise(resolve => {
+       facebookConnectPlugin.login(['email'], function(response) {
+         facebook = response
+         resolve(facebook)
+        },function(error){
             alert(error);
         });
-  }
-  onSuccess(response) {
-    alert(JSON.stringify(response));
-    this.storage.set('twitter',response);
+    });
   }
 
-  onError(response) {
-    alert(JSON.stringify(response));
+  twitter : any
+
+  regWithFacebook(){
+     this.facebookReg().then(data=>{
+       this.twitter = data
+       this.storage.set('facebook',this.twitter)
+        this.http.get('http://protopidea.pdigit.top/en/api/user/register-social?social_id=1&access_token='+ this.twitter.authResponse.accessToken+'&user_id='+this.twitter.authResponse.userID)
+                    .map(res => res.json())
+                    .subscribe(data=>{
+                      this.navCtrl.setRoot(IdeaboxListPage)
+                    })
+     })
   }
+
+  twitterReg(){
+    let tw = {}
+    return new Promise(resolve => {
+      TwitterConnect.login().then( function(response) {
+         tw = response
+         resolve(tw)
+        },function(error){
+            alert(error);
+        })
+    })
+}
 
   regWithTwitter(){
-    TwitterConnect.login().then(this.onSuccess, this.onError);
+     this.twitterReg().then(data=>{
+       this.twitter = data
+       this.storage.set('twitter',this.twitter)
+        this.http.get('http://protopidea.pdigit.top/en/api/user/register-social?social_id=2&access_token='+ this.twitter.token+'&user_id='+this.twitter.userId)
+                    .map(res => res.json())
+                    .subscribe(data=>{
+                      this.navCtrl.setRoot(IdeaboxListPage)
+                    })
+     })
   }
 
   regWithGoogle(){
     GooglePlus.login({
-      'scopes': '', // optional, space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
-      'webClientId': '485661605292-v5il4ttnjcri8k7ekmndn6ugd9ts9gft.apps.googleusercontent.com', // optional clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
+       'scopes': '', // optional, space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
+      'webClientId': '43710822134-s71fs2pkdcj2boiltujde0ncfpfael2m.apps.googleusercontent.com', // optional clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
       'offline': true
     }
     )
       .then(res => {
-        alert(JSON.stringify(res));
-        this.storage.set('google', res);
+        this.storage.set('google',this.twitter)
+        //alert(JSON.stringify(res));
+        this.http.get('http://protopidea.pdigit.top/en/api/user/register-social?social_id=4&access_token='+ res.idToken+'&user_id='+res.userId)
+                    .map(res => res.json())
+                    .subscribe(data=>{
+                        //alert(JSON.stringify(data));
+                        this.navCtrl.setRoot(IdeaboxListPage)                        
+                    })
         })
-      .catch(err => alert(JSON.stringify(err)));
+      .catch(err => alert("error "+JSON.stringify(err)));
   }
-
-  regWithXing(){
-      let data ={
-        oauth_consumer_key: '7337fc71168be8a0f8fe',
-        oauth_callback: 'com.protopidea://',
-        oauth_signature_method:'PLAINTEXT',
-        oauth_signature:'21b78841603fb916446de8f0b4d24252b8a18c2b'
-      }
-      this.http.get('https://api.xing.com/v1/request_token?oauth_consumer_key=7337fc71168be8a0f8fe&oauth_callback=com.protopidea://&oauth_signature_method=PLAINTEXT&oauth_signature=&')
-      .map(res => res.json()).subscribe(data => {
-      console.log(data.status);
-      console.log(data.data); // data received by server
-      console.log(data.headers);
-    });
 
   
-  }
+
+  
   regWithInstagram(){
-    let browser = new InAppBrowser('https://ionic.io', '_system');
+    let browser = new InAppBrowser('https://ionic.io');
     browser.show();
   }
   comingSoon(){
