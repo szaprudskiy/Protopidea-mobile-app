@@ -68,12 +68,9 @@ import { PopupDelete2Page } from '../pages/popup-delete2/popup-delete2';
 import { PopupDelete3Page } from '../pages/popup-delete3/popup-delete3';
 import { PopupDelete4Page } from '../pages/popup-delete4/popup-delete4';
 import { PopupDelete5Page } from '../pages/popup-delete5/popup-delete5';
-<<<<<<< HEAD
 import { NotificationsPage } from '../pages/notifications/notifications';
-
-=======
 import { PopupPage} from '../pages/popup/popup'
->>>>>>> 5de261fb754081b1d10046f5418bc2e7ef9a3a94
+
 
 
 @Component({
@@ -86,10 +83,6 @@ export class MyApp {
 
  
 
-<<<<<<< HEAD
-  rootPage: any = Settings10FaqPage;
-=======
->>>>>>> 5de261fb754081b1d10046f5418bc2e7ef9a3a94
 
 
   rootPage: any = QuotesPagePage;
