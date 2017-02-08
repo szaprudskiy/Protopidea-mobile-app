@@ -30,6 +30,10 @@
 					<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>-->
 				</div>  
 			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Language" required>-->
+			<ion-item>
+				<ion-label>Do you want to be a coach?</ion-label>
+				<ion-checkbox [(ngModel)]="Couch" [ngModelOptions]="{standalone: true}"></ion-checkbox>
+			</ion-item>
 			<a class="form__item-text form__item-icon" (click)="clickLanguage()" href="#">Language</a>
 			<div class="form-skills" *ngIf="langdropdown">
 				<!--<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>-->

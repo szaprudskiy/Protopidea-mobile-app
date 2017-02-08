@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {ProtopideaChallengePage} from '../protopidea-challenge/protopidea-challenge'
 
 /*
   Generated class for the ProtopideaChallengeList page.
@@ -19,4 +20,7 @@ export class ProtopideaChallengeListPage {
     console.log('ionViewDidLoad ProtopideaChallengeListPage');
   }
 
+  goToChallenge(){
+    this.navCtrl.push(ProtopideaChallengePage)
+  }
 }

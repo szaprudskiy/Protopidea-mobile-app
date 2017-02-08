@@ -11,6 +11,7 @@ import { IdeaboxSharePage } from '../ideabox-share/ideabox-share';
 import { IdeaboxPopupPage } from '../ideabox-popup/ideabox-popup';
 import { IdeaboxCommentsPage } from '../ideabox-comments/ideabox-comments';
 import { IdeaboxFollowedGroupsPage } from '../ideabox-followed-groups/ideabox-followed-groups';
+import {NotificationsPage} from '../notifications/notifications'
 import { Storage } from '@ionic/storage';
 
 /*
@@ -73,11 +74,11 @@ export class IdeaboxListPage {
   }
 
   goToChallenges(){
-    this.navCtrl.push(ProtopideaChallengePage)
+    this.navCtrl.push(ProtopideaChallengeListPage)
   }
 
   goToNotifications(){
-    this.navCtrl.push(IdeaCreate2Page)
+    this.navCtrl.push(NotificationsPage)
   }
 
   goToIdea(params : any){
@@ -103,5 +104,6 @@ export class IdeaboxListPage {
     let groupsModal = this.modalCtrl.create(IdeaboxFollowedGroupsPage);
     groupsModal.present();
   }
+
 
 }

@@ -121,9 +121,16 @@
 		}
 	}
 
-}
-.form-skills{
-	&__item-text:first-child{
-		
+
+
+.button-inner{
+	border-bottom: 1px solid #41c3d7;
 	}
+.select-icon-inner{
+	color: white!important;
+}
+.label-md{
+	font-family: 'RobotoRegular';
+	color: white;
+}
 }

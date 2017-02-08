@@ -43,7 +43,7 @@ constructor(public navCtrl: NavController,
                  console.log(this.languages)
               });
             }
-  
+  Couch : false
   profile={
     avatar:'assets/img/circle.png',
     firstName: '',
