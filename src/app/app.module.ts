@@ -13,6 +13,7 @@ import { Profile2Page } from '../pages/profile-2/profile-2';
 import { Profile3Page } from '../pages/profile-3/profile-3';
 import { Profile4PopupCameraGalleryPage } from '../pages/profile-4-popup-camera-gallery/profile-4-popup-camera-gallery';
 import { Profile5UserProfilePage } from '../pages/profile-5-user-profile/profile-5-user-profile';
+import { ProfileCollaboratePage } from '../pages/profile-collaborate/profile-collaborate';
 import { Profile6PopupProfilePage } from '../pages/profile-6-popup-profile/profile-6-popup-profile';
 import { Profile7LogoutPage } from '../pages/profile-7-logout/profile-7-logout';
 import { Settings1ChangePSWDPage } from '../pages/settings-1-change-pswd/settings-1-change-pswd';
@@ -147,7 +148,8 @@ import { PopupPage} from '../pages/popup/popup';
      PopupDelete4Page,
      PopupDelete5Page,
      NotificationsPage,
-     PopupPage
+     PopupPage,
+     ProfileCollaboratePage
 
 
   ],
@@ -198,9 +200,9 @@ import { PopupPage} from '../pages/popup/popup';
      IdeaboxCommentsPage,
      IdeaboxPopupPage,
      IdeaboxViewGroupPage ,
-      IdeaboxCategoriesPage,
-      IdeaboxSharePage,
-      SubmenuPage ,
+     IdeaboxCategoriesPage,
+     IdeaboxSharePage,
+     SubmenuPage ,
      IdeaboxCommentsPage,
      FindCollaboratorsPage,
      PortfolioOwnerPage,
@@ -235,7 +237,8 @@ import { PopupPage} from '../pages/popup/popup';
      PopupDelete4Page,
      PopupDelete5Page,
      NotificationsPage,
-     PopupPage
+     PopupPage,
+     ProfileCollaboratePage
 
 
   ],

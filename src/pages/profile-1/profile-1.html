@@ -1,53 +1,57 @@
-<ion-content class="background">
-<div class="user-profile">
-		<h5 class="user-profile__title">User Profile</h5>
-		<a class="user-profile__link-upload" href="#" (click)="clickAvatar()">
-			<img src="{{profile.avatar}}" alt="">
-		</a>
-		<ul class="user-profile__dots">
-			<li class="user-profile__item"><a class="user-profile__active" href="#"></a></li>
-			<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
-			<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
-		</ul>
-	</div>
-	<div class="form">
-		<form action="">
-			<input class="form__item-text" [(ngModel)]="profile.firstName" name="name" type="text" placeholder="First Name" required>
-			<input class="form__item-text" [(ngModel)]="profile.familyName" name="last" type="text" placeholder="Family Name" required>
-			<input class="form__item-text" [(ngModel)]="profile.email" name="email" type="email" placeholder="Email" required>
-			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>-->
-				<a class="form__item-text form__item-icon" (click)="clickSkills()" href="#">Skills</a>
-				<div class="form-skills" *ngIf="formskill">
-					<a class="form__item-text form__item-icon" href="#">First Skill<span>*</span></a>
-					<a class="form__item-text form__item-icon" href="#">Second Skill</a>
-					<a class="form__item-text form__item-icon" href="#">Third Skill</a>
-					<a class="form__item-text form__item-icon" href="#">Fourth Skill</a>
-					<a class="form__item-text form__item-icon" href="#">Fifth Skill</a>
-					<!--<input class="form__item-text form__item-icon" type="text" placeholder="First Skill*" required>
-					<input class="form__item-text form__item-icon" type="text" placeholder="Second Skill" required>
-					<input class="form__item-text form__item-icon" type="text" placeholder="Third Skill" required>
-					<input class="form__item-text form__item-icon" type="text" placeholder="Fourth Skill" required>
-					<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>-->
-				</div>  
-			<!--<input class="form__item-text form__item-icon" type="text" placeholder="Language" required>-->
-			<ion-item>
-				<ion-label>Do you want to be a coach?</ion-label>
-				<ion-checkbox [(ngModel)]="Couch" [ngModelOptions]="{standalone: true}"></ion-checkbox>
-			</ion-item>
-			<a class="form__item-text form__item-icon" (click)="clickLanguage()" href="#">Language</a>
-			<div class="form-skills" *ngIf="langdropdown">
-				<!--<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>-->
-				<ion-list>
-					<ion-item>
-						<ion-label>First Language</ion-label>
-						<ion-select [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
-							<ion-option *ngFor=" let lang of languages" [value]="lang.name">{{lang.name}}</ion-option>
-						</ion-select>
-					</ion-item>
-				</ion-list>
-				<a class="form__item-text form__item-icon--add" href="#">Add language</a>	
-			</div>
-			<button (click)="goToProfile2()" class="form__button">Saving skip</button>
-		</form>
-	</div>
-</ion-content>
+	<ion-content class="background">
+	<div class="user-profile">
+			<h5 class="user-profile__title">User Profile</h5>
+			<a class="user-profile__link-upload" href="#" (click)="clickAvatar()">
+				<img src="{{profile.avatar}}" alt="">
+			</a>
+			<ul class="user-profile__dots">
+				<li class="user-profile__item"><a class="user-profile__active" href="#"></a></li>
+				<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
+				<li class="user-profile__item"><a class="user-profile__link" href="#"></a></li>
+			</ul>
+		</div>
+		<div class="form">
+			<form action="">
+				<input class="form__item-text" [(ngModel)]="profile.firstName" name="name" type="text" placeholder="First Name" required>
+				<input class="form__item-text" [(ngModel)]="profile.familyName" name="last" type="text" placeholder="Family Name" required>
+				<input class="form__item-text" [(ngModel)]="profile.email" name="email" type="email" placeholder="Email" required>
+				<!--<input class="form__item-text form__item-icon" type="text" placeholder="Skills" required>-->
+					<a class="form__item-text form__item-icon" (click)="clickSkills()" href="#">Skills</a>
+					<div class="form-skills" *ngIf="formskill">
+						<a class="form__item-text form__item-icon" href="#">First Skill<span>*</span></a>
+						<a class="form__item-text form__item-icon" href="#">Second Skill</a>
+						<a class="form__item-text form__item-icon" href="#">Third Skill</a>
+						<a class="form__item-text form__item-icon" href="#">Fourth Skill</a>
+						<a class="form__item-text form__item-icon" href="#">Fifth Skill</a>
+						<!--<input class="form__item-text form__item-icon" type="text" placeholder="First Skill*" required>
+						<input class="form__item-text form__item-icon" type="text" placeholder="Second Skill" required>
+						<input class="form__item-text form__item-icon" type="text" placeholder="Third Skill" required>
+						<input class="form__item-text form__item-icon" type="text" placeholder="Fourth Skill" required>
+						<input class="form__item-text form__item-icon" type="text" placeholder="Fifth Skill" required>-->
+					</div>  
+				<!--<input class="form__item-text form__item-icon" type="text" placeholder="Language" required>-->
+				<ion-item>
+					<ion-label>Do you want to be a coach?</ion-label>
+					<ion-checkbox [(ngModel)]="Couch" [ngModelOptions]="{standalone: true}"></ion-checkbox>
+				</ion-item>
+				<a class="form__item-text form__item-icon" (click)="clickLanguage()" href="#">Language</a>
+				<div class="form-skills" *ngIf="langdropdown">
+					<!--<a class="form__item-text form__item-icon" href="#">English<span>*</span></a>-->
+					<ion-list>
+						<ion-item>
+							<ion-label>First Language</ion-label>
+							<ion-select [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
+								<ion-option *ngFor=" let lang of languages" [value]="lang.name">{{lang.name}}</ion-option>
+							</ion-select>
+						</ion-item>
+					</ion-list>
+					<a class="form__item-text form__item-icon--add" href="#">Add language</a>	
+				</div>
+				<div class="holder-profile1-buttons">
+					<button (click)="goToProfile2()" class="form__button">Save</button>
+					<button class="form__button form__button--color">Skip</button>	
+				</div>
+					
+			</form>
+		</div>
+	</ion-content>

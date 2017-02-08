@@ -1,17 +1,53 @@
-.log-out{
-	margin-top: 125px;
-}
-.profile-photo__marbot{
-	margin-bottom: 20px;
-}
-.log-in-button{
-	width: 95%;
-	margin-bottom: 0;
-}
-.other-acc-button{
-	background: #52c6d8;
-	color: #f3fbfc;
-}
-.log-button-width{
-	width: 44%;
-}
+page-profile-7-logout{
+		.profile-photo{
+			text-align: center;
+		margin-top: 44px;
+		color: #f7f7f7;
+		&__title{
+			margin-bottom: 20px;
+		}
+		img{
+			border-radius: 50%;
+			border: 5px solid #52c6d8;
+		}
+		&__name{
+			margin-top: 20px;
+			font-family: "RobotoBold";
+		}
+	}
+	.form{
+			&__button{
+			background: none;
+			border: none;
+			background: #deff0d;
+			padding: 15px 0;
+			border-radius: 50px;
+			color: #3c4500;
+			display: block;
+			width: 45%;
+			margin: 25px auto 20px;
+		}
+		&__button--color{
+			background: rgba(87, 203, 221, .6);
+			color: #fff;
+		}
+	}
+	.log-out{
+		margin-top: 45%;
+	}
+	.profile-photo__marbot{
+		margin-bottom: 20px;
+	}
+	.log-in-button{
+		width: 95%;
+		margin-bottom: 0;
+	}
+	.other-acc-button{
+		background: #52c6d8;
+		color: #f3fbfc;
+	}
+	.log-button-width{
+		width: 44%;
+	}
+}	
+	

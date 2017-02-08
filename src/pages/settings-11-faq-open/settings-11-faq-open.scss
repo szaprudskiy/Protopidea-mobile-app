@@ -1,12 +1,55 @@
-.support-idea__holder--color {
-  border: 1px solid #1295a9;
-  border-width: 0 0 1px 0; }
+ page-settings-11-faq-open{
+      .change-password {
+        display: block;
+        color: #f7f7f7;
+        padding: 40px 0 17px 40px;
+        font-size: 14px;
+        position: relative; 
+        text-decoration: none;
+        }
+        .change-password:before {
+          content: "";
+          position: absolute;
+          background: url(../assets/img/arr-left.png);
+          width: 9px;
+          height: 13px;
+          left: 24px;
+          top: 42px; }
 
-.support-idea__text--color-blue {
-  color: #1295a9; }
+    .support-idea__holder--border {
+      border: 1px solid #d9eef1;
+      border-width: 1px 0 1px 0; }
 
-.support-idea__text--color {
-  color: #1295a9; }
+    .faq-list {
+      margin-left: 20px; }
+      .faq-list__item {
+        padding: 10px 0; }
+      .faq-list__link {
+        color: #1295a9; 
+        text-decoration: none;
+        }
+        .main{
+          margin-top: 15px;
+        }
+        .support-idea__text {
+    color: #515151;
+    padding: 20px; }
 
-.support-idea__text--pad {
-  padding-top: 0; }
+    .support-idea__holder--color {
+    border: 1px solid #1295a9;
+    border-width: 0 0 1px 0; }
+
+  .support-idea__text--color-blue {
+    color: #1295a9; }
+
+  .support-idea__text--color {
+    color: #1295a9; }
+
+  .support-idea__text--pad {
+    padding-top: 0; }
+
+ }     
+      
+
+
+  

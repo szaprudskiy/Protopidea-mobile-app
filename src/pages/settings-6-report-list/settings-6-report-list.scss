@@ -1,1 +1,84 @@
+page-settings-6-report-list{
+	   .change-password {
+    display: block;
+    color: #f7f7f7;
+    padding: 40px 0 17px 40px;
+    font-size: 14px;
+    position: relative; 
+    text-decoration: none;
+    }
+    .change-password:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/arr-left.png);
+      width: 9px;
+      height: 13px;
+      left: 24px;
+      top: 42px; }
+
+  .main-change-pass {
+    padding: 155px 0 135px; }
+    .main-change-pass__button {
+      background: none;
+      border: none;
+      background: #deff0d;
+      padding: 15px 0;
+      border-radius: 50px;
+      color: #3c4500;
+      display: block;
+      width: 90%;
+      margin: 25px auto 20px; }
+    .main-change-pass__input {
+      display: block;
+      background: none;
+      border: none;
+      color: #9dbdc2;
+      width: 100%;
+      padding: 18px 0 18px 20px;
+      font-size: 16px;
+      border-bottom: 1px solid #d9eef1; }
+      .main-change-pass__input::-webkit-input-placeholder {
+        color: #9dbdc2; }
+    .main-language {
+    padding-bottom: 1px; }
+    .main-language .main-change-pass__input--language {
+      color: #515151;
+      display: block;
+      text-decoration: none;
+      border-bottom: 1px solid #d9eef1; }
+      .main-language .main-change-pass__input--language::-webkit-input-placeholder {
+        color: #515151; }
+
+        .main-support {
+  padding-bottom: 138px; }
+  .main-support__input {
+    text-indent: 20px;
+    font-size: 16px;
+    width: 100%;
+    color: #9dbdc2;
+    border: none;
+    padding: 20px 0;
+    background: url(../assets/img/loupe-support.png) no-repeat;
+    opacity: .6;
+    background-position: 93% 18px;
+    border-bottom: 1px solid #00bfcc; }
+    .main-support__input::-webkit-input-placeholder {
+      color: #9dbdc2; }
+  .main-support__link {
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px solid #d9eef1;
+    color: #515151;
+    color: #1295a9; }
+    .main-support__link:after {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/arr-right2.png);
+      width: 9px;
+      height: 13px;
+      left: 90%;
+      top: 23px; }
+}  
+  
+
 

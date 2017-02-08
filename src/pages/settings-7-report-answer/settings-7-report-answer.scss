@@ -1,2 +1,58 @@
-.report-answer {
+  page-settings-7-report-answer{
+      .change-password {
+      display: block;
+      color: #f7f7f7;
+      padding: 40px 0 17px 40px;
+      font-size: 14px;
+      position: relative; 
+      text-decoration: none;
+      }
+      .change-password:before {
+        content: "";
+        position: absolute;
+        background: url(../assets/img/arr-left.png);
+        width: 9px;
+        height: 13px;
+        left: 24px;
+        top: 42px; }
+  .main-change-pass__button {
+      background: none;
+      border: none;
+      background: #deff0d;
+      padding: 15px 0;
+      border-radius: 50px;
+      color: #3c4500;
+      display: block;
+      width: 90%;
+      margin: 25px auto 20px; }
+ 
+  .support-idea__holder {
+    border-bottom: 1px solid #00bfcc; }
+
+  .support-idea__textarea {
+    width: 280px;
+    border: none;
+    resize: none;
+    padding: 20px;
+    color: #9dbdc2;
+    opacity: 0.8;
+    font-size: 16px; }
+
+  .support-idea__text {
+    color: #515151;
+    padding: 20px; }
+
+  .report-problem__add {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #d9eef1; }
+  
+  .report-answer {
   padding-bottom: 1px; }
+
+  } 
+    
+
+
+
