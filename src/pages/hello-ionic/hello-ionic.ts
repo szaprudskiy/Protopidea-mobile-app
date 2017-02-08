@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map';
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html',
-  providers : [UserController],
+ // providers : [UserController],
 })
 export class HelloIonicPage {
     constructor(public navCtrl: NavController,
@@ -20,7 +20,7 @@ export class HelloIonicPage {
                 public http: Http,
                 public alertCtrl: AlertController,
                 public _jsonp: Jsonp,
-                public userCtrl: UserController,
+                //public userCtrl: UserController,
                 public storage: Storage,
                 public platform: Platform
                ) {
@@ -39,7 +39,7 @@ export class HelloIonicPage {
   }
 
   regFormSend(){
-    this.userCtrl.login(this.regForm.email,this.regForm.password);
+    //this.userCtrl.login(this.regForm.email,this.regForm.password);
   }
 
    regWithFacebook(){

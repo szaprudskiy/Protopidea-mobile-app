@@ -82,7 +82,7 @@ import { PopupPage} from '../pages/popup/popup'
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = IdeaCreatePage;
+  rootPage: any = IdeaboxListPage;
 
   constructor(
     public platform: Platform,
