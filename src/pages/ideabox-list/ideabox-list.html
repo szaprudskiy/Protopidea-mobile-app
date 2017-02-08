@@ -29,7 +29,7 @@
 									<p class="main-idea-list__title" (click)="goToIdea()">{{idea.name}}</p>
 									<img class="main-idea-list__img" src="{{idea.image}}" alt="" width="130px" height="70px" (click)="goToIdea(idea)">
 									<ul class="main-idea-list__icons"> 
-										<li><a href="#" (click)="openLikes()" ><img src="assets/img/idea-list-icon1.png" alt=""></a></li>
+										<li><a href="#" ><img  (click)="openLikes($event)" src='assets/img/idea-list-icon1.png' alt=""></a></li>
 										<li><a href="#" (click)="openMessages()"><img src="assets/img/idea-list-icon2.png" alt=""></a></li>
 										<li><a href="#" (click)="openShares()"><img src="assets/img/idea-list-icon3.png" alt=""></a></li>
 									</ul>

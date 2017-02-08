@@ -6,6 +6,7 @@ import { MyPage } from '../menu/menu';
 import { ProtopideaChallengeListPage } from '../protopidea-challenge-list/protopidea-challenge-list';
 import { ProtopideaChallengePage} from '../protopidea-challenge/protopidea-challenge';
 import { File } from 'ionic-native';
+import { Http,Jsonp } from '@angular/http';
 import { IdeaboxLikesPage } from '../ideabox-likes/ideabox-likes';
 import { IdeaboxSharePage } from '../ideabox-share/ideabox-share';
 import { IdeaboxPopupPage } from '../ideabox-popup/ideabox-popup';
@@ -27,13 +28,15 @@ import { Storage } from '@ionic/storage';
 export class IdeaboxListPage {
 
   ideas = []
+  token = 'MnTvRHONp556fFWMJWBBNFuk741RSV8yGUo7qTNh84oQJ7DISh9pctgjzJZNz2kZ2cYmhIQ9Put73aH4AfLkaq6GTcGK4L6dO2mGhWTjvcE9M63MwfNGzevMz2eAjixs'
 
   constructor(public navCtrl: NavController,
                public navParams: NavParams,
                public platform: Platform,
                public modalCtrl: ModalController,
                public storage: Storage,
-               public viewCtrl: ViewController) {
+               public viewCtrl: ViewController,
+               public http: Http) {
                }
 
   ionViewDidLoad() {
@@ -85,14 +88,23 @@ export class IdeaboxListPage {
     this.navCtrl.push(IdeaCreate2Page,{idea:params});
   }
 
-  openLikes(){
-    let likesModal = this.modalCtrl.create(IdeaboxLikesPage);
-    likesModal.present();
+  openLikes(ev: any){
+    this.http.get('http://protopidea.pdigit.top/en/api/ideas/like?access_token='+this.token+'&idea_id='+1)
+              .map(res=>res.json())
+              .subscribe(data=>{
+                console.log(data)
+                  if (typeof data.like != undefined ){
+                    ev.target.src='assets/img/idea-active.png'
+                  } 
+                  if (data.deleted_like_id>0)
+                  {
+                    ev.target.src='assets/img/idea-list-icon1.png'
+                  }
+              })
   }
 
-  openShare(){
-    let shareModal = this.modalCtrl.create(IdeaboxSharePage);
-    shareModal.present();
+  openShares(){
+    
   }
 
   openMessages(){
