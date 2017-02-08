@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { StatusBar, Splashscreen, SecureStorage } from 'ionic-native';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { RegPage} from '../pages/reg-page/reg-page';
-import { TermsAndConditionsPage} from '../pages/terms-and-conditions/terms-and-conditions';
+import { TermsAndConditionsPage } from '../pages/terms-and-conditions/terms-and-conditions';
 import { ForgotPassPage } from '../pages/forgot-pass/forgot-pass';
 import { Profile1Page } from '../pages/profile-1/profile-1';
 import { Profile2Page } from '../pages/profile-2/profile-2';
@@ -81,15 +81,7 @@ import { PopupPage} from '../pages/popup/popup'
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
- 
-
-
-
-  rootPage: any = QuotesPagePage;
-
-
-
-
+  rootPage: any = Profile5UserProfilePage;
 
   constructor(
     public platform: Platform,
