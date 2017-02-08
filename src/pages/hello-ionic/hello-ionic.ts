@@ -15,14 +15,14 @@ import 'rxjs/add/operator/map';
   providers : [UserController],
 })
 export class HelloIonicPage {
-  constructor(public navCtrl: NavController,
-              public navParams: NavParams,
-              public http: Http,
-              public alertCtrl: AlertController,
-              public _jsonp: Jsonp,
-              public userCtrl: UserController,
-              public storage: Storage,
-              public platform: Platform
+    constructor(public navCtrl: NavController,
+                public navParams: NavParams,
+                public http: Http,
+                public alertCtrl: AlertController,
+                public _jsonp: Jsonp,
+                public userCtrl: UserController,
+                public storage: Storage,
+                public platform: Platform
                ) {
     
 

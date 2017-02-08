@@ -29,7 +29,10 @@
 		    	</div>
           <input class="form__item-text" [(ngModel)]="profile.url" name="url" type="text" placeholder="Your URL" >
           <button class="form__button-cv">Upload CV</button>
-          <button class="form__button" (click)="goToProfile3()">Saving skip</button>
+          <div class="holder-profile1-buttons">
+            <button (click)="goToProfile3()" class="form__button">Save</button>
+            <button class="form__button form__button--color">Skip</button>	
+				  </div>
         </form>
   </div>
  </ion-content>  
