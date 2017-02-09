@@ -1,23 +1,29 @@
-.main-idea-list__title-folders-white{
-    color: #fff;
-}
+ page-protopidea-challenge-popup-buttons{
+         .main-idea-list__title-folders-white{
+        color: #fff;
+        text-align: center;
+    }
+    .main__link-collaborate--opacity{
+       background: rgba(83, 199, 217, .6) !important;
+    }
+    .main__link-collaborate--orange{
+        text-align: center;
+        border: none;
+        background: #e8920c;
+        width: 95%;    
+        padding: 15px 0;
+        border-radius: 50px;
+        color: #fff;
+        display: block;
+        margin: 25px auto 20px;
+        font-family: 'RobotoRegular';
+    }
+    .holder-protop-buttons{
+        margin-top: 30%;
+    }
 
-.main__link-collaborate--orange{
-     text-align: center;
-     border: none;
-     background: #e8920c;
-     width: 95%;    
-     padding: 15px 0;
-     border-radius: 50px;
-     color: #fff;
-     display: block;
-     margin: 25px auto 20px;
-     font-family: 'RobotoRegular';
-}
-.holder-protop-buttons{
-    margin-top: 20%;
-}
+ }  
+   
 
-
-
+ 
     

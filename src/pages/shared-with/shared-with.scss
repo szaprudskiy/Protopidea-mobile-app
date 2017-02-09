@@ -1,4 +1,20 @@
 page-shared-with {
+    		.change-password {
+    display: block;
+    color: #f7f7f7;
+    padding: 40px 0 17px 40px;
+    font-size: 14px;
+    position: relative; 
+    text-decoration: none;
+    }
+    .change-password:before {
+      content: "";
+      position: absolute;
+      background: url(../assets/img/arr-left.png);
+      width: 9px;
+      height: 13px;
+      left: 24px;
+      top: 42px; }
     .main-idea-list{
         background: #fff;
         margin-top: 15px;
