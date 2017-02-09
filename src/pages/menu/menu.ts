@@ -35,7 +35,7 @@ export class MyPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Menu');
     var goToList = this.platform.registerBackButtonAction(() => {
-      this.navCtrl.setRoot(IdeaboxListPage)
+      this.navCtrl.pop()
       goToList();
     });
   }
@@ -94,6 +94,6 @@ export class MyPage {
 //  }
 
  back(){
-   this.navCtrl.setRoot(IdeaboxListPage);
+   this.navCtrl.pop();
  }
 }

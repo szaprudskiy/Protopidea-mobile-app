@@ -73,7 +73,7 @@ export class IdeaboxListPage {
   }
 
   goToMenu(){
-    this.navCtrl.setRoot(MyPage)
+    this.navCtrl.push(MyPage)
   }
 
   goToChallenges(){
@@ -117,5 +117,8 @@ export class IdeaboxListPage {
     groupsModal.present();
   }
 
+  comingSoon(){
+    alert('Coming soon!')
+  }
 
 }

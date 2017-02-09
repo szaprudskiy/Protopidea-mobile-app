@@ -4,7 +4,8 @@
     <description>A protopidea app</description>
     <author email="maksym.shcherbak@point-digital.com" href="http://www.xobaedi.ch/">Point-Digital</author>
     <content src="index.html" />
-    <access origin="*" />
+    <allow-navigation href="*" />
+    <access origin="*://*/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

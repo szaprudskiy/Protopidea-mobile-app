@@ -7,6 +7,8 @@ import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
 import { Storage } from '@ionic/storage';
 import {IdeaboxController}  from '../../providers/ideabox-controller'
 import { Transfer } from 'ionic-native';
+import { Http} from '@angular/http'
+import { HTTP } from 'ionic-native';
 
 /*
   Generated class for the IdeaCreate page.
@@ -25,9 +27,11 @@ export class IdeaCreatePage {
               public navParams: NavParams,
               public modalCtrl: ModalController,
               public storage: Storage,
-              public ideaCtrl: IdeaboxController) {
+              public ideaCtrl: IdeaboxController,
+              public http: Http) {
               this.ideaCtrl.getCategories().then(data => {
                     this.categories = data;
+                    console.log(data)
                   });
   }
 
@@ -40,9 +44,15 @@ export class IdeaCreatePage {
     promDesc:'',
     categories: [],
   }
-  category1 = 'First Category'
-  category2 = 'Second Category'
-  category3 = 'Third Category'
+  category1 = {
+      id :0,
+      name: 'First Category'}
+  category2 = {
+      id :0,
+      name: 'Second Category'}
+  category3 = {
+      id :0,
+      name: 'Third Category'}
   categories: any
   search: any
   searchQuery: string = ''
@@ -66,7 +76,7 @@ export class IdeaCreatePage {
 
   categorySearch(ev: any) {
     this.initializeCategories();
-    let val = ev.target.value;
+    var val = ev.target.value;
     console.log
     if (val && val.trim() != '') {
       this.categories = this.categories.filter((item) => {
@@ -87,17 +97,20 @@ export class IdeaCreatePage {
   setCat1(event : any){
     var val = event.target.value
     console.log(val);
-    this.category1 = val;
+    var x = this.categories.find(cat => cat.id == val)
+    this.category1 = x;
   }
   setCat2(event : any){
     var val = event.target.value
     console.log(val);
-    this.category2 = val;
+    var x = this.categories.find(cat => cat.id == val)
+    this.category2 = x;
   }
   setCat3(event : any){
     var val = event.target.value
     console.log(val);
-    this.category3 = val;
+    var x = this.categories.find(cat => cat.id == val)
+    this.category3 = x;
   }
 
   catTogleList(){
@@ -113,34 +126,53 @@ export class IdeaCreatePage {
   }
 
   modalUploadPhoto(){
-    const fileTransfer = new Transfer();
-    var options = {
-      fileKey: 'file',
-      fileName: 'name.jpg',
-      headers: {}
-    }
     let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
     uploadPhotoModal.onDidDismiss(data => {
      this.idea.image = data;
-     fileTransfer.upload(this.idea.image,'',options).then(data=>{
-          alert(JSON.stringify(data))},
-        error=> {
-           alert(JSON.stringify(error))},
-        )
       });
    uploadPhotoModal.present();
   }
 
   goPublic(){
+    //const fileTransfer = new Transfer();
+    var options = {
+      fileKey: 'file',
+      fileName: 'name.jpg',
+      chunkedMode: false,
+      //mimeType: "multipart/form-data",
+      params : {'fileName': 'name.jpg'}
+    }
       this.navCtrl.push( IdeaboxListPage );
       this.storage.get('ideas').then(val=>{
           val.push(this.idea);
           this.storage.set('ideas',val);
       });
+      HTTP.post('http://protopidea.pdigit.top/en/api/ideas/create?access_token=MnTvRHONp556fFWMJWBBNFuk741RSV8yGUo7qTNh84oQJ7DISh9pctgjzJZNz2kZ2cYmhIQ9Put73aH4AfLkaq6GTcGK4L6dO2mGhWTjvcE9M63MwfNGzevMz2eAjixs',
+                        {
+                          category_1_id: this.category1.id,
+                          category_2_id: this.category2.id,
+                          category_3_id: this.category3.id,
+                          name : this.idea.name,
+                          scom: this.idea.promDesc,
+                          com: this.idea.promDesc
+                        },{})
+                        .then(data=>{
+                            alert(JSON.stringify(data))
+                            /*fileTransfer.upload(this.idea.image,'http://protopidea.pdigit.top/en/api/ideas/edit',options).then(data=>{
+                              alert(JSON.stringify(data))},
+                            error=> {
+                              alert(JSON.stringify(error))},
+                            )*/
+                        }).catch(error => {
+                            alert(JSON.stringify(error))
+                        });
   }
   
   goToIdeaList(){
     this.navCtrl.push( IdeaboxListPage,{},{animate: true, direction: 'left', });
   }
   
+  comingSoon(){
+    alert('Coming soon!')
+  }
 }
