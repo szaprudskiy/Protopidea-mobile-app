@@ -12,9 +12,9 @@
           <div class="header__bot">
             <ul class="header__list">
               <li class="header__item"><a (click)="goToIdeaList()" class="header__list-link header__list-link-idea" href="#"></a></li>
-              <li class="header__item "><a class="header__list-link header__list-link-goblet" href="#"></a></li>
+              <li class="header__item "><a (click)="comingSoon()" class="header__list-link header__list-link-goblet" href="#"></a></li>
               <li class="header__item header__item--active"><a class="header__list-link header__list-link-cloud--active" href="#"></a></li>
-              <li class="header__item "><a class="header__list-link header__list-link-bell" href="#"></a></li>
+              <li class="header__item "><a (click)="comingSoon()" class="header__list-link header__list-link-bell" href="#"></a></li>
             </ul>
           </div>
       </div>
@@ -35,35 +35,35 @@
         <a href="#" class="main__input main__input--arrdown" (click)="catTogleList()">Categories</a>
 
         <div *ngIf="showCatList" class="cat-container">
-            <a href="#" class="main__input main__input--arrdown" (click)="catTogle1()">{{category1}}</a>
+            <a href="#" class="main__input main__input--arrdown" (click)="catTogle1()">{{category1.name}}</a>
             <div  *ngIf="showCat1">
               <ion-searchbar
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat1($event)" class="select-category" value="{{categ.name}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat1($event)" class="select-category" value="{{categ.id}}">
                     {{categ.name}}
                 </button></li>
               </ul>
             </div>
-            <a href="#"  class="main__input main__input--arrdown" (click)="catTogle2()">{{category2}}</a>
+            <a href="#"  class="main__input main__input--arrdown" (click)="catTogle2()">{{category2.name}}</a>
             <div  *ngIf="showCat2">
               <ion-searchbar
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat2($event)" class="select-category" value="{{categ.name}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat2($event)" class="select-category" value="{{categ.id}}">
                     {{categ.name}}
                 </button></li>
               </ul>
             </div>
-            <a href="#"  class="main__input main__input--arrdown" (click)="catTogle3()">{{category3}}</a>
+            <a href="#"  class="main__input main__input--arrdown" (click)="catTogle3()">{{category3.name}}</a>
             <div  *ngIf="showCat3">
               <ion-searchbar
                 (ionInput)="categorySearch($event)">
               </ion-searchbar>
             <ul>
-                <li *ngFor="let categ of categories"><button (click)="setCat3($event)" class="select-category" value="{{categ.name}}">
+                <li *ngFor="let categ of categories"><button (click)="setCat3($event)" class="select-category" value="{{categ.id}}">
                     {{categ.name}}
                 </button></li>
               </ul>

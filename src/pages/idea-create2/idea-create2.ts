@@ -14,14 +14,7 @@ import { MyPage } from '../menu/menu';
 })
 export class IdeaCreate2Page {
 
-  idea = {
-    image:'assets/img/upload-photo.png',
-    name:'',
-    title:'',
-    briefDesc:'',
-    promDesc:'',
-    categories: [],
-  }
+  idea : any
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     //this.idea = navParams.get('idea');
@@ -46,9 +39,16 @@ export class IdeaCreate2Page {
      this.promotiondrop = !this.promotiondrop;
   }
   
-goToIdeaList(){
+  goToIdeaList(){
     this.navCtrl.push( IdeaboxListPage );
   }
+
+  goToMenu(){
+    this.navCtrl.push(MyPage);
+  }
   
+  comingSoon(){
+    alert('Coming soon!')
+  }
 
 }
