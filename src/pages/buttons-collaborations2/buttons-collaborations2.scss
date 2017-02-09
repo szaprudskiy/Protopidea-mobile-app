@@ -1,27 +1,30 @@
-.form__button-cv--icon-third{
-	 border: none;
-    background: #e8920c url(../assets/img/submit-icon.png) no-repeat !important;
-    width: 90%;
-    padding: 15px 0;
-    border-radius: 50px;
-    color: #f3fbfc;
-    display: block;
-    margin: 25px auto 20px !important;
-   	background-position: 60px 10px !important;
-}
-.form__button-cv--icon-fourth{
-	border: none;
-    background: #deff0d url(../assets/img/share-icon.png) no-repeat !important;
-    width: 90%;
-    padding: 15px 0;
-    border-radius: 50px;
-    color: #3c4500;
-    display: block;
-    margin: 25px auto 20px !important;
-  	background-position: 100px 13px !important;
-}
-.holder-buttons{
-    position: absolute;
-    width: 100%;
-    top: 35%;
-}
+ page-buttons-collaborations2{
+        .form__button-cv--icon-third{
+        border: none;
+        background: #e8920c url(../assets/img/submit-icon.png) no-repeat !important;
+        width: 90%;
+        padding: 15px 0;
+        border-radius: 50px;
+        color: #f3fbfc;
+        display: block;
+        margin: 25px auto 20px !important;
+        background-position: 49px 10px !important;
+    }
+    .form__button-cv--icon-fourth{
+        border: none;
+        background: #deff0d url(../assets/img/share-icon.png) no-repeat !important;
+        width: 90%;
+        padding: 15px 0;
+        border-radius: 50px;
+        color: #3c4500;
+        display: block;
+        margin: 25px auto 20px !important;
+        background-position: 89px 13px !important;
+    }
+    .holder-buttons{
+        position: absolute;
+        width: 100%;
+        top: 35%;
+    }
+ } 
+    
