@@ -6,6 +6,7 @@ import { IdeaCreate2Page } from '../idea-create2/idea-create2';
 import { IdeaboxListPage } from '../ideabox-list/ideabox-list';
 import { Storage } from '@ionic/storage';
 import {IdeaboxController}  from '../../providers/ideabox-controller'
+import { Transfer } from 'ionic-native';
 
 /*
   Generated class for the IdeaCreate page.
@@ -29,6 +30,7 @@ export class IdeaCreatePage {
                     this.categories = data;
                   });
   }
+
 
   idea = {
     image:'assets/img/upload-photo.png',
@@ -111,10 +113,21 @@ export class IdeaCreatePage {
   }
 
   modalUploadPhoto(){
+    const fileTransfer = new Transfer();
+    var options = {
+      fileKey: 'file',
+      fileName: 'name.jpg',
+      headers: {}
+    }
     let uploadPhotoModal = this.modalCtrl.create(Profile4PopupCameraGalleryPage);
     uploadPhotoModal.onDidDismiss(data => {
      this.idea.image = data;
-   });
+     fileTransfer.upload(this.idea.image,'',options).then(data=>{
+          alert(JSON.stringify(data))},
+        error=> {
+           alert(JSON.stringify(error))},
+        )
+      });
    uploadPhotoModal.present();
   }
 
