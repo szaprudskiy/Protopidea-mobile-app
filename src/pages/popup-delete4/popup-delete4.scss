@@ -1,8 +1,8 @@
 page-popup-delete4 {
              .user-popup{
-        background: url(../assets/img/popup-bg.png) no-repeat;
+        background: url(../assets/img/bg-popup2.png) no-repeat;
         width: 308px;
-        height: 174px;
+        height: 132px;
         margin: 50% auto 0;
         &__title{
             padding: 20px;
@@ -11,7 +11,7 @@ page-popup-delete4 {
         }
     }
     .user-popup--pad{
-        padding-top: 28px;
+        padding-top: 10px;
     }
     .user-holder-buttons {
         display: flex;

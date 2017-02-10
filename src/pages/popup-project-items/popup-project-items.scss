@@ -1,4 +1,56 @@
 page-popup-project-items {
+    .form{
+        	&__item-text{
+			background: none;
+			border: none;
+			color: #f7f7f7;
+			width: 100%;
+			padding: 18px 0 20px 20px;
+			font-family: 'RobotoRegular';
+			font-size: 16px;
+			border-bottom: 1px solid #41c3d7;
+			&::-webkit-input-placeholder{
+				color: #f7f7f7;	
+			}
+        }
+            &__button--color{
+                background: rgba(87, 203, 221, .6);
+                color: #fff;
+		}
+		&__button-cv{
+            text-align: center;
+			background: none;
+			border: none;
+			background: rgba(82, 198, 216, .6);
+			width: 90%;
+			padding: 15px 0;
+			border-radius: 50px;
+			color: #f3fbfc;
+			display: block;
+			margin: 20px auto 0px;
+			font-family: 'RobotoRegular';
+		}
+        &__button-link-device-icon{
+            background: #52c6d8 url(../assets/img/icon-camera.png) no-repeat !important;
+            background-position: 17px 12px !important;
+        }
+        &__button{
+			background: none;
+			border: none;
+			background: #deff0d;
+			padding: 15px 0;
+			border-radius: 50px;
+			color: #3c4500;
+			display: block;
+			width: 45%;
+			margin: 25px auto 20px;
+		}
+        
+		&__button--color{
+			background: rgba(87, 203, 221, .6);
+			color: #fff;
+		}
+     }  
       .holder-links{
         &__title{
             text-align: center;
@@ -23,5 +75,8 @@ page-popup-project-items {
     }
     .holder-links--mar{
         margin-top: 110px;
+    }
+        .holder-profile1-buttons{
+        display: flex;
     }
 }

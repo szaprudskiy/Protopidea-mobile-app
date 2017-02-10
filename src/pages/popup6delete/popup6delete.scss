@@ -1,0 +1,45 @@
+page-popup6delete {
+        .popup-delete{
+        background: url(../assets/img/popup-bg-delete.png);
+        width: 308px;
+        height: 111px;
+        margin: 50% auto 0;
+        padding: 10px 0 10px;
+        &__title{
+            text-align: center;
+            color: #515151;
+            margin-bottom: 10px;
+            span{
+                color: #1295a9; 
+            }
+        }
+        &__btn{
+            display: block;
+            text-align: center;
+            margin: 10px auto 0;
+            color: #fff;
+            background: #e8920c url(../assets/img/delete-popup.png) no-repeat;
+            background-position: 65% 11px;
+            width: 280px;
+            padding: 15px 0;
+            border-radius: 20px;
+        }
+    }
+    .user-holder-buttons {
+        display: flex;
+        justify-content: space-around;
+         a {
+             display: block;
+             border-radius: 20px;
+             padding: 15px 40px;
+         } 
+         &__continue{
+              background: rgb(225, 238, 240);  
+              color: #1295a9;
+         }
+         &__cancel{
+             background: rgb(232, 146, 12);
+             color: #fff;  
+         }  
+    }
+}

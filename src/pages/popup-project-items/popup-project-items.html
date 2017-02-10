@@ -15,8 +15,10 @@
 				<a class="form__button-cv form__button-link-device form__button-link-device-icon" href="#" (click)="uploadFromCamera()">Camera</a>
         <input class="form__item-text" type="text" placeholder="Link Video" required>
          <div class="main__holder-links">
-           <a class="main__link-hide" href="#" class="main__link-hide--color">Dismiss</a>
-          <a class="main__link-public" href="#">Save</a>
-        </div>
+          <div class="holder-profile1-buttons">
+            <button class="form__button form__button--color">Dismiss</button>	
+            <button (click)="goToProfile2()" class="form__button">Save</button>
+				  </div> 
+      </div>
 		</div>
 </ion-content>
