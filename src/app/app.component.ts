@@ -84,21 +84,21 @@ import { PopupPage} from '../pages/popup/popup';
 export class MyApp {
   @ViewChild('myNav') nav: NavController
 
-  rootPage: any = Popup6deletePage;
+  rootPage: any = IdeaCreatePage;
 
   constructor(
     public platform: Platform,
     public storage: Storage
   ) {
 
-    
+
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
       Splashscreen.hide();
     });
-  
+
 
   }
 

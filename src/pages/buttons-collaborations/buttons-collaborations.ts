@@ -18,5 +18,6 @@ export class ButtonsCollaborationsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ButtonsCollaborationsPage');
   }
+    
 
 }
